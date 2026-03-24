@@ -87,30 +87,35 @@ const services = [
     title: "Emergency Car Lockout",
     description: "Locked out of your car? We'll get you back in fast — no damage to your vehicle. Available 24/7.",
     seoAnchor: "Emergency Car Lockout Service in Burbank",
+    image: serviceCarLockout,
   },
   {
     icon: Key,
     title: "All Keys Lost Replacement",
     description: "Lost every key? We program brand-new keys on-site using OEM-level equipment, even with zero keys.",
     seoAnchor: "All Keys Lost Car Key Replacement in Burbank",
+    image: serviceAllKeysLost,
   },
   {
     icon: Zap,
     title: "Key Programming (OEM & Aftermarket)",
     description: "Transponder keys, smart keys, push-to-start fobs — programmed on-site with dealer-level tools.",
     seoAnchor: "OEM Car Key Programming Burbank",
+    image: serviceKeyProgramming,
   },
   {
     icon: Wrench,
     title: "Ignition Repair & Replacement",
     description: "Key won't turn? Ignition stuck? We repair and replace ignitions for all makes and models.",
     seoAnchor: "Ignition Repair & Replacement in Burbank",
+    image: serviceIgnitionRepair,
   },
   {
     icon: Shield,
     title: "ECU / BCM / Immobilizer Work",
     description: "Advanced EEPROM programming, ECU/BCM module synchronization, and anti-theft system restoration.",
     seoAnchor: "ECU BCM Immobilizer Programming in Burbank",
+    image: serviceEcuProgramming,
   },
 ];
 
