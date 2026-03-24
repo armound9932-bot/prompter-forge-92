@@ -1,5 +1,11 @@
 import { Phone, MessageCircle, Clock, Shield, Star, MapPin, Wrench, Key, Car, Zap, ChevronRight, Award, CheckCircle } from "lucide-react";
 
+import serviceCarLockout from "@/assets/service-car-lockout.jpg";
+import serviceAllKeysLost from "@/assets/service-all-keys-lost.jpg";
+import serviceKeyProgramming from "@/assets/service-key-programming.jpg";
+import serviceIgnitionRepair from "@/assets/service-ignition-repair.jpg";
+import serviceEcuProgramming from "@/assets/service-ecu-programming.jpg";
+
 const PHONE = "8186061684";
 const PHONE_DISPLAY = "(818) 606-1684";
 const WHATSAPP = `https://wa.me/1${PHONE}`;
