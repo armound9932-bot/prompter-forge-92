@@ -132,16 +132,29 @@ function ServicesSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s) => (
-            <div key={s.title} className="bg-card rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-border">
-              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4">
-                <s.icon className="w-6 h-6 text-accent" />
+            <div key={s.title} className="group bg-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-border">
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={s.image}
+                  alt={s.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                <div className="absolute bottom-3 left-3 flex items-center gap-2">
+                  <div className="w-10 h-10 rounded-lg bg-accent/90 flex items-center justify-center backdrop-blur-sm">
+                    <s.icon className="w-5 h-5 text-accent-foreground" />
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">{s.title}</h3>
-              <p className="text-muted-foreground mb-1">{s.description}</p>
-              <p className="text-accent text-sm font-medium mb-4">{s.seoAnchor}</p>
-              <a href={`tel:${PHONE}`} className="inline-flex items-center gap-1 text-accent font-semibold hover:underline text-sm">
-                Learn More <ChevronRight className="w-4 h-4" />
-              </a>
+              <div className="p-5">
+                <h3 className="text-xl font-bold text-foreground mb-2">{s.title}</h3>
+                <p className="text-muted-foreground text-sm mb-1">{s.description}</p>
+                <p className="text-accent text-xs font-medium mb-3">{s.seoAnchor}</p>
+                <a href={`tel:${PHONE}`} className="inline-flex items-center gap-1 text-accent font-semibold hover:underline text-sm">
+                  Learn More <ChevronRight className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           ))}
         </div>
