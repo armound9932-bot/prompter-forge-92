@@ -1,20 +1,30 @@
 
 
-## Hero Section Conversion Optimization
+## Mobile Services Section Optimization
 
-### Changes (single file: `src/pages/Index.tsx`, lines 35-73)
+### What changes
+Single file: `src/pages/Index.tsx`, the `ServicesSection` component (lines 141-188).
 
-1. **Red emergency badge** — Replace the current subtle `bg-accent/20` badge with a bold red badge: `bg-red-600 text-white` with a pulsing dot indicator and text "24/7 Emergency Locksmith"
+### Plan
 
-2. **Updated headline** — Change to:
-   - Line 1: "Locked Out? Lost Your Car Keys?"
-   - Line 2 (accent): "We're There in 30 Minutes"
+1. **Replace large images with icons on mobile** — On mobile (`md:` breakpoint and below), hide the `h-48` image container entirely and show a compact icon-based card instead. On desktop, keep the current image card layout unchanged.
 
-3. **Updated subtext** — Replace current paragraph with: "Fast, reliable mobile car locksmith in Burbank. Call now for immediate service."
+2. **Mobile card layout** — Each service renders as a horizontal card with:
+   - Left: colored icon circle (`w-12 h-12`, accent background)
+   - Right: bold title (`text-lg font-bold`), description text, SEO anchor, and "Learn More" link
+   - Card styling: `bg-card rounded-xl p-4 shadow-sm border`
 
-4. **Larger Call Now button** — Increase padding (`px-10 py-5`), font size (`text-xl`), and keep pulse-glow animation
+3. **Spacing** — Use `gap-4` between stacked cards on mobile (single column), switching to the existing grid on `md:+`
 
-5. **Secondary "Get Instant Quote" button** — Replace current "Get a Free Quote" with "Get Instant Quote" linking to `#quote-section`, styled as a prominent secondary button. Remove the "Text Us" button per existing CTA guidelines (Text Us only in designated areas)
+4. **Implementation approach** — Use responsive classes:
+   - Wrap the current image card in `hidden md:block`
+   - Add a new mobile-only card variant wrapped in `md:hidden`
+   - This avoids any structural changes to the desktop layout
 
-6. **Keep trust badges** — 30-Min Response, Licensed & Insured, NASTF Approved, 1-Year Warranty remain unchanged
+5. **Call Now button** — Keep the existing prominent CTA button at the bottom, already works well on mobile. No changes needed.
+
+### Technical detail
+- No new components or files needed
+- Uses Tailwind responsive prefixes (`md:hidden` / `hidden md:block`) to switch between mobile icon cards and desktop image cards
+- No images loaded on mobile = faster page load
 
