@@ -38,27 +38,27 @@ function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-accent/20 opacity-90" />
       <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/20 text-accent-foreground text-sm font-semibold mb-4">
-            <Clock className="w-4 h-4" /> 24/7 Emergency Mobile Service
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-600 text-white text-sm font-bold mb-4 shadow-lg">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
+            </span>
+            24/7 Emergency Locksmith
           </div>
           <h1 className="text-4xl md:text-6xl font-black leading-tight mb-4">
-            Locked Out? Keys Lost?<br />
-            <span className="text-accent">We're There in 30 Minutes.</span>
+            Locked Out? Lost Your Car Keys?<br />
+            <span className="text-accent">We're There in 30 Minutes</span>
           </h1>
           <p className="text-lg md:text-xl opacity-90 mb-6 max-w-2xl">
-            Burbank's #1 rated mobile auto locksmith. OEM key programming, ignition repair, 
-            and emergency lockouts — at your location. <strong>Licensed & Insured.</strong>
+            Fast, reliable mobile car locksmith in Burbank. Call now for immediate service.
           </p>
           
           <div className="flex flex-wrap gap-3 mb-8">
-            <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-accent text-accent-foreground font-bold text-lg shadow-xl animate-pulse-glow hover:brightness-110 transition">
-              <Phone className="w-5 h-5" /> Call Now – {PHONE_DISPLAY}
+            <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 px-10 py-5 rounded-xl bg-accent text-accent-foreground font-bold text-xl shadow-xl animate-pulse-glow hover:brightness-110 transition">
+              <Phone className="w-6 h-6" /> Call Now – {PHONE_DISPLAY}
             </a>
-            <a href="#quote-section" className="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-primary-foreground/15 text-primary-foreground font-semibold text-lg border border-primary-foreground/30 hover:bg-primary-foreground/25 transition">
-              Get a Free Quote
-            </a>
-            <a href={`sms:${PHONE}`} className="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-primary-foreground/10 text-primary-foreground font-semibold text-lg border border-primary-foreground/20 hover:bg-primary-foreground/20 transition">
-              <MessageCircle className="w-5 h-5" /> Text Us
+            <a href="#quote-section" className="inline-flex items-center gap-2 px-8 py-5 rounded-xl bg-white text-primary font-bold text-lg shadow-lg hover:bg-gray-100 transition">
+              Get Instant Quote
             </a>
           </div>
 
