@@ -453,6 +453,91 @@ function ServiceAreas() {
   );
 }
 
+const faqs = [
+  {
+    q: "How fast can you get to me if I'm locked out?",
+    a: "We offer 24/7 emergency mobile service across Burbank, Glendale, North Hollywood, Pacoima, and Granada Hills. Our average response time is 15–30 minutes.",
+  },
+  {
+    q: "Can you make a new car key if I lost all my keys?",
+    a: "Yes! We specialize in all-keys-lost situations. Using OEM-level equipment, we can program brand-new keys on-site — even with zero existing keys — for most makes and models.",
+  },
+  {
+    q: "Do you work on push-to-start and smart key vehicles?",
+    a: "Absolutely. We program transponder keys, smart keys, and push-to-start fobs using dealer-level tools for vehicles from Toyota, Honda, Nissan, BMW, Mercedes, and more.",
+  },
+  {
+    q: "Are you licensed and insured?",
+    a: "Yes. We operate under KPN Electronic Inc. with California Locksmith License LCO8538. We are fully insured and NASTF-approved for advanced key programming.",
+  },
+  {
+    q: "How much does car key replacement cost?",
+    a: "Pricing depends on the vehicle make, model, and key type. We offer free quotes — call us or send a text and we'll give you an upfront price with no hidden fees.",
+  },
+  {
+    q: "Do you offer a warranty on your work?",
+    a: "Yes, all key replacements and programming services come with a 1-year warranty. If anything goes wrong, we'll fix it at no additional cost.",
+  },
+];
+
+function FAQSection() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  };
+
+  return (
+    <section className="py-16 md:py-24 bg-card border-t border-border" id="faq">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <div className="max-w-3xl mx-auto px-4">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-black text-foreground mb-3">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-muted-foreground text-lg">
+            Common questions about our car locksmith services in Burbank.
+          </p>
+        </div>
+        <div className="space-y-3">
+          {faqs.map((faq, i) => (
+            <div
+              key={i}
+              className="rounded-2xl border border-border bg-muted overflow-hidden transition-all"
+            >
+              <button
+                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                className="w-full flex items-center justify-between px-6 py-5 text-left"
+              >
+                <span className="font-semibold text-foreground pr-4">{faq.q}</span>
+                <ChevronRight
+                  className={`w-5 h-5 text-accent shrink-0 transition-transform duration-200 ${
+                    openIndex === i ? "rotate-90" : ""
+                  }`}
+                />
+              </button>
+              {openIndex === i && (
+                <div className="px-6 pb-5 text-muted-foreground text-sm leading-relaxed">
+                  {faq.a}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function AboutSection() {
   return (
     <section className="py-16 bg-card border-t border-border">
@@ -564,6 +649,7 @@ export default function Index() {
       <MidPageCTA />
       <QuoteForm />
       <ServiceAreas />
+      <FAQSection />
       <AboutSection />
       <Footer />
       <MobileStickyBar />
