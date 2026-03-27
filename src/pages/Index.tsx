@@ -70,17 +70,20 @@ function HeroSection() {
 
 function TrustBar() {
   return (
-    <div className="bg-primary-foreground/5 border-y border-primary-foreground/10 bg-muted">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-center gap-6 md:gap-10 text-sm md:text-base font-semibold text-foreground">
+    <div className="bg-foreground/95 border-y border-foreground/10">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-center items-center gap-6 md:gap-12 text-sm md:text-base font-semibold text-white">
         <span className="flex items-center gap-2">
-          <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" /> 5.0 Rating
+          <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" /> 5.0 Rating
         </span>
+        <span className="hidden md:block w-px h-5 bg-white/30" />
         <span className="flex items-center gap-2">
           <Shield className="w-5 h-5 text-accent" /> Licensed & Insured
         </span>
+        <span className="hidden md:block w-px h-5 bg-white/30" />
         <span className="flex items-center gap-2">
           <CheckCircle className="w-5 h-5 text-accent" /> NASTF Approved
         </span>
+        <span className="hidden md:block w-px h-5 bg-white/30" />
         <span className="flex items-center gap-2">
           <CheckCircle className="w-5 h-5 text-accent" /> 1-Year Warranty
         </span>
