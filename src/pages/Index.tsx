@@ -497,10 +497,9 @@ export default function Index() {
       <Header />
       <HeroSection />
       <UrgencyBanner />
+      <GoogleReviewsShowcase />
       <TrustSection />
       <ServicesSection />
-      <GoogleMapSection />
-      <ReviewsSection />
       <MidPageCTA />
       <QuoteForm />
       <ServiceAreas />
