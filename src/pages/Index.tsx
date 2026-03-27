@@ -443,8 +443,9 @@ export default function Index() {
       <UrgencyBanner />
       <TrustSection />
       <ServicesSection />
-      <MidPageCTA />
+      <GoogleMapSection />
       <ReviewsSection />
+      <MidPageCTA />
       <QuoteForm />
       <ServiceAreas />
       <AboutSection />
