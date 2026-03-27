@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from "react";
 import { Phone, MessageCircle, Clock, Shield, Star, MapPin, Wrench, Key, Car, Zap, ChevronRight, Award, CheckCircle } from "lucide-react";
 
 import serviceCarLockout from "@/assets/service-car-lockout.jpg";
