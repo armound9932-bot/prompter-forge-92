@@ -627,12 +627,19 @@ function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground py-10">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-lg font-bold mb-3">🔑 Burbank Auto Locksmith</h3>
             <p className="text-sm opacity-80">KPN Electronic Inc.</p>
             <p className="text-sm opacity-80">CA License: LCO8538</p>
             <p className="text-sm opacity-80">Mobile Service — 7 Days a Week</p>
+          </div>
+          <div>
+            <h3 className="text-lg font-bold mb-3">Services</h3>
+            <Link to="/car-lockout" className="block text-sm opacity-80 hover:opacity-100 mb-1">Emergency Car Lockout</Link>
+            <Link to="/key-replacement" className="block text-sm opacity-80 hover:opacity-100 mb-1">Car Key Replacement</Link>
+            <Link to="/key-programming" className="block text-sm opacity-80 hover:opacity-100 mb-1">Key Programming</Link>
+            <Link to="/ignition-repair" className="block text-sm opacity-80 hover:opacity-100">Ignition Repair</Link>
           </div>
           <div>
             <h3 className="text-lg font-bold mb-3">Contact</h3>
