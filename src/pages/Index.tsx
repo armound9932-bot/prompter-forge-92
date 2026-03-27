@@ -70,22 +70,22 @@ function HeroSection() {
 
 function TrustBar() {
   return (
-    <div className="bg-foreground/95 border-y border-foreground/10">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-center items-center gap-6 md:gap-12 text-sm md:text-base font-semibold text-white">
-        <span className="flex items-center gap-2">
-          <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" /> 5.0 Rating
+    <div className="bg-gray-900">
+      <div className="max-w-7xl mx-auto px-6 py-5 flex flex-wrap justify-center items-center gap-8 md:gap-14 text-base md:text-lg font-bold text-white tracking-wide">
+        <span className="flex items-center gap-2.5">
+          <Star className="w-6 h-6 text-yellow-400 fill-yellow-400" /> 5.0 Rating
         </span>
-        <span className="hidden md:block w-px h-5 bg-white/30" />
-        <span className="flex items-center gap-2">
-          <Shield className="w-5 h-5 text-accent" /> Licensed & Insured
+        <span className="hidden md:block w-px h-6 bg-white/25" />
+        <span className="flex items-center gap-2.5">
+          <Shield className="w-6 h-6 text-emerald-400" /> Licensed &amp; Insured
         </span>
-        <span className="hidden md:block w-px h-5 bg-white/30" />
-        <span className="flex items-center gap-2">
-          <CheckCircle className="w-5 h-5 text-accent" /> NASTF Approved
+        <span className="hidden md:block w-px h-6 bg-white/25" />
+        <span className="flex items-center gap-2.5">
+          <CheckCircle className="w-6 h-6 text-emerald-400" /> NASTF Approved
         </span>
-        <span className="hidden md:block w-px h-5 bg-white/30" />
-        <span className="flex items-center gap-2">
-          <CheckCircle className="w-5 h-5 text-accent" /> 1-Year Warranty
+        <span className="hidden md:block w-px h-6 bg-white/25" />
+        <span className="flex items-center gap-2.5">
+          <CheckCircle className="w-6 h-6 text-emerald-400" /> 1-Year Warranty
         </span>
       </div>
     </div>
