@@ -661,6 +661,7 @@ export default function Index() {
     <div className="min-h-screen">
       <Header />
       <HeroSection />
+      <TrustBar />
       <UrgencyBanner />
       <div ref={reviewsRef}>
         <GoogleReviewsShowcase />
