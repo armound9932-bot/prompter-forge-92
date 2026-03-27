@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import { Phone, MessageCircle, Clock, Shield, Star, MapPin, Wrench, Key, Car, Zap, ChevronRight, Award, CheckCircle } from "lucide-react";
 
 import serviceCarLockout from "@/assets/service-car-lockout.jpg";
@@ -108,6 +109,7 @@ const services = [
     seoAnchor: "Emergency Car Lockout Service in Burbank",
     image: serviceCarLockout,
     emergency: true,
+    link: "/car-lockout",
   },
   {
     icon: Key,
@@ -116,6 +118,7 @@ const services = [
     seoAnchor: "All Keys Lost Car Key Replacement in Burbank",
     image: serviceAllKeysLost,
     emergency: false,
+    link: "/key-replacement",
   },
   {
     icon: Zap,
@@ -124,6 +127,7 @@ const services = [
     seoAnchor: "OEM Car Key Programming Burbank",
     image: serviceKeyProgramming,
     emergency: false,
+    link: "/key-programming",
   },
   {
     icon: Wrench,
@@ -132,6 +136,7 @@ const services = [
     seoAnchor: "Ignition Repair & Replacement in Burbank",
     image: serviceIgnitionRepair,
     emergency: false,
+    link: "/ignition-repair",
   },
   {
     icon: Shield,
@@ -140,6 +145,7 @@ const services = [
     seoAnchor: "ECU BCM Immobilizer Programming in Burbank",
     image: serviceEcuProgramming,
     emergency: false,
+    link: null,
   },
 ];
 
@@ -176,9 +182,15 @@ function ServicesSection() {
                 <h3 className="text-xl font-bold text-foreground mb-2">{s.title}</h3>
                 <p className="text-muted-foreground text-sm mb-1">{s.description}</p>
                 <p className="text-accent text-xs font-medium mb-3">{s.seoAnchor}</p>
-                <a href={`tel:${PHONE}`} className="inline-flex items-center gap-1 text-accent font-semibold hover:underline text-sm">
-                  Learn More <ChevronRight className="w-4 h-4" />
-                </a>
+                {s.link ? (
+                  <Link to={s.link} className="inline-flex items-center gap-1 text-accent font-semibold hover:underline text-sm">
+                    Learn More <ChevronRight className="w-4 h-4" />
+                  </Link>
+                ) : (
+                  <a href={`tel:${PHONE}`} className="inline-flex items-center gap-1 text-accent font-semibold hover:underline text-sm">
+                    Learn More <ChevronRight className="w-4 h-4" />
+                  </a>
+                )}
               </div>
             </div>
           ))}
@@ -615,12 +627,19 @@ function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground py-10">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-lg font-bold mb-3">🔑 Burbank Auto Locksmith</h3>
             <p className="text-sm opacity-80">KPN Electronic Inc.</p>
             <p className="text-sm opacity-80">CA License: LCO8538</p>
             <p className="text-sm opacity-80">Mobile Service — 7 Days a Week</p>
+          </div>
+          <div>
+            <h3 className="text-lg font-bold mb-3">Services</h3>
+            <Link to="/car-lockout" className="block text-sm opacity-80 hover:opacity-100 mb-1">Emergency Car Lockout</Link>
+            <Link to="/key-replacement" className="block text-sm opacity-80 hover:opacity-100 mb-1">Car Key Replacement</Link>
+            <Link to="/key-programming" className="block text-sm opacity-80 hover:opacity-100 mb-1">Key Programming</Link>
+            <Link to="/ignition-repair" className="block text-sm opacity-80 hover:opacity-100">Ignition Repair</Link>
           </div>
           <div>
             <h3 className="text-lg font-bold mb-3">Contact</h3>
