@@ -197,6 +197,15 @@ function TrustSection() {
   );
 }
 
+const GoogleIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
+    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+  </svg>
+);
+
 function GoogleReviewsShowcase() {
   const reviews = [
     { name: "Mike T.", text: "Lost all my keys at the mall. They came in 25 minutes and made new ones on the spot. Incredible service!", rating: 5 },
@@ -207,95 +216,116 @@ function GoogleReviewsShowcase() {
     { name: "Amanda W.", text: "Came to my office in Glendale, made a spare key for my Honda in 30 min. Great price, great service!", rating: 5 },
   ];
 
+  const hasReviews = reviews.length > 0;
+
   return (
     <section className="py-16 md:py-24 bg-card border-b border-border" id="reviews">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Header with Google branding */}
+        {/* Section header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted border border-border mb-4">
-            <svg className="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
-              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
-              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-            </svg>
-            <span className="text-sm font-bold text-foreground">Google Reviews</span>
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-muted border border-border mb-5 shadow-sm">
+            <GoogleIcon className="w-5 h-5" />
+            <span className="text-sm font-bold text-foreground tracking-wide uppercase">Customer Reviews</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-black text-foreground mb-3">Trusted by 127+ Customers</h2>
-          
-          {/* Star rating display */}
-          <div className="flex items-center justify-center gap-3 mb-2">
-            <span className="text-5xl font-black text-foreground">5.0</span>
-            <div>
-              <div className="flex items-center gap-0.5">
+          <h2 className="text-3xl md:text-5xl font-black text-foreground mb-3 leading-tight">
+            Trusted Local Car Locksmith<br className="hidden md:block" />
+            <span className="text-accent"> in Burbank</span>
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+            Real reviews from real customers. See why Burbank trusts us with their car keys.
+          </p>
+        </div>
+
+        {hasReviews ? (
+          <>
+            {/* Rating summary card */}
+            <div className="max-w-md mx-auto mb-10 bg-muted rounded-2xl p-6 border border-border shadow-md text-center">
+              <div className="flex items-center justify-center gap-4 mb-2">
+                <GoogleIcon className="w-8 h-8" />
+                <span className="text-6xl font-black text-foreground leading-none">5.0</span>
+              </div>
+              <div className="flex items-center justify-center gap-0.5 mb-1">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-7 h-7 text-accent fill-current" />
+                  <Star key={i} className="w-6 h-6 text-accent fill-current" />
                 ))}
               </div>
-              <p className="text-sm text-muted-foreground font-medium mt-0.5">Based on 127 verified reviews</p>
+              <p className="text-muted-foreground font-medium">Based on <strong className="text-foreground">127</strong> verified Google reviews</p>
             </div>
-          </div>
-        </div>
 
-        {/* Review cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-          {reviews.map((r, i) => (
-            <div key={i} className="bg-muted rounded-2xl p-5 border border-border hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
-              <div className="flex items-center justify-between mb-3">
-                <div className="flex items-center gap-2">
-                  <div className="w-9 h-9 rounded-full bg-accent/15 flex items-center justify-center">
-                    <span className="text-sm font-bold text-accent">{r.name[0]}</span>
+            {/* Review cards */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
+              {reviews.map((r, i) => (
+                <div key={i} className="bg-muted rounded-2xl p-5 border border-border hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-10 h-10 rounded-full bg-accent/15 flex items-center justify-center">
+                        <span className="text-sm font-bold text-accent">{r.name[0]}</span>
+                      </div>
+                      <div>
+                        <span className="font-semibold text-foreground text-sm block">{r.name}</span>
+                        <span className="text-xs text-muted-foreground">Google Review</span>
+                      </div>
+                    </div>
+                    <GoogleIcon className="w-4 h-4 opacity-50" />
                   </div>
-                  <span className="font-semibold text-foreground text-sm">{r.name}</span>
+                  <div className="flex items-center gap-0.5 mb-2">
+                    {[...Array(r.rating)].map((_, j) => <Star key={j} className="w-3.5 h-3.5 text-accent fill-current" />)}
+                  </div>
+                  <p className="text-foreground text-sm leading-relaxed">"{r.text}"</p>
                 </div>
-                <svg className="w-4 h-4 opacity-40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
-                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
-                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-                </svg>
-              </div>
-              <div className="flex items-center gap-0.5 mb-2">
-                {[...Array(r.rating)].map((_, j) => <Star key={j} className="w-3.5 h-3.5 text-accent fill-current" />)}
-              </div>
-              <p className="text-foreground text-sm leading-relaxed">"{r.text}"</p>
+              ))}
             </div>
-          ))}
-        </div>
+          </>
+        ) : (
+          /* Empty state */
+          <div className="max-w-lg mx-auto mb-12 text-center bg-muted rounded-2xl p-10 border border-border">
+            <GoogleIcon className="w-12 h-12 mx-auto mb-4 opacity-60" />
+            <h3 className="text-xl font-bold text-foreground mb-2">Be the First to Leave a Review!</h3>
+            <p className="text-muted-foreground mb-6">We'd love to hear about your experience. Your feedback helps others find trusted locksmith service in Burbank.</p>
+            <a
+              href="https://g.page/r/CXKwG3VBxikrEBM/review"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-accent text-accent-foreground font-bold shadow-lg hover:brightness-110 transition"
+            >
+              <Star className="w-5 h-5 fill-current" /> Write the First Review
+            </a>
+          </div>
+        )}
 
-        {/* CTA buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+        {/* Primary CTA buttons */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
           <a
             href="https://g.page/r/CXKwG3VBxikrEBM/review"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-accent text-accent-foreground font-bold text-lg shadow-xl hover:brightness-110 hover:shadow-2xl hover:-translate-y-0.5 transition-all animate-pulse-glow"
+            className="inline-flex items-center gap-2.5 px-10 py-5 rounded-2xl bg-accent text-accent-foreground font-black text-lg shadow-2xl hover:brightness-110 hover:shadow-accent/30 hover:-translate-y-1 transition-all animate-pulse-glow"
           >
-            <Star className="w-5 h-5 fill-current" /> Leave Us a Review ⭐
+            <Star className="w-6 h-6 fill-current" /> Leave Us a Review ⭐
+          </a>
+          <a
+            href={`tel:${PHONE}`}
+            className="inline-flex items-center gap-2 px-8 py-5 rounded-2xl bg-primary text-primary-foreground font-bold text-lg shadow-xl hover:brightness-110 hover:-translate-y-0.5 transition-all"
+          >
+            <Phone className="w-5 h-5" /> Call Now – {PHONE_DISPLAY}
           </a>
           <a
             href="https://maps.app.goo.gl/ZxvrjzHunakGa8WV8"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-muted border border-border text-foreground font-semibold text-lg shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all"
+            className="inline-flex items-center gap-2 px-6 py-5 rounded-2xl bg-muted border border-border text-foreground font-semibold text-lg shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all"
           >
-            <svg className="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
-              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
-              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-            </svg>
-            Read All Reviews on Google
+            <GoogleIcon /> Read All Reviews
           </a>
         </div>
 
-        {/* Trust badges row */}
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
+        {/* Trust badges */}
+        <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
           {[
             { icon: Shield, text: "Licensed & Insured" },
             { icon: Award, text: "NASTF Approved" },
             { icon: CheckCircle, text: "CA Lic# LCO8538" },
-            { icon: Clock, text: "24/7 Service" },
+            { icon: Clock, text: "24/7 Emergency Service" },
           ].map((badge) => (
             <div key={badge.text} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted border border-border text-sm font-medium text-muted-foreground">
               <badge.icon className="w-4 h-4 text-accent" />
@@ -304,7 +334,7 @@ function GoogleReviewsShowcase() {
           ))}
         </div>
 
-        {/* Embedded Google Map */}
+        {/* Google Map */}
         <div className="rounded-2xl overflow-hidden shadow-lg border border-border">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.0!2d-118.3!3d34.18!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bf6a7574b0ab%3A0x2b29c5417503b072!2sBurbank%20Auto%20Locksmith!5e0!3m2!1sen!2sus!4v1700000000000"
