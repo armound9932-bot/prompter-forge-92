@@ -496,7 +496,7 @@ function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-3">Service Areas</h3>
             <p className="text-sm opacity-80">Burbank • Glendale • North Hollywood</p>
-            <p className="text-sm opacity-80">Pacoima • Granada Hills • Pasadena</p>
+            <p className="text-sm opacity-80">Pacoima • Granada Hills</p>
           </div>
         </div>
         <div className="border-t border-primary-foreground/20 pt-6 text-center text-sm opacity-70">
