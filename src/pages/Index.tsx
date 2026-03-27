@@ -435,7 +435,7 @@ function QuoteForm() {
 }
 
 function ServiceAreas() {
-  const areas = ["Burbank", "Glendale", "North Hollywood", "Pacoima", "Granada Hills", "Pasadena", "Sun Valley", "Toluca Lake"];
+  const areas = ["Burbank", "Glendale", "North Hollywood", "Pacoima", "Granada Hills"];
   return (
     <section className="py-12 bg-muted">
       <div className="max-w-7xl mx-auto px-4 text-center">
