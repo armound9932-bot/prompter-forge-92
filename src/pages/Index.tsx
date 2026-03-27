@@ -522,6 +522,33 @@ function MobileStickyBar() {
   );
 }
 
+function FloatingReviewButton({ reviewsSectionRef }: { reviewsSectionRef: React.RefObject<HTMLDivElement | null> }) {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!reviewsSectionRef.current) return;
+      const rect = reviewsSectionRef.current.getBoundingClientRect();
+      setVisible(rect.bottom < 0);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [reviewsSectionRef]);
+
+  if (!visible) return null;
+
+  return (
+    <a
+      href="https://maps.app.goo.gl/ZxvrjzHunakGa8WV8"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="fixed right-4 z-50 inline-flex items-center gap-2 px-5 py-3 rounded-full bg-accent text-accent-foreground font-bold text-sm shadow-2xl hover:brightness-110 hover:-translate-y-0.5 transition-all animate-fade-in bottom-20 md:bottom-6"
+    >
+      <Star className="w-4 h-4 fill-current" /> Leave a Review ⭐
+    </a>
+  );
+}
+
 export default function Index() {
   return (
     <div className="min-h-screen">
