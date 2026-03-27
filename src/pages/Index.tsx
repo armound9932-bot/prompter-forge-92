@@ -74,6 +74,27 @@ function HeroSection() {
   );
 }
 
+function TrustBar() {
+  return (
+    <div className="bg-primary-foreground/5 border-y border-primary-foreground/10 bg-muted">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-center gap-6 md:gap-10 text-sm md:text-base font-semibold text-foreground">
+        <span className="flex items-center gap-2">
+          <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" /> 5.0 Rating
+        </span>
+        <span className="flex items-center gap-2">
+          <Shield className="w-5 h-5 text-accent" /> Licensed & Insured
+        </span>
+        <span className="flex items-center gap-2">
+          <CheckCircle className="w-5 h-5 text-accent" /> NASTF Approved
+        </span>
+        <span className="flex items-center gap-2">
+          <CheckCircle className="w-5 h-5 text-accent" /> 1-Year Warranty
+        </span>
+      </div>
+    </div>
+  );
+}
+
 function UrgencyBanner() {
   return (
     <div className="bg-accent text-accent-foreground py-3 text-center font-bold text-sm md:text-base">
@@ -640,6 +661,7 @@ export default function Index() {
     <div className="min-h-screen">
       <Header />
       <HeroSection />
+      <TrustBar />
       <UrgencyBanner />
       <div ref={reviewsRef}>
         <GoogleReviewsShowcase />
