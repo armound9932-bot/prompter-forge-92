@@ -550,12 +550,15 @@ function FloatingReviewButton({ reviewsSectionRef }: { reviewsSectionRef: React.
 }
 
 export default function Index() {
+  const reviewsRef = useRef<HTMLDivElement>(null);
   return (
     <div className="min-h-screen">
       <Header />
       <HeroSection />
       <UrgencyBanner />
-      <GoogleReviewsShowcase />
+      <div ref={reviewsRef}>
+        <GoogleReviewsShowcase />
+      </div>
       <TrustSection />
       <ServicesSection />
       <MidPageCTA />
@@ -564,6 +567,7 @@ export default function Index() {
       <AboutSection />
       <Footer />
       <MobileStickyBar />
+      <FloatingReviewButton reviewsSectionRef={reviewsRef} />
     </div>
   );
 }
