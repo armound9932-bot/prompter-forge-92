@@ -649,6 +649,7 @@ export default function Index() {
       <MidPageCTA />
       <QuoteForm />
       <ServiceAreas />
+      <FAQSection />
       <AboutSection />
       <Footer />
       <MobileStickyBar />
