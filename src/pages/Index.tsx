@@ -62,12 +62,6 @@ function HeroSection() {
             </a>
           </div>
 
-          <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium opacity-90">
-            <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4 text-accent" /> 30-Min Response</span>
-            <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4 text-accent" /> Licensed & Insured</span>
-            <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4 text-accent" /> NASTF Approved</span>
-            <span className="flex items-center gap-1"><CheckCircle className="w-4 h-4 text-accent" /> 1-Year Warranty</span>
-          </div>
         </div>
       </div>
     </section>
