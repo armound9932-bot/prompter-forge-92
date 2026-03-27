@@ -182,9 +182,15 @@ function ServicesSection() {
                 <h3 className="text-xl font-bold text-foreground mb-2">{s.title}</h3>
                 <p className="text-muted-foreground text-sm mb-1">{s.description}</p>
                 <p className="text-accent text-xs font-medium mb-3">{s.seoAnchor}</p>
-                <a href={`tel:${PHONE}`} className="inline-flex items-center gap-1 text-accent font-semibold hover:underline text-sm">
-                  Learn More <ChevronRight className="w-4 h-4" />
-                </a>
+                {s.link ? (
+                  <Link to={s.link} className="inline-flex items-center gap-1 text-accent font-semibold hover:underline text-sm">
+                    Learn More <ChevronRight className="w-4 h-4" />
+                  </Link>
+                ) : (
+                  <a href={`tel:${PHONE}`} className="inline-flex items-center gap-1 text-accent font-semibold hover:underline text-sm">
+                    Learn More <ChevronRight className="w-4 h-4" />
+                  </a>
+                )}
               </div>
             </div>
           ))}
