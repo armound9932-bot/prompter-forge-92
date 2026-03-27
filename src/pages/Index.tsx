@@ -197,6 +197,33 @@ function TrustSection() {
   );
 }
 
+function GoogleMapSection() {
+  return (
+    <section className="py-12 bg-card border-y border-border">
+      <div className="max-w-7xl mx-auto px-4">
+        <h2 className="text-2xl font-black text-center text-foreground mb-6">Find Us on Google Maps</h2>
+        <div className="rounded-2xl overflow-hidden shadow-lg border border-border">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.0!2d-118.3!3d34.18!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bf6a7574b0ab%3A0x2b29c5417503b072!2sBurbank%20Auto%20Locksmith!5e0!3m2!1sen!2sus!4v1700000000000"
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Burbank Auto Locksmith on Google Maps"
+          />
+        </div>
+        <div className="text-center mt-4">
+          <a href="https://maps.app.goo.gl/ZxvrjzHunakGa8WV8" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-accent font-semibold hover:underline">
+            <MapPin className="w-4 h-4" /> Open in Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function ReviewsSection() {
   const reviews = [
     { name: "Mike T.", text: "Lost all my keys at the mall. They came in 25 minutes and made new ones on the spot. Incredible service!", rating: 5 },
@@ -215,7 +242,7 @@ function ReviewsSection() {
           <div className="flex items-center justify-center gap-1 text-accent text-xl mb-1">
             {[...Array(5)].map((_, i) => <Star key={i} className="w-6 h-6 fill-current" />)}
           </div>
-          <p className="text-muted-foreground">5.0 stars from 127+ Google Reviews</p>
+          <p className="text-muted-foreground text-lg font-semibold">5.0 ★ Rating — 127+ Google Reviews</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -230,9 +257,12 @@ function ReviewsSection() {
           ))}
         </div>
 
-        <div className="text-center mt-8">
-          <a href="https://g.page/r/YOUR_GOOGLE_REVIEW_LINK/review" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-semibold hover:brightness-110 transition">
-            <Star className="w-5 h-5" /> Leave Us a Google Review
+        <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
+          <a href="https://maps.app.goo.gl/ZxvrjzHunakGa8WV8" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-card border border-border text-foreground font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all">
+            <Star className="w-5 h-5 text-accent fill-current" /> Read Reviews on Google
+          </a>
+          <a href="https://g.page/r/CXKwG3VBxikrEBM/review" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-accent text-accent-foreground font-bold shadow-md hover:brightness-110 transition">
+            <Star className="w-5 h-5" /> Leave a Review
           </a>
         </div>
       </div>
