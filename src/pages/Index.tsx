@@ -107,6 +107,7 @@ const services = [
     description: "Locked out of your car? We'll get you back in fast — no damage to your vehicle. Available 24/7.",
     seoAnchor: "Emergency Car Lockout Service in Burbank",
     image: serviceCarLockout,
+    emergency: true,
   },
   {
     icon: Key,
@@ -114,6 +115,7 @@ const services = [
     description: "Lost every key? We program brand-new keys on-site using OEM-level equipment, even with zero keys.",
     seoAnchor: "All Keys Lost Car Key Replacement in Burbank",
     image: serviceAllKeysLost,
+    emergency: false,
   },
   {
     icon: Zap,
@@ -121,6 +123,7 @@ const services = [
     description: "Transponder keys, smart keys, push-to-start fobs — programmed on-site with dealer-level tools.",
     seoAnchor: "OEM Car Key Programming Burbank",
     image: serviceKeyProgramming,
+    emergency: false,
   },
   {
     icon: Wrench,
@@ -128,6 +131,7 @@ const services = [
     description: "Key won't turn? Ignition stuck? We repair and replace ignitions for all makes and models.",
     seoAnchor: "Ignition Repair & Replacement in Burbank",
     image: serviceIgnitionRepair,
+    emergency: false,
   },
   {
     icon: Shield,
@@ -135,6 +139,7 @@ const services = [
     description: "Advanced EEPROM programming, ECU/BCM module synchronization, and anti-theft system restoration.",
     seoAnchor: "ECU BCM Immobilizer Programming in Burbank",
     image: serviceEcuProgramming,
+    emergency: false,
   },
 ];
 
@@ -182,19 +187,23 @@ function ServicesSection() {
         {/* Mobile stacked cards */}
         <div className="flex flex-col gap-4 md:hidden">
           {services.map((s) => (
-            <div key={s.title} className="flex items-start gap-4 bg-card rounded-xl p-4 shadow-sm border border-border">
-              <div className="w-12 h-12 rounded-xl bg-accent/15 flex items-center justify-center shrink-0">
-                <s.icon className="w-6 h-6 text-accent" />
+            <a
+              key={s.title}
+              href={s.emergency ? `tel:${PHONE}` : '#quote-section'}
+              className="flex items-start gap-4 bg-card rounded-xl p-4 shadow-sm border border-border active:scale-[0.98] transition-transform"
+            >
+              <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 ${s.emergency ? 'bg-red-600/15' : 'bg-accent/15'}`}>
+                <s.icon className={`w-6 h-6 ${s.emergency ? 'text-red-600' : 'text-accent'}`} />
               </div>
               <div className="flex-1 min-w-0">
                 <h3 className="text-lg font-bold text-foreground mb-1">{s.title}</h3>
                 <p className="text-muted-foreground text-sm mb-1">{s.description}</p>
                 <p className="text-accent text-xs font-medium mb-2">{s.seoAnchor}</p>
-                <a href={`tel:${PHONE}`} className="inline-flex items-center gap-1 text-accent font-semibold hover:underline text-sm">
-                  Learn More <ChevronRight className="w-4 h-4" />
-                </a>
+                <span className={`inline-flex items-center gap-1 font-semibold text-sm ${s.emergency ? 'text-red-600' : 'text-accent'}`}>
+                  {s.emergency ? '📞 Call Now' : 'Get Instant Quote'} <ChevronRight className="w-4 h-4" />
+                </span>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
