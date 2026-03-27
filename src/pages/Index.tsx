@@ -190,7 +190,7 @@ function ServicesSection() {
             <a
               key={s.title}
               href={s.emergency ? `tel:${PHONE}` : '#quote-section'}
-              className="flex items-start gap-4 bg-card rounded-xl p-4 shadow-sm border border-border active:scale-[0.98] transition-transform"
+              className={`flex items-start gap-4 rounded-xl p-4 shadow-sm border active:scale-[0.98] transition-all ${s.emergency ? 'bg-red-600/5 border-red-600/30 ring-1 ring-red-600/10' : 'bg-card border-border'}`}
             >
               <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 ${s.emergency ? 'bg-red-600/15' : 'bg-accent/15'}`}>
                 <s.icon className={`w-6 h-6 ${s.emergency ? 'text-red-600' : 'text-accent'}`} />
@@ -201,6 +201,9 @@ function ServicesSection() {
                 <p className="text-accent text-xs font-medium mb-2">{s.seoAnchor}</p>
                 <span className={`inline-flex items-center gap-1 font-semibold text-sm ${s.emergency ? 'text-red-600' : 'text-accent'}`}>
                   {s.emergency ? '📞 Call Now' : 'Get Instant Quote'} <ChevronRight className="w-4 h-4" />
+                </span>
+                <span className={`block text-[11px] mt-1 ${s.emergency ? 'text-red-600/60' : 'text-muted-foreground/60'}`}>
+                  {s.emergency ? 'Tap to call instantly' : 'Tap for a free quote'}
                 </span>
               </div>
             </a>
