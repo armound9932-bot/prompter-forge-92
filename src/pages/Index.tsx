@@ -107,6 +107,7 @@ const services = [
     description: "Locked out of your car? We'll get you back in fast — no damage to your vehicle. Available 24/7.",
     seoAnchor: "Emergency Car Lockout Service in Burbank",
     image: serviceCarLockout,
+    emergency: true,
   },
   {
     icon: Key,
@@ -114,6 +115,7 @@ const services = [
     description: "Lost every key? We program brand-new keys on-site using OEM-level equipment, even with zero keys.",
     seoAnchor: "All Keys Lost Car Key Replacement in Burbank",
     image: serviceAllKeysLost,
+    emergency: false,
   },
   {
     icon: Zap,
@@ -121,6 +123,7 @@ const services = [
     description: "Transponder keys, smart keys, push-to-start fobs — programmed on-site with dealer-level tools.",
     seoAnchor: "OEM Car Key Programming Burbank",
     image: serviceKeyProgramming,
+    emergency: false,
   },
   {
     icon: Wrench,
@@ -128,6 +131,7 @@ const services = [
     description: "Key won't turn? Ignition stuck? We repair and replace ignitions for all makes and models.",
     seoAnchor: "Ignition Repair & Replacement in Burbank",
     image: serviceIgnitionRepair,
+    emergency: false,
   },
   {
     icon: Shield,
@@ -135,6 +139,7 @@ const services = [
     description: "Advanced EEPROM programming, ECU/BCM module synchronization, and anti-theft system restoration.",
     seoAnchor: "ECU BCM Immobilizer Programming in Burbank",
     image: serviceEcuProgramming,
+    emergency: false,
   },
 ];
 
