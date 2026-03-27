@@ -149,7 +149,8 @@ function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Desktop grid */}
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s) => (
             <div key={s.title} className="group bg-card rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-border">
               <div className="relative h-48 overflow-hidden">
@@ -170,6 +171,25 @@ function ServicesSection() {
                 <h3 className="text-xl font-bold text-foreground mb-2">{s.title}</h3>
                 <p className="text-muted-foreground text-sm mb-1">{s.description}</p>
                 <p className="text-accent text-xs font-medium mb-3">{s.seoAnchor}</p>
+                <a href={`tel:${PHONE}`} className="inline-flex items-center gap-1 text-accent font-semibold hover:underline text-sm">
+                  Learn More <ChevronRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile stacked cards */}
+        <div className="flex flex-col gap-4 md:hidden">
+          {services.map((s) => (
+            <div key={s.title} className="flex items-start gap-4 bg-card rounded-xl p-4 shadow-sm border border-border">
+              <div className="w-12 h-12 rounded-xl bg-accent/15 flex items-center justify-center shrink-0">
+                <s.icon className="w-6 h-6 text-accent" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="text-lg font-bold text-foreground mb-1">{s.title}</h3>
+                <p className="text-muted-foreground text-sm mb-1">{s.description}</p>
+                <p className="text-accent text-xs font-medium mb-2">{s.seoAnchor}</p>
                 <a href={`tel:${PHONE}`} className="inline-flex items-center gap-1 text-accent font-semibold hover:underline text-sm">
                   Learn More <ChevronRight className="w-4 h-4" />
                 </a>
