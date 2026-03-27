@@ -109,6 +109,7 @@ const services = [
     seoAnchor: "Emergency Car Lockout Service in Burbank",
     image: serviceCarLockout,
     emergency: true,
+    link: "/car-lockout",
   },
   {
     icon: Key,
@@ -117,6 +118,7 @@ const services = [
     seoAnchor: "All Keys Lost Car Key Replacement in Burbank",
     image: serviceAllKeysLost,
     emergency: false,
+    link: "/key-replacement",
   },
   {
     icon: Zap,
@@ -125,6 +127,7 @@ const services = [
     seoAnchor: "OEM Car Key Programming Burbank",
     image: serviceKeyProgramming,
     emergency: false,
+    link: "/key-programming",
   },
   {
     icon: Wrench,
@@ -133,6 +136,7 @@ const services = [
     seoAnchor: "Ignition Repair & Replacement in Burbank",
     image: serviceIgnitionRepair,
     emergency: false,
+    link: "/ignition-repair",
   },
   {
     icon: Shield,
@@ -141,6 +145,7 @@ const services = [
     seoAnchor: "ECU BCM Immobilizer Programming in Burbank",
     image: serviceEcuProgramming,
     emergency: false,
+    link: null,
   },
 ];
 
