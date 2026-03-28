@@ -236,7 +236,7 @@ function TrustSection() {
   const badges = [
     { icon: Shield, label: "Licensed & Insured", sub: "CA License LCO8538" },
     { icon: Award, label: "NASTF Approved", sub: "Authorized Locksmith" },
-    { icon: Star, label: "5.0 ★ Google Rating", sub: "127+ Verified Reviews" },
+    { icon: Star, label: "5.0 ★ Google Rating", sub: "Verified Business" },
     { icon: CheckCircle, label: "1-Year Warranty", sub: "On Key Replacements" },
   ];
 
@@ -270,16 +270,7 @@ const GoogleIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
 );
 
 function GoogleReviewsShowcase() {
-  const reviews = [
-    { name: "Mike T.", text: "Lost all my keys at the mall. They came in 25 minutes and made new ones on the spot. Incredible service!", rating: 5 },
-    { name: "Sarah L.", text: "My ignition was stuck and I couldn't start my car. They fixed it same day. Very professional and fair pricing.", rating: 5 },
-    { name: "David R.", text: "Best auto locksmith in Burbank! Programmed a new smart key for my Toyota in under an hour. Highly recommend.", rating: 5 },
-    { name: "Jessica M.", text: "Locked out at 11pm — they answered immediately and were at my location in 20 minutes. Lifesaver!", rating: 5 },
-    { name: "Carlos G.", text: "Needed ECU reprogramming after battery replacement. They knew exactly what to do. Professional OEM-level work.", rating: 5 },
-    { name: "Amanda W.", text: "Came to my office in Glendale, made a spare key for my Honda in 30 min. Great price, great service!", rating: 5 },
-  ];
-
-  const hasReviews = reviews.length > 0;
+  const GOOGLE_LINK = "https://maps.app.goo.gl/vtRt23VC2Bfv3Jd49";
 
   return (
     <section className="py-16 md:py-24 bg-card border-b border-border" id="reviews">
@@ -288,98 +279,41 @@ function GoogleReviewsShowcase() {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-muted border border-border mb-5 shadow-sm">
             <GoogleIcon className="w-5 h-5" />
-            <span className="text-sm font-bold text-foreground tracking-wide uppercase">Customer Reviews</span>
+            <span className="text-sm font-bold text-foreground tracking-wide uppercase">Google Reviews</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-black text-foreground mb-3 leading-tight">
-            Trusted Local Car Locksmith<br className="hidden md:block" />
-            <span className="text-accent"> in Burbank</span>
+            Our Google Reviews
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Real reviews from real customers. See why Burbank trusts us with their car keys.
+            See what our customers say on Google. Your honest feedback helps us improve.
           </p>
         </div>
 
-        {hasReviews ? (
-          <>
-            {/* Rating summary card */}
-            <div className="max-w-md mx-auto mb-10 bg-muted rounded-2xl p-6 border border-border shadow-md text-center">
-              <div className="flex items-center justify-center gap-4 mb-2">
-                <GoogleIcon className="w-8 h-8" />
-                <span className="text-6xl font-black text-foreground leading-none">5.0</span>
-              </div>
-              <div className="flex items-center justify-center gap-0.5 mb-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-6 h-6 text-accent fill-current" />
-                ))}
-              </div>
-              <p className="text-muted-foreground font-medium">Based on <strong className="text-foreground">127</strong> verified Google reviews</p>
-            </div>
-
-            {/* Review cards */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
-              {reviews.map((r, i) => (
-                <div key={i} className="bg-muted rounded-2xl p-5 border border-border hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
-                  <div className="flex items-center justify-between mb-3">
-                    <div className="flex items-center gap-2.5">
-                      <div className="w-10 h-10 rounded-full bg-accent/15 flex items-center justify-center">
-                        <span className="text-sm font-bold text-accent">{r.name[0]}</span>
-                      </div>
-                      <div>
-                        <span className="font-semibold text-foreground text-sm block">{r.name}</span>
-                        <span className="text-xs text-muted-foreground">Google Review</span>
-                      </div>
-                    </div>
-                    <GoogleIcon className="w-4 h-4 opacity-50" />
-                  </div>
-                  <div className="flex items-center gap-0.5 mb-2">
-                    {[...Array(r.rating)].map((_, j) => <Star key={j} className="w-3.5 h-3.5 text-accent fill-current" />)}
-                  </div>
-                  <p className="text-foreground text-sm leading-relaxed">"{r.text}"</p>
-                </div>
-              ))}
-            </div>
-          </>
-        ) : (
-          /* Empty state */
-          <div className="max-w-lg mx-auto mb-12 text-center bg-muted rounded-2xl p-10 border border-border">
-            <GoogleIcon className="w-12 h-12 mx-auto mb-4 opacity-60" />
-            <h3 className="text-xl font-bold text-foreground mb-2">Be the First to Leave a Review!</h3>
-            <p className="text-muted-foreground mb-6">We'd love to hear about your experience. Your feedback helps others find trusted locksmith service in Burbank.</p>
+        {/* Honest empty state — no fake reviews */}
+        <div className="max-w-lg mx-auto mb-12 text-center bg-muted rounded-2xl p-10 border border-border">
+          <GoogleIcon className="w-14 h-14 mx-auto mb-4" />
+          <h3 className="text-2xl font-bold text-foreground mb-2">Be the First to Leave a Google Review</h3>
+          <p className="text-muted-foreground mb-6">
+            We'd love to hear about your experience. Your feedback helps others find trusted locksmith service in Burbank.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
-              href="https://g.page/r/CXKwG3VBxikrEBM/review"
+              href={GOOGLE_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-accent text-accent-foreground font-bold shadow-lg hover:brightness-110 transition"
+              className="inline-flex items-center gap-2.5 px-8 py-4 rounded-xl bg-accent text-accent-foreground font-bold text-lg shadow-xl hover:brightness-110 hover:-translate-y-0.5 transition-all animate-pulse-glow"
             >
-              <Star className="w-5 h-5 fill-current" /> Write the First Review
+              <Star className="w-5 h-5 fill-current" /> Leave a Review
+            </a>
+            <a
+              href={GOOGLE_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-muted border border-border text-foreground font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all"
+            >
+              <GoogleIcon /> Read All Reviews
             </a>
           </div>
-        )}
-
-        {/* Primary CTA buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
-          <a
-            href="https://g.page/r/CXKwG3VBxikrEBM/review"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 px-10 py-5 rounded-2xl bg-accent text-accent-foreground font-black text-lg shadow-2xl hover:brightness-110 hover:shadow-accent/30 hover:-translate-y-1 transition-all animate-pulse-glow"
-          >
-            <Star className="w-6 h-6 fill-current" /> Leave Us a Review ⭐
-          </a>
-          <a
-            href={`tel:${PHONE}`}
-            className="inline-flex items-center gap-2 px-8 py-5 rounded-2xl bg-primary text-primary-foreground font-bold text-lg shadow-xl hover:brightness-110 hover:-translate-y-0.5 transition-all"
-          >
-            <Phone className="w-5 h-5" /> Call Now – {PHONE_DISPLAY}
-          </a>
-          <a
-            href="https://maps.app.goo.gl/ZxvrjzHunakGa8WV8"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-5 rounded-2xl bg-muted border border-border text-foreground font-semibold text-lg shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all"
-          >
-            <GoogleIcon /> Read All Reviews
-          </a>
         </div>
 
         {/* Trust badges */}
@@ -407,13 +341,22 @@ function GoogleReviewsShowcase() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Burbank Auto Locksmith Service Area"
+            title="Burbank Auto Locksmith Location"
           />
         </div>
-        <p className="text-center text-sm text-muted-foreground mt-3">
-          <MapPin className="w-3.5 h-3.5 inline-block text-accent mr-1" />
-          Serving Burbank, Glendale, North Hollywood, Pacoima & Granada Hills
-        </p>
+        <div className="text-center mt-4">
+          <a
+            href={GOOGLE_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-bold shadow-md hover:brightness-110 transition"
+          >
+            <MapPin className="w-4 h-4" /> Open in Google Maps
+          </a>
+          <p className="text-sm text-muted-foreground mt-2">
+            Serving Burbank, Glendale, North Hollywood, Pacoima & Granada Hills
+          </p>
+        </div>
       </div>
     </section>
   );
@@ -693,7 +636,7 @@ function FloatingReviewButton({ reviewsSectionRef }: { reviewsSectionRef: React.
 
   return (
     <a
-      href="https://maps.app.goo.gl/ZxvrjzHunakGa8WV8"
+      href="https://maps.app.goo.gl/vtRt23VC2Bfv3Jd49"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed right-4 z-50 inline-flex items-center gap-2 px-5 py-3 rounded-full bg-accent text-accent-foreground font-bold text-sm shadow-2xl hover:brightness-110 hover:-translate-y-0.5 transition-all animate-fade-in bottom-20 md:bottom-6"
