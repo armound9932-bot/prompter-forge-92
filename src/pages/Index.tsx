@@ -653,6 +653,7 @@ export default function Index() {
       <Header />
       <HeroSection />
       <TrustBar />
+      <SmartKeyBrandsSection />
       <UrgencyBanner />
       <div ref={reviewsRef}>
         <GoogleReviewsShowcase />
