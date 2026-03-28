@@ -30,6 +30,7 @@
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <!-- Smart Key Brand Pages -->
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/toyota</loc>
     <priority>0.8</priority>
@@ -63,6 +64,123 @@
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/hyundai</loc>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <!-- Toyota Model Pages -->
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/toyota/camry</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/toyota/corolla</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/toyota/prius</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/toyota/rav4</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <!-- Honda Model Pages -->
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/honda/civic</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/honda/accord</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/honda/cr-v</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <!-- Ford Model Pages -->
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/ford/f-150</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/ford/escape</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/ford/explorer</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <!-- Chevrolet Model Pages -->
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/chevrolet/malibu</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/chevrolet/equinox</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/chevrolet/silverado</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <!-- Nissan Model Pages -->
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/nissan/altima</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/nissan/sentra</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/nissan/rogue</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <!-- Kia Model Pages -->
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/kia/optima</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/kia/forte</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/kia/sorento</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <!-- Hyundai Model Pages -->
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/hyundai/elantra</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/hyundai/sonata</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/hyundai/tucson</loc>
+    <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>

@@ -26,7 +26,7 @@ const allServices: { slug: string; title: string; icon: LucideIcon }[] = [
   { slug: "/ignition-repair", title: "Ignition Repair", icon: CheckCircle },
 ];
 
-export default function ServicePageLayout({ page }: { page: ServicePage }) {
+export default function ServicePageLayout({ page, extraContent }: { page: ServicePage; extraContent?: React.ReactNode }) {
   useEffect(() => {
     document.title = page.metaTitle;
     const setMeta = (name: string, content: string) => {
@@ -142,6 +142,8 @@ export default function ServicePageLayout({ page }: { page: ServicePage }) {
           </div>
         </div>
       </section>
+
+      {extraContent}
 
       {/* Other Services */}
       <section className="py-14 bg-muted">
