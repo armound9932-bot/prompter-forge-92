@@ -27,7 +27,7 @@ const SMART_KEY_BRANDS = ["toyota", "honda", "ford", "chevrolet", "nissan", "kia
 const SMART_KEY_MODELS: Record<string, string[]> = {
   toyota: [],
   honda: [],
-  ford: ["escape", "explorer"],
+  ford: ["escape"],
   chevrolet: ["malibu", "equinox", "silverado"],
   nissan: ["altima", "sentra", "rogue"],
   kia: ["optima", "forte", "sorento"],
