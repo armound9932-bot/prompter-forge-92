@@ -99,6 +99,8 @@ const brandModelPages: Record<string, { slug: string; label: string }[]> = {
     { slug: "/smart-key-programming/chevrolet/malibu", label: "Malibu" },
     { slug: "/smart-key-programming/chevrolet/equinox", label: "Equinox" },
     { slug: "/smart-key-programming/chevrolet/silverado", label: "Silverado" },
+    { slug: "/smart-key-programming/chevrolet/suburban", label: "Suburban" },
+    { slug: "/smart-key-programming/chevrolet/tahoe", label: "Tahoe" },
   ],
   nissan: [
     { slug: "/smart-key-programming/nissan/altima", label: "Altima" },
