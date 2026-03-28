@@ -42,14 +42,17 @@ const faqSchema = {
 };
 
 export default function HondaOdysseyPage() {
-  return (
-    <>
-      <Helmet>
-        <title>Honda Odyssey Key Replacement & Smart Key Programming Burbank | Burbank Auto Locksmith</title>
-        <meta name="description" content="Honda Odyssey smart key programming in Burbank. Sliding door antenna diagnostics, keyless start repair, all keys lost service. Mobile locksmith with Honda-specific tools. Licensed & insured." />
-        <link rel="canonical" href="https://prompter-forge-92.lovable.app/smart-key-programming/honda/odyssey" />
-        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
-      </Helmet>
+  useEffect(() => {
+    document.title = "Honda Odyssey Key Replacement & Smart Key Programming Burbank | Burbank Auto Locksmith";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute("content", "Honda Odyssey smart key programming in Burbank. Sliding door antenna diagnostics, keyless start repair, all keys lost service. Mobile locksmith with Honda-specific tools. Licensed & insured.");
+
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.text = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+    return () => { document.head.removeChild(script); };
+  }, []);
 
       <div className="min-h-screen bg-background text-foreground">
         {/* Breadcrumb */}
