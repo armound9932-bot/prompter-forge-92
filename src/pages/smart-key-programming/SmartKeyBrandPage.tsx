@@ -79,6 +79,7 @@ const brandModelPages: Record<string, { slug: string; label: string }[]> = {
     { slug: "/smart-key-programming/toyota/rav4", label: "RAV4" },
     { slug: "/smart-key-programming/toyota/highlander", label: "Highlander" },
     { slug: "/smart-key-programming/toyota/prius", label: "Prius" },
+    { slug: "/smart-key-programming/toyota/sienna", label: "Sienna" },
   ],
   honda: [
     { slug: "/smart-key-programming/honda/civic", label: "Civic" },
