@@ -1,20 +1,21 @@
-import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, Key, ShieldCheck, AlertTriangle, Cpu, Car, CheckCircle, ArrowRight, Wrench, Clock, MapPin, Battery, Settings } from "lucide-react";
 
 export default function KiaFortePage() {
+  useEffect(() => {
+    document.title = "Kia Forte Smart Key Programming Burbank | Compact Sedan Key Fob – Burbank Auto Locksmith";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Kia Forte smart key programming & transponder key replacement in Burbank. 2010–2024 models. Traditional keys, push-to-start fobs, PIN extraction. Mobile locksmith.");
+    }
+  }, []);
+
   return (
-    <>
-      <Helmet>
-        <title>Kia Forte Smart Key Programming Burbank | Compact Sedan Key Fob – Burbank Auto Locksmith</title>
-        <meta name="description" content="Kia Forte smart key programming & transponder key replacement in Burbank. 2010–2024 models. Traditional keys, push-to-start fobs, PIN extraction. Mobile locksmith." />
-        <link rel="canonical" href="https://prompter-forge-92.lovable.app/smart-key-programming/kia/forte" />
-      </Helmet>
+    <main className="min-h-screen bg-background text-foreground">
 
-      <main className="min-h-screen bg-background text-foreground">
-
-        {/* Breadcrumb */}
-        <nav className="bg-muted border-b border-border">
+      {/* Breadcrumb */}
+      <nav className="bg-muted border-b border-border">
           <div className="max-w-5xl mx-auto px-4 py-3 text-xs text-muted-foreground flex flex-wrap items-center gap-1">
             <Link to="/" className="hover:text-primary transition-colors">Home</Link>
             <span>/</span>
