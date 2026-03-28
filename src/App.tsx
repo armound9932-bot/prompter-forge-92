@@ -14,6 +14,7 @@ import ToyotaHighlanderPage from "./pages/smart-key-programming/ToyotaHighlander
 import ToyotaTacomaPage from "./pages/smart-key-programming/ToyotaTacomaPage";
 import ToyotaPriusPage from "./pages/smart-key-programming/ToyotaPriusPage";
 import ToyotaSiennaPage from "./pages/smart-key-programming/ToyotaSiennaPage";
+import HondaCivicPage from "./pages/smart-key-programming/HondaCivicPage";
 
 const SMART_KEY_BRANDS = ["toyota", "honda", "ford", "chevrolet", "nissan", "kia", "hyundai"];
 
