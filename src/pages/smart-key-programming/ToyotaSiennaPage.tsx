@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, ShieldCheck, Clock, Car, ChevronRight, MapPin, Wrench, AlertTriangle, Battery, Zap, DoorOpen, Users } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 

@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, MessageCircle, Clock, Shield, Star, ChevronRight, CheckCircle, Cpu, Car, Wrench, AlertTriangle, Key, Award } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
@@ -382,6 +383,8 @@ export default function ToyotaCorollaPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Toyota Corolla" />
 
       <RelatedModelsSection category="sedan" currentSlug="/smart-key-programming/toyota/corolla" brandSlug="toyota" />
 

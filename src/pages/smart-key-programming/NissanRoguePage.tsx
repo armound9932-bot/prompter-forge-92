@@ -2,6 +2,7 @@ import { Cpu, Phone, ShieldCheck, AlertTriangle, Wrench, Clock, MapPin, CheckCir
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
@@ -268,6 +269,8 @@ export default function NissanRoguePage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Nissan Rogue" />
 
       <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/nissan/rogue" brandSlug="nissan" />
 

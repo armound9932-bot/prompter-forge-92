@@ -2,6 +2,7 @@ import { Cpu, Phone, ShieldCheck, AlertTriangle, Wrench, Clock, MapPin, CheckCir
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
@@ -277,6 +278,8 @@ export default function NissanPathfinderPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Nissan Pathfinder" />
 
       <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/nissan/pathfinder" brandSlug="nissan" />
 

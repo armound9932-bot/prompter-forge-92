@@ -1,6 +1,7 @@
 import { Cpu, Phone, CheckCircle, AlertTriangle, Info, Car, Shield, MapPin } from "lucide-react";
 import ServicePageLayout from "@/components/ServicePageLayout";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 
 
@@ -268,6 +269,8 @@ export default function KiaSorentoPage() {
               </div>
             </div>
           </section>
+
+      <LocalSeoBlock vehicleName="Kia Sorento" />
 
       <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/kia/sorento" brandSlug="kia" />
 

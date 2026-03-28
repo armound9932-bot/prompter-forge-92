@@ -2,6 +2,7 @@ import { Cpu, Phone, ShieldCheck, Clock, Wrench, AlertTriangle, Car, Key, CheckC
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
@@ -272,6 +273,8 @@ export default function HondaCivicPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Honda Civic" />
 
       <RelatedModelsSection category="sedan" currentSlug="/smart-key-programming/honda/civic" brandSlug="honda" />
 

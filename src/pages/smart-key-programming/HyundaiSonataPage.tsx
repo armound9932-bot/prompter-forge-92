@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Phone, Shield, Car, Cpu, CheckCircle, AlertTriangle, MapPin, Wrench } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
@@ -298,6 +299,8 @@ export default function HyundaiSonataPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Hyundai Sonata" />
 
       <RelatedModelsSection category="sedan" currentSlug="/smart-key-programming/hyundai/sonata" brandSlug="hyundai" />
 

@@ -2,6 +2,7 @@ import { Cpu, Phone, Car, ShieldCheck, AlertTriangle, CheckCircle2, ArrowRight }
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
@@ -291,6 +292,8 @@ export default function ChevroletEquinoxPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Chevrolet Equinox" />
 
       <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/chevrolet/equinox" brandSlug="chevrolet" />
 

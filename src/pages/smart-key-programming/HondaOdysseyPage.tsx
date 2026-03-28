@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, Shield, Clock, MapPin, Wrench, AlertTriangle, ChevronRight } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
@@ -341,6 +342,8 @@ export default function HondaOdysseyPage() {
             </div>
           </div>
         </section>
+
+      <LocalSeoBlock vehicleName="Honda Odyssey" />
 
       <RelatedModelsSection category="minivan" currentSlug="/smart-key-programming/honda/odyssey" brandSlug="honda" />
 

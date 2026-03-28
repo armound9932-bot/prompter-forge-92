@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Phone, Shield, Car, Cpu, CheckCircle, AlertTriangle, MapPin, Wrench } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
@@ -308,6 +309,8 @@ export default function KiaSportagePage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Kia Sportage" />
 
       <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/kia/sportage" brandSlug="kia" />
 
