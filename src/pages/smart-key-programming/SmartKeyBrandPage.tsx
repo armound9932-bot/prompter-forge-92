@@ -112,6 +112,8 @@ const brandModelPages: Record<string, { slug: string; label: string }[]> = {
     { slug: "/smart-key-programming/kia/optima", label: "Optima (K5)" },
     { slug: "/smart-key-programming/kia/forte", label: "Forte" },
     { slug: "/smart-key-programming/kia/sorento", label: "Sorento" },
+    { slug: "/smart-key-programming/kia/sportage", label: "Sportage" },
+    { slug: "/smart-key-programming/kia/soul", label: "Soul" },
   ],
   hyundai: [
     { slug: "/smart-key-programming/hyundai/elantra", label: "Elantra" },
