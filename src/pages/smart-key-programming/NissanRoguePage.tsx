@@ -91,6 +91,9 @@ export default function NissanRoguePage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Nissan Rogue" />
+
+
       {/* SUV-Specific Behavior */}
       <section className="py-12 bg-muted/50">
         <div className="max-w-5xl mx-auto px-4">

@@ -104,6 +104,9 @@ export default function FordF150Page() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Ford F-150" />
+
+
       {/* HOW PATS WORKS */}
       <section className="py-14 bg-muted">
         <div className="max-w-5xl mx-auto px-4">

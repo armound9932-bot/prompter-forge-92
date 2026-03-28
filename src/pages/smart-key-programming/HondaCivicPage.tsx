@@ -89,6 +89,9 @@ export default function HondaCivicPage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Honda Civic" />
+
+
       {/* Honda-Specific Differences */}
       <section className="py-12 bg-muted/50">
         <div className="max-w-4xl mx-auto px-4">

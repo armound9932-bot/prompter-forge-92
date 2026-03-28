@@ -100,6 +100,9 @@ export default function KiaOptimaPage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Kia Optima" />
+
+
       {/* Sedan Behavior */}
       <section className="py-10 px-4 bg-muted">
         <div className="max-w-4xl mx-auto">

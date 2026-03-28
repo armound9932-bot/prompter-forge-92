@@ -83,6 +83,9 @@ export default function FordEdgePage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Ford Edge" />
+
+
       {/* MID-SIZE SUV BEHAVIOR */}
       <section className="py-14">
         <div className="max-w-5xl mx-auto px-4">

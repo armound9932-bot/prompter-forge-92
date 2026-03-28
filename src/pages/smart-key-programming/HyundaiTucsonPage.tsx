@@ -100,6 +100,9 @@ export default function HyundaiTucsonPage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Hyundai Tucson" />
+
+
       {/* SUV Behavior */}
       <section className="py-10 px-4 bg-muted">
         <div className="max-w-4xl mx-auto">

@@ -130,6 +130,9 @@ export default function ChevroletSilveradoPage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Chevrolet Silverado" />
+
+
       {/* GM-Specific Differences */}
       <section className="py-12 bg-background">
         <div className="max-w-5xl mx-auto px-4">

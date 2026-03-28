@@ -99,6 +99,9 @@ export default function HondaPilotPage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Honda Pilot" />
+
+
       {/* 3-Row SUV Behavior */}
       <section className="py-12 bg-muted/40">
         <div className="max-w-4xl mx-auto px-4">

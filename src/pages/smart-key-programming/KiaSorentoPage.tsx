@@ -107,6 +107,9 @@ export default function KiaSorentoPage() {
             </div>
           </section>
 
+      <MidPageCTA vehicleName="Kia Sorento" />
+
+
           {/* Common Problems */}
           <section className="py-10 bg-muted">
             <div className="max-w-4xl mx-auto px-4">

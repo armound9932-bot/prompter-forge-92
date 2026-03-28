@@ -130,6 +130,9 @@ export default function ChevroletSuburbanPage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Chevrolet Suburban" />
+
+
       {/* Extra-Large SUV Behavior */}
       <section className="py-12 bg-background">
         <div className="max-w-5xl mx-auto px-4">

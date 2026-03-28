@@ -97,6 +97,9 @@ export default function NissanPathfinderPage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Nissan Pathfinder" />
+
+
       {/* Large SUV Behavior */}
       <section className="py-12 bg-muted/50">
         <div className="max-w-5xl mx-auto px-4">

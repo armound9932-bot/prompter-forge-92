@@ -102,6 +102,9 @@ export default function KiaFortePage() {
           </div>
         </section>
 
+      <MidPageCTA vehicleName="Kia Forte" />
+
+
         {/* Kia Smart Key Architecture */}
         <section className="py-12">
           <div className="max-w-5xl mx-auto px-4">

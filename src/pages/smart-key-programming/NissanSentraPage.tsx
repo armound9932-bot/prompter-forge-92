@@ -107,6 +107,9 @@ export default function NissanSentraPage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Nissan Sentra" />
+
+
       {/* How System Works */}
       <section className="py-12 bg-muted/50">
         <div className="max-w-5xl mx-auto px-4">

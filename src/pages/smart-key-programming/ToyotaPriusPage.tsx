@@ -155,6 +155,9 @@ export default function ToyotaPriusPage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Toyota Prius" />
+
+
       {/* ===== 3. HOW PRIUS IMMOBILIZER WORKS ===== */}
       <section className="py-16 bg-muted/50 border-b border-border">
         <div className="max-w-5xl mx-auto px-4">

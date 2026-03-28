@@ -94,6 +94,9 @@ export default function HondaAccordPage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Honda Accord" />
+
+
       {/* Accord-Specific Differences */}
       <section className="py-12 bg-muted">
         <div className="max-w-4xl mx-auto px-4">

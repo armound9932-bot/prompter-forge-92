@@ -130,6 +130,9 @@ export default function ChevroletEquinoxPage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Chevrolet Equinox" />
+
+
       {/* SUV-Specific Behavior */}
       <section className="py-12 bg-background">
         <div className="max-w-5xl mx-auto px-4">

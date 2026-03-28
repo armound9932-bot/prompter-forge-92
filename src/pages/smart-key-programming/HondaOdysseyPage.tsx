@@ -124,6 +124,9 @@ export default function HondaOdysseyPage() {
           </div>
         </section>
 
+      <MidPageCTA vehicleName="Honda Odyssey" />
+
+
         {/* Minivan-Specific Behavior */}
         <section className="py-12 bg-muted">
           <div className="max-w-4xl mx-auto px-4">

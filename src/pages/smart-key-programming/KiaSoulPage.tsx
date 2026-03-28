@@ -96,6 +96,9 @@ export default function KiaSoulPage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Kia Soul" />
+
+
       {/* Kia Smart Key System – How It Works in the Soul */}
       <section className="py-12 bg-muted/50">
         <div className="max-w-5xl mx-auto px-4">

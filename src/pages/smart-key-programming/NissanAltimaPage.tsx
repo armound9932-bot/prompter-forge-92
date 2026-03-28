@@ -83,6 +83,9 @@ export default function NissanAltimaPage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Nissan Altima" />
+
+
       {/* IMMOBILIZER */}
       <section className="py-14">
         <div className="max-w-5xl mx-auto px-4">

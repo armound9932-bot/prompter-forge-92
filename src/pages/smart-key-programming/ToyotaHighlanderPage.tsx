@@ -145,6 +145,9 @@ export default function ToyotaHighlanderPage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Toyota Highlander" />
+
+
       {/* ===== 3. PUSH-TO-START & SYSTEM BEHAVIOR ===== */}
       <section className="py-16 bg-muted/50 border-b border-border">
         <div className="max-w-5xl mx-auto px-4">

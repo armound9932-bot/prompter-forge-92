@@ -91,6 +91,9 @@ export default function HondaCrvPage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Honda CR-V" />
+
+
       {/* SUV-Specific Behavior */}
       <section className="py-12 bg-muted">
         <div className="max-w-4xl mx-auto px-4">

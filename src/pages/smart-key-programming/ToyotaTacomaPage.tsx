@@ -155,6 +155,9 @@ export default function ToyotaTacomaPage() {
         </div>
       </section>
 
+      <MidPageCTA vehicleName="Toyota Tacoma" />
+
+
       {/* ===== 3. HOW IMMOBILIZER WORKS ===== */}
       <section className="py-16 bg-muted/50 border-b border-border">
         <div className="max-w-5xl mx-auto px-4">
