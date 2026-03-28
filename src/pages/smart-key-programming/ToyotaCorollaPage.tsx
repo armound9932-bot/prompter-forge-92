@@ -364,6 +364,29 @@ export default function ToyotaCorollaPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="py-14 md:py-20 bg-card border-t border-border">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-black text-foreground mb-8">Toyota Corolla Smart Key FAQ</h2>
+          <div className="space-y-3">
+            {[
+              { q: "Can you program a Toyota Corolla key without the original?", a: "Yes. We handle all-keys-lost situations for every smart-key-equipped Corolla. The process requires an immobilizer reset and, on 2020+ models, EEPROM-level security access — but no original key or dealer visit is needed." },
+              { q: "How long does Toyota Corolla smart key programming take?", a: "Most jobs are completed in 20–30 minutes on-site. All-keys-lost scenarios on newer models may take slightly longer due to the additional security initialization steps." },
+              { q: "Do I need to go to a Toyota dealer for key programming?", a: "No. Our mobile locksmith team carries dealer-level diagnostic tools and can program your Corolla smart key at your location in Burbank — at a fraction of the dealership cost." },
+              { q: "What if my Toyota Corolla says 'Key Not Detected'?", a: "This usually means the fob battery is below the 2.8V threshold, or there's an issue with the vehicle's interior antenna. Try holding the fob directly against the start button. If the problem persists, call us for a diagnostic." },
+            ].map((faq, i) => (
+              <details key={i} className="rounded-2xl border border-border bg-muted overflow-hidden group">
+                <summary className="flex items-center justify-between px-6 py-5 cursor-pointer font-semibold text-foreground">
+                  {faq.q}
+                  <ChevronRight className="w-5 h-5 text-accent shrink-0 transition-transform group-open:rotate-90" />
+                </summary>
+                <div className="px-6 pb-5 text-muted-foreground text-sm leading-relaxed">{faq.a}</div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Local SEO */}
       <section className="py-10 bg-muted border-t border-border">
         <div className="max-w-4xl mx-auto px-4">
