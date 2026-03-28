@@ -107,10 +107,10 @@ export default function LostCarKeys() {
       {/* Trust Bar */}
       <div className="bg-foreground/95">
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-wrap justify-center items-center gap-6 md:gap-12 text-sm md:text-base font-bold text-background">
-          <span className="flex items-center gap-2"><Star className="w-5 h-5 text-yellow-400 fill-yellow-400" /> 5.0 Google Rating</span>
-          <span className="flex items-center gap-2"><Shield className="w-5 h-5 text-emerald-400" /> Licensed & Insured</span>
-          <span className="flex items-center gap-2"><Clock className="w-5 h-5 text-emerald-400" /> 15–30 Min Response</span>
-          <span className="flex items-center gap-2"><Award className="w-5 h-5 text-emerald-400" /> NASTF Approved</span>
+          <span className="flex items-center gap-2"><Star className="w-5 h-5 text-accent fill-accent" /> 5.0 Google Rating</span>
+          <span className="flex items-center gap-2"><Shield className="w-5 h-5 text-accent" /> Licensed & Insured</span>
+          <span className="flex items-center gap-2"><Clock className="w-5 h-5 text-accent" /> 15–30 Min Response</span>
+          <span className="flex items-center gap-2"><Award className="w-5 h-5 text-accent" /> NASTF Approved</span>
         </div>
       </div>
 
