@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Phone, MessageCircle, Clock, Shield, Star, ChevronRight, CheckCircle, Cpu, Car, Wrench, AlertTriangle, Key } from "lucide-react";
+import { Phone, MessageCircle, Clock, Shield, Star, ChevronRight, CheckCircle, Cpu, Car, Wrench, AlertTriangle, Key, Award } from "lucide-react";
 
 const PHONE = "8186061684";
 const PHONE_DISPLAY = "(818) 606-1684";
@@ -30,7 +30,7 @@ export default function ToyotaCamryPage() {
         { "@type": "Question", name: "How much does Toyota Camry smart key programming cost in Burbank?", acceptedAnswer: { "@type": "Answer", text: "Toyota Camry smart key programming typically costs significantly less than dealership rates. Pricing depends on the model year and whether you're adding a key or replacing all lost keys. Call us for an exact Burbank quote." } },
         { "@type": "Question", name: "Can you program a Toyota Camry smart key if all keys are lost?", acceptedAnswer: { "@type": "Answer", text: "Yes. We perform full immobilizer initialization for all Camry generations, including EEPROM-level programming for 2018+ models. No towing to the dealer required." } },
         { "@type": "Question", name: "How long does Toyota Camry smart key programming take?", acceptedAnswer: { "@type": "Answer", text: "Most Toyota Camry smart key jobs are completed in 20–30 minutes on-site at your Burbank location." } },
-        { "@type": "Question", name: "What Toyota Camry smart key fob part numbers do you support?", acceptedAnswer: { "@type": "Answer", text: "We program HYQ14FBE, HYQ14FBC, and HYQ1EA fobs, plus compatible aftermarket equivalents for 2007–2024 Camry models." } },
+        { "@type": "Question", name: "What Toyota Camry smart key fob part numbers do you support?", acceptedAnswer: { "@type": "Answer", text: "We program HYQ14FBE, HYQ14FBC, HYQ14FBA, HYQ1EA, and HYQ14AAB fobs, plus compatible aftermarket equivalents for 2007–2024 Camry models." } },
       ],
     };
     let script = document.getElementById("faq-schema") as HTMLScriptElement | null;
@@ -105,13 +105,22 @@ export default function ToyotaCamryPage() {
           </h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              The Camry's Smart Key System (SKS) uses a proximity fob containing a transponder chip that communicates wirelessly with the vehicle's immobilizer ECU. When you approach the car with the fob in your pocket or bag, interior and exterior antennas detect its presence — allowing you to unlock the door by touching the handle and start the engine with the push-to-start button.
+              Every Toyota Camry equipped with the Smart Key System (SKS) relies on a <strong className="text-foreground">two-way radio frequency handshake</strong> between the fob and the vehicle. The car continuously broadcasts a low-frequency (LF) challenge signal through a network of antennas — typically two in the exterior door handles, one in the trunk lid, and three inside the cabin. When your fob enters range, it receives that LF signal, wakes up, and responds on a 315 MHz UHF channel with an encrypted rolling code. That response is what tells the body control module (BCM) "this is an authorized key."
             </p>
+
+            <h3 className="text-lg font-bold text-foreground pt-2">Push-to-Start Operation</h3>
             <p>
-              The smart key must be <strong className="text-foreground">programmed and registered</strong> to the specific vehicle. Without proper registration, the immobilizer prevents the engine from cranking — even if the physical key blade fits the ignition cylinder. This security layer means replacement keys can't simply be cut; they must be electronically paired with the Camry's body control module using dealer-level diagnostic equipment.
+              The push-to-start system doesn't simply check whether a fob is nearby — it performs a <strong className="text-foreground">full immobilizer authentication cycle</strong> every time you press the button. The BCM sends an encrypted challenge to the transponder chip inside the fob. The transponder computes a response using a shared secret stored in both the fob and the immobilizer ECU. If the response matches, the BCM signals the engine control module (ECM) to enable the fuel injectors and ignition circuit. The entire handshake takes about 100 milliseconds. If authentication fails at any point, the dashboard shows "Key Not Detected" and the engine will not crank.
             </p>
+
+            <h3 className="text-lg font-bold text-foreground pt-2">Immobilizer Behavior</h3>
             <p>
-              At Burbank Auto Locksmith, we carry the same diagnostic tools used by Toyota dealerships. We program your new or replacement smart key on-site at your Burbank location — no towing, no waiting at a service counter.
+              Toyota's immobilizer is a <strong className="text-foreground">separate security layer</strong> from the keyless entry system. Even if the doors unlock, the engine won't start unless the immobilizer ECU independently verifies the transponder. On 2012–2017 Camrys, this uses a G-chip or H-chip with rolling code encryption. On 2018+ models, Toyota upgraded to AES 128-bit encryption — the same standard used in banking. This is why you can't simply buy a blank fob online and have it work; the transponder must be electronically married to the vehicle's specific immobilizer using factory-level diagnostic protocols.
+            </p>
+
+            <h3 className="text-lg font-bold text-foreground pt-2">Proximity Detection & "Key Not Detected" Issues</h3>
+            <p>
+              The "Key Not Detected" warning is one of the most common calls we get for the Camry. It happens when the LF antennas inside the vehicle can't establish a link with the fob. The root causes vary: a fob battery below 2.8V (even though the battery technically still works for lock/unlock), a cracked antenna amplifier behind the dashboard, RF interference from an aftermarket phone mount or dashcam wired to the OBD port, or — on XV50 models — a known issue where moisture gets into the driver-side door handle antenna connector. We diagnose the actual cause on-site rather than just replacing parts.
             </p>
           </div>
         </div>
@@ -124,30 +133,30 @@ export default function ToyotaCamryPage() {
             <Key className="w-7 h-7 text-accent" /> Add Key vs. All Keys Lost
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
-            {/* Add Key */}
             <div className="bg-card rounded-2xl border border-border p-6">
               <h3 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-accent" /> Add Key (Working Key Available)
               </h3>
+              <p className="text-muted-foreground text-sm mb-4">When you already have at least one working smart key, adding a spare is straightforward. Your existing key acts as the "master" during the registration process — it proves to the immobilizer that the programming request is authorized.</p>
               <ul className="space-y-3 text-muted-foreground text-sm">
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> Faster process — your existing key helps authenticate the new one</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> The working key is placed in the vehicle during programming</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> New fob is registered to the body control module alongside existing keys</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> Typically completed in 15–20 minutes</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> Lower cost than all-keys-lost scenarios</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> The working fob is placed inside the vehicle during the procedure</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> Our diagnostic tool reads the existing key's registration data from the BCM</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> The new fob is added to the key table without erasing existing entries</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> No immobilizer reset needed — security is never fully disarmed</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Typical time: 15–20 minutes</strong></li>
               </ul>
             </div>
-            {/* All Keys Lost */}
             <div className="bg-card rounded-2xl border border-border p-6">
               <h3 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">
                 <AlertTriangle className="w-5 h-5 text-accent" /> All Keys Lost
               </h3>
+              <p className="text-muted-foreground text-sm mb-4">When no working key exists, the process is fundamentally different. Without a master key to authorize the new one, we need to bypass the immobilizer's security layer through legitimate diagnostic channels — not guesswork.</p>
               <ul className="space-y-3 text-muted-foreground text-sm">
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> Full immobilizer reset required — no existing key to authenticate</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> Security access or pin code extraction from the ECU</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> Some 2018+ models require EEPROM-level programming</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> Advanced diagnostic equipment needed on-site</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> Typically completed in 25–40 minutes</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Immobilizer reset:</strong> The existing key table in the BCM must be wiped and re-initialized</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Pin code extraction:</strong> Security access code pulled from the ECU to authorize the reset</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">2018+ XV70 models:</strong> May require EEPROM dump from the immobilizer ECU — the encryption seed must be read and re-written with the new key's credentials</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Advanced programming:</strong> Our tools perform the same procedure as Toyota's TIS Techstream — full dealer-level security access</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Typical time: 25–40 minutes</strong> depending on generation</li>
               </ul>
             </div>
           </div>
@@ -161,40 +170,40 @@ export default function ToyotaCamryPage() {
             <Car className="w-7 h-7 text-accent" /> Toyota Camry Smart Key Systems by Year
           </h2>
           <div className="space-y-6">
-            {/* 2007-2011 */}
             <div className="bg-muted rounded-2xl border border-border p-6">
-              <h3 className="text-lg font-bold text-foreground mb-3">2007–2011 Toyota Camry (XV40)</h3>
+              <h3 className="text-lg font-bold text-foreground mb-2">2007–2011 Toyota Camry (XV40)</h3>
+              <p className="text-muted-foreground text-sm mb-3">The XV40 generation was a transition period for Toyota. Base and LE trims still used a traditional transponder chip key with a mechanical ignition cylinder, while XLE and higher trims began offering the first-generation smart key system with push-to-start.</p>
               <ul className="space-y-2 text-muted-foreground text-sm">
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Key type:</strong> Basic transponder chip key; select trims introduced early smart key with push-to-start</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Immobilizer:</strong> Toyota 4D67/4D68 transponder chip system</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Add key:</strong> Possible with a working key present — standard registration procedure</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">All keys lost:</strong> Immobilizer ECU reset may be required; pin code extraction from the body control module</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Common fob:</strong> HYQ14AAB, HYQ14AEM (proximity-equipped trims)</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Transponder:</strong> 4D67 or 4D68 chip — these are older crypto chips with a fixed ID, making them easier to clone when a working key is present</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Smart key trims:</strong> Use HYQ14AAB or HYQ14AEM proximity fobs — limited antenna coverage compared to later generations</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Add key:</strong> Straightforward on-board registration when a working key is present</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">All keys lost:</strong> Pin code extraction from the BCM via OBD; immobilizer ECU reset required to register virgin keys</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Field note:</strong> We see a lot of XV40 Camrys in Burbank where the owner has a transponder key but wants to upgrade to a smart key — this requires a hardware conversion kit, not just programming</li>
               </ul>
             </div>
 
-            {/* 2012-2017 */}
             <div className="bg-muted rounded-2xl border border-border p-6">
-              <h3 className="text-lg font-bold text-foreground mb-3">2012–2017 Toyota Camry (XV50)</h3>
+              <h3 className="text-lg font-bold text-foreground mb-2">2012–2017 Toyota Camry (XV50)</h3>
+              <p className="text-muted-foreground text-sm mb-3">Toyota made the smart key system standard on most XV50 trims. This generation introduced the G-chip and later H-chip transponders with rolling code encryption — a significant security upgrade over the XV40's fixed-code system.</p>
               <ul className="space-y-2 text-muted-foreground text-sm">
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Key type:</strong> Smart key with proximity detection and push-to-start standard on most trims</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Immobilizer:</strong> Toyota G-chip and H-chip transponder with rolling code encryption</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Proximity system:</strong> Dual-band 315 MHz signal; capacitive door handle sensors for keyless entry</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">All keys lost:</strong> Requires immobilizer initialization — diagnostic tool syncs new key with the body control module</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Common fob:</strong> HYQ14FBA, HYQ14FBC</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Transponder:</strong> Toyota G-chip (2012–2014) transitioning to H-chip (2015–2017) — rolling code means each start cycle generates a new authentication sequence</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Proximity system:</strong> 315 MHz UHF with six antenna zones — door handles, trunk, and three cabin positions</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Common fob:</strong> HYQ14FBA (early models), HYQ14FBC (2015+) — board revisions between years mean not all fobs are interchangeable</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">All keys lost:</strong> Requires full immobilizer initialization via diagnostic tool — pin code extracted from the ECU, BCM key table cleared, then new keys registered</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Known issue:</strong> The 2012–2013 models have a known problem where the driver door handle antenna corrodes at the connector, causing intermittent "Key Not Detected" on only the driver side</li>
               </ul>
             </div>
 
-            {/* 2018-2024 */}
             <div className="bg-muted rounded-2xl border border-border p-6">
-              <h3 className="text-lg font-bold text-foreground mb-3">2018–2024 Toyota Camry (XV70)</h3>
+              <h3 className="text-lg font-bold text-foreground mb-2">2018–2024 Toyota Camry (XV70)</h3>
+              <p className="text-muted-foreground text-sm mb-3">The XV70 is Toyota's current platform and represents a major jump in smart key security. The immobilizer uses AES 128-bit encryption — the same algorithm protecting online banking. This makes unauthorized key duplication virtually impossible without proper diagnostic access.</p>
               <ul className="space-y-2 text-muted-foreground text-sm">
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Key type:</strong> Advanced smart key with enhanced encryption protocol</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Immobilizer:</strong> Toyota's updated AES 128-bit encrypted immobilizer — significantly harder to bypass</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Proximity system:</strong> Multi-antenna array covering all doors, trunk, and cabin interior</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">All keys lost:</strong> EEPROM-level programming or dealer-level security access may be required</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Common fob:</strong> HYQ14FBE, HYQ14FBC (updated board revision)</li>
-                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Note:</strong> Our equipment supports full initialization for the XV70 platform, including the 2024 model year</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Transponder:</strong> AES 128-bit encrypted chip — each key stores a unique cryptographic seed that pairs exclusively with the vehicle's immobilizer ECU</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Proximity system:</strong> Enhanced multi-antenna array with improved range and faster response — walk-up detection is noticeably quicker than the XV50</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Common fob:</strong> HYQ14FBE (standard), HYQ14FBC with updated board revision for 2018+ — visually similar to XV50 fobs but electronically incompatible</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">All keys lost:</strong> This is where it gets involved. The immobilizer ECU's EEPROM must be read to extract the encryption seed, then re-written with the new key's credentials. Some early 2018 models allow pin-based initialization, but 2020+ consistently require EEPROM access</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Add key:</strong> Still straightforward with a working key present — the BCM handles registration without touching the EEPROM</li>
+                <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> <strong className="text-foreground">Camry Hybrid (2018+):</strong> Uses identical smart key hardware — the hybrid powertrain doesn't add any additional key programming steps</li>
               </ul>
             </div>
           </div>
@@ -209,10 +218,10 @@ export default function ToyotaCamryPage() {
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
-              { title: "Key Not Detected", desc: "The dashboard displays 'Key Not Detected' even though the fob is inside the vehicle. Usually caused by a weak fob battery, faulty interior antenna, or signal interference from aftermarket accessories." },
-              { title: "Push-to-Start Not Working", desc: "Engine won't crank when you press the start button. The immobilizer may not be recognizing the transponder signal — try holding the fob directly against the start button as a temporary workaround." },
-              { title: "Lost All Keys", desc: "When every key is lost, the vehicle cannot verify ownership through normal means. We perform a full immobilizer reset with pin code extraction to register new keys from scratch." },
-              { title: "Key Stopped Working After Battery Replacement", desc: "Replacing the fob battery can sometimes cause the rolling code to desynchronize. The key needs to be re-registered to the vehicle's body control module to restore full functionality." },
+              { title: "\"Key Not Detected\" Warning", desc: "This is the most common Camry smart key complaint. The LF antennas inside the cabin can't establish a link with the fob. Causes include: fob battery below the 2.8V threshold (even though lock/unlock buttons still work at lower voltages), corroded antenna connector on the driver door handle (common on 2012–2013 models), or signal interference from aftermarket devices plugged into the OBD port." },
+              { title: "Push-to-Start Won't Crank", desc: "The start button lights up but the engine doesn't turn over. This means the proximity system sees the fob, but the immobilizer authentication is failing. The transponder chip may be damaged, or the rolling code has desynchronized — which can happen if the fob battery dies while the car is running. As a workaround, hold the fob directly against the start button; the short-range NFC backup may still authenticate." },
+              { title: "All Keys Lost — No Way to Start", desc: "Without any registered key present, the immobilizer stays armed and the engine is completely disabled. We extract the security pin code from the ECU, perform a full immobilizer initialization, and register new keys from scratch. On 2018+ models this requires EEPROM-level access to the immobilizer — not just an OBD connection." },
+              { title: "Key Stopped Working After Battery Change", desc: "This is more nuanced than people think. The fob's rolling code counter increments each time it transmits. If the battery dies and you press the button many times trying to make it work, the counter advances beyond the BCM's acceptance window. The fix isn't just a new battery — the fob needs to be re-synchronized with the vehicle's rolling code counter through a registration procedure." },
             ].map((issue, i) => (
               <div key={i} className="bg-card rounded-2xl border border-border p-5">
                 <h3 className="font-bold text-foreground mb-2 flex items-center gap-2">
@@ -225,34 +234,49 @@ export default function ToyotaCamryPage() {
         </div>
       </section>
 
-      {/* FCC IDs + Service Time */}
+      {/* FCC IDs + Service Time + Trust */}
       <section className="py-14 md:py-20 bg-card">
         <div className="max-w-4xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h2 className="text-xl font-black text-foreground mb-4">Compatible Smart Key FCC IDs</h2>
-              <p className="text-muted-foreground text-sm mb-4">We program the following Toyota Camry smart key fob models:</p>
+              <h2 className="text-xl font-black text-foreground mb-2">Compatible Smart Key FCC IDs</h2>
+              <p className="text-muted-foreground text-sm mb-4">The FCC ID printed on the back of your fob tells us exactly which circuit board and frequency your key uses. This matters because Toyota uses different board revisions across model years — a fob that looks identical on the outside may be electronically incompatible if the FCC ID doesn't match. Always check before ordering a replacement online.</p>
               <div className="space-y-2">
                 {[
-                  { id: "HYQ14FBE", note: "2018–2024 Camry (most common)" },
-                  { id: "HYQ14FBC", note: "2012–2017 & select 2018+ Camry trims" },
-                  { id: "HYQ1EA", note: "Select Camry models with remote start" },
+                  { id: "HYQ14FBE", note: "2018–2024 XV70 Camry — most common current fob" },
+                  { id: "HYQ14FBC", note: "2015–2017 XV50 & select 2018+ trims — earlier board revision" },
+                  { id: "HYQ14FBA", note: "2012–2014 XV50 — original G-chip smart key" },
+                  { id: "HYQ1EA", note: "Select models with factory remote start capability" },
+                  { id: "HYQ14AAB", note: "2007–2011 XV40 proximity-equipped trims" },
                 ].map(fcc => (
-                  <div key={fcc.id} className="flex items-center gap-3 bg-muted rounded-xl p-3 border border-border">
-                    <span className="font-mono font-bold text-foreground text-sm">{fcc.id}</span>
-                    <span className="text-muted-foreground text-xs">— {fcc.note}</span>
+                  <div key={fcc.id} className="flex items-start gap-3 bg-muted rounded-xl p-3 border border-border">
+                    <span className="font-mono font-bold text-foreground text-sm shrink-0">{fcc.id}</span>
+                    <span className="text-muted-foreground text-xs">{fcc.note}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div>
               <h2 className="text-xl font-black text-foreground mb-4">Service Time</h2>
-              <div className="bg-muted rounded-2xl border border-border p-6 flex items-center gap-4">
+              <div className="bg-muted rounded-2xl border border-border p-6 flex items-center gap-4 mb-6">
                 <Clock className="w-10 h-10 text-accent shrink-0" />
                 <div>
                   <p className="text-2xl font-black text-foreground">20–30 Minutes</p>
-                  <p className="text-muted-foreground text-sm">Most Toyota Camry smart key programming jobs are completed on-site in under 30 minutes. All-keys-lost scenarios may take up to 40 minutes depending on the model year.</p>
+                  <p className="text-muted-foreground text-sm">Add-key jobs with a working key present. All-keys-lost on XV70 models may take 35–40 minutes due to EEPROM access requirements.</p>
                 </div>
+              </div>
+
+              <div className="bg-muted rounded-2xl border border-border p-6">
+                <h3 className="text-lg font-bold text-foreground mb-3 flex items-center gap-2">
+                  <Award className="w-5 h-5 text-accent" /> Why Trust Us with Your Camry
+                </h3>
+                <ul className="space-y-2 text-muted-foreground text-sm">
+                  <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> We've programmed smart keys for every Camry generation — XV40 through XV70</li>
+                  <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> Our equipment supports Toyota's latest AES 128-bit immobilizer protocols</li>
+                  <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> Licensed (CA #LCO8538) and insured — not a roadside hobbyist</li>
+                  <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> We carry OEM and quality aftermarket fobs — no waiting for parts to ship</li>
+                  <li className="flex items-start gap-2"><span className="text-accent font-bold mt-0.5">•</span> Every key is fully tested before we leave your Burbank location</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -300,9 +324,10 @@ export default function ToyotaCamryPage() {
               { q: "How much does Toyota Camry smart key programming cost in Burbank?", a: "Pricing depends on the Camry model year and whether you're adding a key or replacing all lost keys. Our rates are significantly lower than Toyota dealership pricing. Call us for an exact Burbank quote tailored to your situation." },
               { q: "Can you program a Toyota Camry smart key if all keys are lost?", a: "Yes. We perform full immobilizer initialization for all Camry generations, including EEPROM-level programming for 2018+ models. We come to your Burbank location — no towing to the dealer required." },
               { q: "How long does Toyota Camry smart key programming take?", a: "Most jobs are completed in 20–30 minutes on-site. All-keys-lost scenarios on 2018+ Camry models may take up to 40 minutes due to the advanced encryption protocol." },
-              { q: "What Toyota Camry key fob part numbers do you support?", a: "We program HYQ14FBE (2018–2024), HYQ14FBC (2012–2017 and select 2018+ trims), and HYQ1EA (models with remote start), plus compatible aftermarket equivalents." },
-              { q: "Do I need to tow my Camry to a Toyota dealer for smart key programming?", a: "No. Our mobile locksmith arrives at your Burbank location with all the diagnostic equipment needed to program your smart key on the spot." },
+              { q: "What Toyota Camry key fob part numbers do you support?", a: "We program HYQ14FBE (2018–2024), HYQ14FBC (2012–2017 and select 2018+ trims), HYQ14FBA (2012–2014), HYQ1EA (models with remote start), and HYQ14AAB (2007–2011 smart key trims), plus compatible aftermarket equivalents." },
+              { q: "Do I need to tow my Camry to a Toyota dealer for smart key programming?", a: "No. Our mobile locksmith arrives at your Burbank location with all the diagnostic equipment needed to program your smart key on the spot — including EEPROM tools for all-keys-lost situations on newer models." },
               { q: "Will programming a new key deactivate my old one?", a: "Not unless you request it. When adding a key, all existing registered keys remain active. If a key was lost or stolen, we can deauthorize it during the programming process for security." },
+              { q: "Why does my Camry say 'Key Not Detected' even though I have the fob?", a: "The most common causes are a fob battery below 2.8V, a corroded door handle antenna connector (especially 2012–2013 models), or RF interference from aftermarket devices. We diagnose the root cause on-site — it's not always the battery." },
             ].map((faq, i) => (
               <details key={i} className="rounded-2xl border border-border bg-muted overflow-hidden group">
                 <summary className="flex items-center justify-between px-6 py-5 cursor-pointer font-semibold text-foreground">
