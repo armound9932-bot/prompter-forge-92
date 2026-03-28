@@ -397,6 +397,9 @@ export default function ToyotaHighlanderPage() {
           </a>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Toyota Highlander" />
+
     </main>
   );
 }

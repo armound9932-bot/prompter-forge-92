@@ -353,6 +353,9 @@ export default function NissanAltimaPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Nissan Altima" />
+
     </main>
   );
 }

@@ -334,6 +334,9 @@ export default function FordFusionPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Ford Fusion" />
+
     </main>
   );
 }

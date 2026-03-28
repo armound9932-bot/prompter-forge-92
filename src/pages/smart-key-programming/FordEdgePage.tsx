@@ -334,6 +334,9 @@ export default function FordEdgePage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Ford Edge" />
+
     </main>
   );
 }

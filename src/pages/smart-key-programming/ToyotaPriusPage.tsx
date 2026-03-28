@@ -451,6 +451,9 @@ export default function ToyotaPriusPage() {
           </a>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Toyota Prius" />
+
     </main>
   );
 }

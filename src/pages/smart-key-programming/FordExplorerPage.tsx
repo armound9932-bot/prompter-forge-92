@@ -334,6 +334,9 @@ export default function FordExplorerPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Ford Explorer" />
+
     </main>
   );
 }

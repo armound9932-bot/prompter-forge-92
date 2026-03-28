@@ -425,6 +425,9 @@ export default function ToyotaTacomaPage() {
           </a>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Toyota Tacoma" />
+
     </main>
   );
 }
