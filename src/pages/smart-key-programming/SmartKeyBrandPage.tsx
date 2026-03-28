@@ -20,7 +20,7 @@ const brandData: Record<string, BrandData> = {
     specialty: "Toyota Smart Key System (SKS) and Smart Entry with Push-to-Start",
     fobType: "Toyota HYQ14FBE, HYQ14FBC, and HYQ1EA proximity fobs",
     commonIssue: "Toyota smart keys losing sync after battery replacement",
-    additionalModels: ["Tacoma", "Tundra", "Sienna", "Venza", "4Runner", "Sequoia"],
+    additionalModels: ["Tundra", "Venza", "4Runner", "Sequoia"],
   },
   honda: {
     brand: "Honda",
@@ -79,6 +79,7 @@ const brandModelPages: Record<string, { slug: string; label: string }[]> = {
     { slug: "/smart-key-programming/toyota/rav4", label: "RAV4" },
     { slug: "/smart-key-programming/toyota/highlander", label: "Highlander" },
     { slug: "/smart-key-programming/toyota/prius", label: "Prius" },
+    { slug: "/smart-key-programming/toyota/sienna", label: "Sienna" },
   ],
   honda: [
     { slug: "/smart-key-programming/honda/civic", label: "Civic" },
