@@ -116,6 +116,7 @@ export default function SmartKeyBrandPage({ brand }: { brand: string }) {
   const data = brandData[brand];
   if (!data) return null;
   const modelLinks = brandModelPages[brand] || [];
+  const extra = data.additionalModels || [];
 
   return (
     <ServicePageLayout
