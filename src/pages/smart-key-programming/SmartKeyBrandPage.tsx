@@ -70,9 +70,49 @@ const brandData: Record<string, BrandData> = {
   },
 };
 
+const brandModelPages: Record<string, { slug: string; label: string }[]> = {
+  toyota: [
+    { slug: "/smart-key-programming/toyota/camry", label: "Camry" },
+    { slug: "/smart-key-programming/toyota/corolla", label: "Corolla" },
+    { slug: "/smart-key-programming/toyota/prius", label: "Prius" },
+    { slug: "/smart-key-programming/toyota/rav4", label: "RAV4" },
+  ],
+  honda: [
+    { slug: "/smart-key-programming/honda/civic", label: "Civic" },
+    { slug: "/smart-key-programming/honda/accord", label: "Accord" },
+    { slug: "/smart-key-programming/honda/cr-v", label: "CR-V" },
+  ],
+  ford: [
+    { slug: "/smart-key-programming/ford/f-150", label: "F-150" },
+    { slug: "/smart-key-programming/ford/escape", label: "Escape" },
+    { slug: "/smart-key-programming/ford/explorer", label: "Explorer" },
+  ],
+  chevrolet: [
+    { slug: "/smart-key-programming/chevrolet/malibu", label: "Malibu" },
+    { slug: "/smart-key-programming/chevrolet/equinox", label: "Equinox" },
+    { slug: "/smart-key-programming/chevrolet/silverado", label: "Silverado" },
+  ],
+  nissan: [
+    { slug: "/smart-key-programming/nissan/altima", label: "Altima" },
+    { slug: "/smart-key-programming/nissan/sentra", label: "Sentra" },
+    { slug: "/smart-key-programming/nissan/rogue", label: "Rogue" },
+  ],
+  kia: [
+    { slug: "/smart-key-programming/kia/optima", label: "Optima (K5)" },
+    { slug: "/smart-key-programming/kia/forte", label: "Forte" },
+    { slug: "/smart-key-programming/kia/sorento", label: "Sorento" },
+  ],
+  hyundai: [
+    { slug: "/smart-key-programming/hyundai/elantra", label: "Elantra" },
+    { slug: "/smart-key-programming/hyundai/sonata", label: "Sonata" },
+    { slug: "/smart-key-programming/hyundai/tucson", label: "Tucson" },
+  ],
+};
+
 export default function SmartKeyBrandPage({ brand }: { brand: string }) {
   const data = brandData[brand];
   if (!data) return null;
+  const modelLinks = brandModelPages[brand] || [];
 
   return (
     <ServicePageLayout
@@ -105,6 +145,24 @@ export default function SmartKeyBrandPage({ brand }: { brand: string }) {
           { q: `How long does ${data.brand} smart key programming take?`, a: `Most ${data.brand} smart key jobs take 20-45 minutes depending on the model and whether we're programming an existing key or creating a new one.` },
         ],
       }}
+      extraContent={
+        modelLinks.length > 0 ? (
+          <section className="py-10 bg-muted">
+            <div className="max-w-4xl mx-auto px-4">
+              <h2 className="text-xl font-bold text-foreground mb-4">{data.brand} Model-Specific Smart Key Pages</h2>
+              <p className="text-muted-foreground text-sm mb-4">Select your {data.brand} model for detailed smart key programming information, common problems, and pricing specific to your vehicle.</p>
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+                {modelLinks.map(m => (
+                  <Link key={m.slug} to={m.slug} className="flex items-center gap-2 bg-card rounded-xl p-4 border border-border hover:shadow-md hover:-translate-y-0.5 transition-all">
+                    <Cpu className="w-4 h-4 text-accent shrink-0" />
+                    <span className="font-semibold text-foreground text-sm">{data.brand} {m.label}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        ) : undefined
+      }
     />
   );
 }
