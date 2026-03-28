@@ -139,7 +139,7 @@ export default function KiaSorentoPage() {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="bg-card rounded-xl p-5 border border-border">
                   <h3 className="font-bold text-foreground mb-3 flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    <CheckCircle className="w-4 h-4 text-accent" />
                     Add a Key (Spare Exists)
                   </h3>
                   <ul className="space-y-2 text-muted-foreground text-xs">
