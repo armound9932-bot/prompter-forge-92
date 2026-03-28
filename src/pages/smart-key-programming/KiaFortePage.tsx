@@ -361,7 +361,6 @@ export default function KiaFortePage() {
           </div>
         </section>
 
-      </main>
-    </>
+    </main>
   );
 }
