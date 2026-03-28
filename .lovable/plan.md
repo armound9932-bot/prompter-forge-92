@@ -1,30 +1,34 @@
 
 
-## Mobile Services Section Optimization
+## Remove Fake Reviews & Replace with Google-Only Content
 
-### What changes
-Single file: `src/pages/Index.tsx`, the `ServicesSection` component (lines 141-188).
+### What's being removed
+- **6 hardcoded fake review objects** (lines 273-280 in `Index.tsx`) — Mike T., Sarah L., David R., Jessica M., Carlos G., Amanda W.
+- **"127 verified Google reviews" claim** (line 315)
+- **"127+ Verified Reviews" badge** in TrustSection (line 239)
 
-### Plan
+### What's being built (replacing `GoogleReviewsShowcase` function, lines 272-419)
 
-1. **Replace large images with icons on mobile** — On mobile (`md:` breakpoint and below), hide the `h-48` image container entirely and show a compact icon-based card instead. On desktop, keep the current image card layout unchanged.
+**1. Google Reviews Section (no fake content)**
+- Header: "Our Google Reviews" with Google icon badge
+- Since we cannot fetch live Google reviews client-side without an API key, show the honest empty state:
+  - Google icon + "Be the First to Leave a Google Review" heading
+  - Encouraging subtext
+- Two prominent CTA buttons:
+  - **"Leave a Review"** → `https://maps.app.goo.gl/vtRt23VC2Bfv3Jd49` (new link)
+  - **"Read All Reviews"** → same link (opens Google profile)
 
-2. **Mobile card layout** — Each service renders as a horizontal card with:
-   - Left: colored icon circle (`w-12 h-12`, accent background)
-   - Right: bold title (`text-lg font-bold`), description text, SEO anchor, and "Learn More" link
-   - Card styling: `bg-card rounded-xl p-4 shadow-sm border`
+**2. Google Map Embed Section**
+- Embed iframe using the coordinates from the provided Google Maps link
+- "Open in Google Maps" button → `https://maps.app.goo.gl/vtRt23VC2Bfv3Jd49`
+- Location text underneath
 
-3. **Spacing** — Use `gap-4` between stacked cards on mobile (single column), switching to the existing grid on `md:+`
+**3. TrustSection cleanup**
+- Change "5.0 ★ Google Rating / 127+ Verified Reviews" badge to "5.0 ★ Google Rating / Verified Business"
 
-4. **Implementation approach** — Use responsive classes:
-   - Wrap the current image card in `hidden md:block`
-   - Add a new mobile-only card variant wrapped in `md:hidden`
-   - This avoids any structural changes to the desktop layout
+**4. Update all Google links**
+- Replace old `https://g.page/r/CXKwG3VBxikrEBM/review` and `https://maps.app.goo.gl/ZxvrjzHunakGa8WV8` with new link `https://maps.app.goo.gl/vtRt23VC2Bfv3Jd49`
 
-5. **Call Now button** — Keep the existing prominent CTA button at the bottom, already works well on mobile. No changes needed.
-
-### Technical detail
-- No new components or files needed
-- Uses Tailwind responsive prefixes (`md:hidden` / `hidden md:block`) to switch between mobile icon cards and desktop image cards
-- No images loaded on mobile = faster page load
+### Files changed
+- `src/pages/Index.tsx` — single file, rewrite `GoogleReviewsShowcase` and update TrustSection badge
 
