@@ -35,6 +35,7 @@ import ChevroletTahoePage from "./pages/smart-key-programming/ChevroletTahoePage
 import HyundaiElantraPage from "./pages/smart-key-programming/HyundaiElantraPage";
 import HyundaiSonataPage from "./pages/smart-key-programming/HyundaiSonataPage";
 import HyundaiTucsonPage from "./pages/smart-key-programming/HyundaiTucsonPage";
+import HyundaiSantaFePage from "./pages/smart-key-programming/HyundaiSantaFePage";
 
 const SMART_KEY_BRANDS = ["toyota", "honda", "ford", "chevrolet", "nissan", "kia", "hyundai"];
 
