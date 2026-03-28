@@ -20,7 +20,7 @@ const brandData: Record<string, BrandData> = {
     specialty: "Toyota Smart Key System (SKS) and Smart Entry with Push-to-Start",
     fobType: "Toyota HYQ14FBE, HYQ14FBC, and HYQ1EA proximity fobs",
     commonIssue: "Toyota smart keys losing sync after battery replacement",
-    additionalModels: ["Tacoma", "Tundra", "Sienna", "Venza", "4Runner", "Sequoia"],
+    additionalModels: ["Tundra", "Venza", "4Runner", "Sequoia"],
   },
   honda: {
     brand: "Honda",
