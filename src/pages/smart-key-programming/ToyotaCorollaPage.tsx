@@ -97,6 +97,24 @@ export default function ToyotaCorollaPage() {
         </div>
       </div>
 
+      {/* Conversion Section */}
+      <section className="py-10 md:py-14 bg-accent">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-black text-accent-foreground mb-3">Toyota Corolla Key Replacement in Burbank</h2>
+          <p className="text-lg text-accent-foreground/90 mb-2 font-semibold">Need a spare key? Lost all your keys? We handle it all — on the spot.</p>
+          <div className="flex flex-wrap justify-center gap-4 text-accent-foreground/85 text-sm font-medium mb-6">
+            <span className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4" /> Add Key — Quick & Affordable</span>
+            <span className="flex items-center gap-1.5"><AlertTriangle className="w-4 h-4" /> All Keys Lost — Same-Day Recovery</span>
+            <span className="flex items-center gap-1.5"><Car className="w-4 h-4" /> Mobile Service — We Come to You</span>
+            <span className="flex items-center gap-1.5"><Clock className="w-4 h-4" /> Emergency Same-Day Service</span>
+          </div>
+          <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 px-10 py-4 rounded-xl bg-primary text-primary-foreground font-bold text-xl shadow-xl hover:brightness-110 transition">
+            <Phone className="w-6 h-6" /> Call Now – {PHONE_DISPLAY}
+          </a>
+          <p className="text-accent-foreground/70 text-xs mt-3">We arrive in 15–30 minutes anywhere in Burbank. No tow needed.</p>
+        </div>
+      </section>
+
       {/* Introduction: How the System Works */}
       <section className="py-14 md:py-20 bg-card">
         <div className="max-w-4xl mx-auto px-4">
