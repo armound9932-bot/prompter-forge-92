@@ -29,6 +29,7 @@ import NissanSentraPage from "./pages/smart-key-programming/NissanSentraPage";
 import NissanPathfinderPage from "./pages/smart-key-programming/NissanPathfinderPage";
 import ChevroletSilveradoPage from "./pages/smart-key-programming/ChevroletSilveradoPage";
 import ChevroletMalibuPage from "./pages/smart-key-programming/ChevroletMalibuPage";
+import ChevroletEquinoxPage from "./pages/smart-key-programming/ChevroletEquinoxPage";
 
 const SMART_KEY_BRANDS = ["toyota", "honda", "ford", "chevrolet", "nissan", "kia", "hyundai"];
 
@@ -36,7 +37,7 @@ const SMART_KEY_MODELS: Record<string, string[]> = {
   toyota: [],
   honda: [],
   ford: ["escape"],
-  chevrolet: ["equinox"],
+  chevrolet: [],
   nissan: [],
   kia: ["optima", "forte", "sorento"],
   hyundai: ["elantra", "sonata", "tucson"],
@@ -73,6 +74,7 @@ function App() {
       <Route path="/smart-key-programming/nissan/pathfinder" element={<NissanPathfinderPage />} />
       <Route path="/smart-key-programming/chevrolet/silverado" element={<ChevroletSilveradoPage />} />
       <Route path="/smart-key-programming/chevrolet/malibu" element={<ChevroletMalibuPage />} />
+      <Route path="/smart-key-programming/chevrolet/equinox" element={<ChevroletEquinoxPage />} />
       {SMART_KEY_BRANDS.map(brand => (
         <Route key={brand} path={`/smart-key-programming/${brand}`} element={<SmartKeyBrandPage brand={brand} />} />
       ))}
