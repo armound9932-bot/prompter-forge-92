@@ -364,6 +364,16 @@ export default function ToyotaCorollaPage() {
         </div>
       </section>
 
+      {/* Local SEO */}
+      <section className="py-10 bg-muted border-t border-border">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-xl font-bold text-foreground mb-3">Serving Burbank & Nearby Cities</h2>
+          <p className="text-muted-foreground leading-relaxed text-sm">
+            We provide Toyota Corolla smart key programming across Burbank and the neighboring areas of Glendale, North Hollywood, and greater Los Angeles. Our fully equipped mobile unit comes directly to you — whether you're stranded in a parking lot, at home, or at your workplace. No dealership appointment needed, no towing required. Just fast, professional service from a licensed local locksmith.
+          </p>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-primary text-primary-foreground py-10">
         <div className="max-w-7xl mx-auto px-4">
