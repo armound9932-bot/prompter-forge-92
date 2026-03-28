@@ -151,7 +151,7 @@ export default function SmartKeyBrandPage({ brand }: { brand: string }) {
       }}
       extraContent={
         modelLinks.length > 0 ? (
-          <section className="py-10 bg-muted">
+           <section className="py-10 bg-muted">
             <div className="max-w-4xl mx-auto px-4">
               <h2 className="text-xl font-bold text-foreground mb-4">{data.brand} Model-Specific Smart Key Pages</h2>
               <p className="text-muted-foreground text-sm mb-4">Select your {data.brand} model for detailed smart key programming information, common problems, and pricing specific to your vehicle.</p>
@@ -163,6 +163,16 @@ export default function SmartKeyBrandPage({ brand }: { brand: string }) {
                   </Link>
                 ))}
               </div>
+              {extra.length > 0 && (
+                <div className="mt-6">
+                  <h3 className="text-sm font-semibold text-foreground mb-2">We Also Service:</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {extra.map(model => (
+                      <span key={model} className="bg-card border border-border rounded-lg px-3 py-1.5 text-sm text-muted-foreground">{data.brand} {model}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </section>
         ) : undefined

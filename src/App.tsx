@@ -11,7 +11,7 @@ import SmartKeyModelPage from "./pages/smart-key-programming/SmartKeyModelPage";
 const SMART_KEY_BRANDS = ["toyota", "honda", "ford", "chevrolet", "nissan", "kia", "hyundai"];
 
 const SMART_KEY_MODELS: Record<string, string[]> = {
-  toyota: ["camry", "corolla", "prius", "rav4"],
+  toyota: ["camry", "corolla", "prius", "rav4", "highlander"],
   honda: ["civic", "accord", "cr-v"],
   ford: ["f-150", "escape", "explorer"],
   chevrolet: ["malibu", "equinox", "silverado"],
