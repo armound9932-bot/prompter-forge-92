@@ -236,7 +236,7 @@ function TrustSection() {
   const badges = [
     { icon: Shield, label: "Licensed & Insured", sub: "CA License LCO8538" },
     { icon: Award, label: "NASTF Approved", sub: "Authorized Locksmith" },
-    { icon: Star, label: "5.0 ★ Google Rating", sub: "127+ Verified Reviews" },
+    { icon: Star, label: "5.0 ★ Google Rating", sub: "Verified Business" },
     { icon: CheckCircle, label: "1-Year Warranty", sub: "On Key Replacements" },
   ];
 
