@@ -92,8 +92,41 @@ function TrustBar() {
     </div>
   );
 }
+const smartKeyBrands = [
+  { slug: "/smart-key-programming/toyota", label: "Toyota" },
+  { slug: "/smart-key-programming/honda", label: "Honda" },
+  { slug: "/smart-key-programming/ford", label: "Ford" },
+  { slug: "/smart-key-programming/chevrolet", label: "Chevrolet" },
+  { slug: "/smart-key-programming/nissan", label: "Nissan" },
+  { slug: "/smart-key-programming/kia", label: "Kia" },
+  { slug: "/smart-key-programming/hyundai", label: "Hyundai" },
+];
 
-function UrgencyBanner() {
+function SmartKeyBrandsSection() {
+  return (
+    <section className="py-10 bg-muted">
+      <div className="max-w-5xl mx-auto px-4">
+        <h2 className="text-xl md:text-2xl font-black text-foreground mb-2">Smart Key Programming by Brand</h2>
+        <p className="text-muted-foreground text-sm mb-5">Select your vehicle brand for expert smart key programming in Burbank.</p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+          {smartKeyBrands.map(b => (
+            <Link key={b.slug} to={b.slug} className="flex items-center gap-2.5 bg-card rounded-xl p-4 border border-border hover:shadow-md hover:-translate-y-0.5 transition-all group">
+              <Cpu className="w-5 h-5 text-accent shrink-0" />
+              <span className="font-semibold text-foreground text-sm group-hover:text-accent transition-colors">{b.label}</span>
+              <ChevronRight className="w-4 h-4 text-muted-foreground ml-auto" />
+            </Link>
+          ))}
+          <Link to="/smart-key-programming" className="flex items-center gap-2.5 bg-accent/10 rounded-xl p-4 border border-accent/30 hover:shadow-md hover:-translate-y-0.5 transition-all group">
+            <Key className="w-5 h-5 text-accent shrink-0" />
+            <span className="font-semibold text-accent text-sm">All Brands →</span>
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
   return (
     <div className="bg-accent text-accent-foreground py-3 text-center font-bold text-sm md:text-base">
       🚨 Emergency Locksmith Available Now — Fast Mobile Service in Burbank, Glendale &amp; North Hollywood
