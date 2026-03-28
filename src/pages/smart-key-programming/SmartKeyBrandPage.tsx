@@ -16,10 +16,11 @@ const brandData: Record<string, BrandData> = {
   toyota: {
     brand: "Toyota",
     slug: "/smart-key-programming/toyota",
-    models: "Camry, Corolla, RAV4, Highlander, Tacoma, 4Runner, Prius, and Tundra",
+    models: "Camry, Corolla, RAV4, Highlander, Prius, Tacoma, Tundra, Sienna, Venza, 4Runner, Sequoia",
     specialty: "Toyota Smart Key System (SKS) and Smart Entry with Push-to-Start",
     fobType: "Toyota HYQ14FBE, HYQ14FBC, and HYQ1EA proximity fobs",
     commonIssue: "Toyota smart keys losing sync after battery replacement",
+    additionalModels: ["Tacoma", "Tundra", "Sienna", "Venza", "4Runner", "Sequoia"],
   },
   honda: {
     brand: "Honda",
