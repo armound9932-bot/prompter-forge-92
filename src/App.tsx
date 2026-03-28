@@ -49,7 +49,7 @@ const SMART_KEY_MODELS: Record<string, string[]> = {
   ford: ["escape"],
   chevrolet: [],
   nissan: [],
-  kia: ["forte", "sorento"],
+  kia: ["forte"],
   hyundai: [],
 };
 
