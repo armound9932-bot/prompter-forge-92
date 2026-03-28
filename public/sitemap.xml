@@ -1,191 +1,307 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
   <url>
     <loc>https://burbankautolocksmith.com/</loc>
-    <priority>1.0</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
+  <!-- Core Service Pages -->
   <url>
     <loc>https://burbankautolocksmith.com/car-lockout</loc>
-    <priority>0.9</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/key-replacement</loc>
-    <priority>0.9</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/key-programming</loc>
-    <priority>0.9</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/ignition-repair</loc>
-    <priority>0.9</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming</loc>
-    <priority>0.9</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/lost-car-keys</loc>
-    <priority>0.9</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <!-- Smart Key Brand Pages -->
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/toyota</loc>
-    <priority>0.8</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/honda</loc>
-    <priority>0.8</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/ford</loc>
-    <priority>0.8</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/chevrolet</loc>
-    <priority>0.8</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/nissan</loc>
-    <priority>0.8</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/kia</loc>
-    <priority>0.8</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/hyundai</loc>
-    <priority>0.8</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <!-- Toyota Model Pages -->
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/toyota/camry</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/toyota/corolla</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://burbankautolocksmith.com/smart-key-programming/toyota/prius</loc>
     <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/toyota/rav4</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/toyota/highlander</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/toyota/tacoma</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/toyota/prius</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/toyota/sienna</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <!-- Honda Model Pages -->
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/honda/civic</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/honda/accord</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/honda/cr-v</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/honda/pilot</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/honda/odyssey</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <!-- Ford Model Pages -->
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/ford/f-150</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://burbankautolocksmith.com/smart-key-programming/ford/escape</loc>
     <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/ford/explorer</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/ford/fusion</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/ford/edge</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <!-- Chevrolet Model Pages -->
   <url>
-    <loc>https://burbankautolocksmith.com/smart-key-programming/chevrolet/malibu</loc>
-    <priority>0.7</priority>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/chevrolet/silverado</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/chevrolet/malibu</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/chevrolet/equinox</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://burbankautolocksmith.com/smart-key-programming/chevrolet/silverado</loc>
-    <priority>0.7</priority>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/chevrolet/suburban</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/chevrolet/tahoe</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <!-- Nissan Model Pages -->
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/nissan/altima</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/nissan/sentra</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/nissan/rogue</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
-  </url>
-  <!-- Kia Model Pages -->
-  <url>
-    <loc>https://burbankautolocksmith.com/smart-key-programming/kia/optima</loc>
     <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://burbankautolocksmith.com/smart-key-programming/kia/forte</loc>
-    <priority>0.7</priority>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/nissan/pathfinder</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://burbankautolocksmith.com/smart-key-programming/kia/sorento</loc>
     <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
   </url>
   <!-- Hyundai Model Pages -->
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/hyundai/elantra</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/hyundai/sonata</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://burbankautolocksmith.com/smart-key-programming/hyundai/tucson</loc>
-    <priority>0.7</priority>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/hyundai/santafe</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/hyundai/palisade</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Kia Model Pages -->
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/kia/optima</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/kia/sportage</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/kia/sorento</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/kia/forte</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://burbankautolocksmith.com/smart-key-programming/kia/soul</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
