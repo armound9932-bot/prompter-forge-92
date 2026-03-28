@@ -1,6 +1,9 @@
 import { Phone, ShieldCheck, Clock, Wrench, AlertTriangle, Car, Key, CheckCircle2, Settings, Info, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 export default function HondaPilotPage() {
   useEffect(() => {
@@ -95,6 +98,9 @@ export default function HondaPilotPage() {
           </p>
         </div>
       </section>
+
+      <MidPageCTA vehicleName="Honda Pilot" />
+
 
       {/* 3-Row SUV Behavior */}
       <section className="py-12 bg-muted/40">
@@ -285,6 +291,9 @@ export default function HondaPilotPage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/honda/pilot" brandSlug="honda" />
+
 
       {/* Local SEO */}
       <section className="py-12 bg-background">

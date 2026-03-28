@@ -1,6 +1,9 @@
 import { Cpu, Phone, Car, ShieldCheck, AlertTriangle, CheckCircle2, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 const PAGE_TITLE = "Chevrolet Equinox Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith";
 const PAGE_DESC = "Chevrolet Equinox smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2010–2024 Equinox. Mobile SUV service.";
@@ -126,6 +129,9 @@ export default function ChevroletEquinoxPage() {
           </div>
         </div>
       </section>
+
+      <MidPageCTA vehicleName="Chevrolet Equinox" />
+
 
       {/* SUV-Specific Behavior */}
       <section className="py-12 bg-background">
@@ -292,6 +298,9 @@ export default function ChevroletEquinoxPage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/chevrolet/equinox" brandSlug="chevrolet" />
+
 
       {/* Local SEO */}
       <section className="py-12 bg-background">

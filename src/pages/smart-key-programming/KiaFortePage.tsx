@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, Key, ShieldCheck, AlertTriangle, Cpu, Car, CheckCircle, ArrowRight, Wrench, Clock, MapPin, Battery, Settings } from "lucide-react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 export default function KiaFortePage() {
   useEffect(() => {
@@ -98,6 +101,9 @@ export default function KiaFortePage() {
             </div>
           </div>
         </section>
+
+      <MidPageCTA vehicleName="Kia Forte" />
+
 
         {/* Kia Smart Key Architecture */}
         <section className="py-12">
@@ -302,6 +308,9 @@ export default function KiaFortePage() {
             </div>
           </div>
         </section>
+
+      <RelatedModelsSection category="sedan" currentSlug="/smart-key-programming/kia/forte" brandSlug="kia" />
+
 
         {/* Local SEO */}
         <section className="py-12">

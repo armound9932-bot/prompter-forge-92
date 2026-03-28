@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Phone, Shield, Car, Cpu, CheckCircle, AlertTriangle, MapPin, Wrench } from "lucide-react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 const defined_faqs = [
   { q: "Can you program a Hyundai Palisade smart key without the original?", a: "Yes. All-keys-lost programming on the Palisade requires extracting the vehicle-specific PIN from the SMK module and performing a full immobilizer reset. We complete the entire procedure on-site in Burbank — no dealer tow required for your luxury SUV." },
@@ -96,6 +99,9 @@ export default function HyundaiPalisadePage() {
           </div>
         </div>
       </section>
+
+      <MidPageCTA vehicleName="Hyundai Palisade" />
+
 
       {/* Luxury SUV Difference */}
       <section className="py-10 px-4 bg-muted">
@@ -292,6 +298,9 @@ export default function HyundaiPalisadePage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/hyundai/palisade" brandSlug="hyundai" />
+
 
       {/* Local SEO */}
       <section className="py-10 px-4 bg-muted">

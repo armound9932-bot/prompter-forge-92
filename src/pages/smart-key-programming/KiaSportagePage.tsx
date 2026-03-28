@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Phone, Shield, Car, Cpu, CheckCircle, AlertTriangle, MapPin, Wrench } from "lucide-react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 const defined_faqs = [
   { q: "Can you program a Kia Sportage smart key without the original?", a: "Yes. All-keys-lost programming on the Sportage requires extracting the vehicle-specific PIN from the keyless module and performing a full immobilizer reset. We complete everything on-site in Burbank — no dealer tow required." },
@@ -96,6 +99,9 @@ export default function KiaSportagePage() {
           </div>
         </div>
       </section>
+
+      <MidPageCTA vehicleName="Kia Sportage" />
+
 
       {/* SUV Behavior */}
       <section className="py-10 px-4 bg-muted">
@@ -305,6 +311,9 @@ export default function KiaSportagePage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/kia/sportage" brandSlug="kia" />
+
 
       {/* Local SEO */}
       <section className="py-10 px-4 bg-muted">

@@ -78,6 +78,7 @@ const brandModelPages: Record<string, { slug: string; label: string }[]> = {
     { slug: "/smart-key-programming/toyota/corolla", label: "Corolla" },
     { slug: "/smart-key-programming/toyota/rav4", label: "RAV4" },
     { slug: "/smart-key-programming/toyota/highlander", label: "Highlander" },
+    { slug: "/smart-key-programming/toyota/tacoma", label: "Tacoma" },
     { slug: "/smart-key-programming/toyota/prius", label: "Prius" },
     { slug: "/smart-key-programming/toyota/sienna", label: "Sienna" },
   ],
@@ -99,6 +100,8 @@ const brandModelPages: Record<string, { slug: string; label: string }[]> = {
     { slug: "/smart-key-programming/chevrolet/malibu", label: "Malibu" },
     { slug: "/smart-key-programming/chevrolet/equinox", label: "Equinox" },
     { slug: "/smart-key-programming/chevrolet/silverado", label: "Silverado" },
+    { slug: "/smart-key-programming/chevrolet/suburban", label: "Suburban" },
+    { slug: "/smart-key-programming/chevrolet/tahoe", label: "Tahoe" },
   ],
   nissan: [
     { slug: "/smart-key-programming/nissan/altima", label: "Altima" },
@@ -110,11 +113,15 @@ const brandModelPages: Record<string, { slug: string; label: string }[]> = {
     { slug: "/smart-key-programming/kia/optima", label: "Optima (K5)" },
     { slug: "/smart-key-programming/kia/forte", label: "Forte" },
     { slug: "/smart-key-programming/kia/sorento", label: "Sorento" },
+    { slug: "/smart-key-programming/kia/sportage", label: "Sportage" },
+    { slug: "/smart-key-programming/kia/soul", label: "Soul" },
   ],
   hyundai: [
     { slug: "/smart-key-programming/hyundai/elantra", label: "Elantra" },
     { slug: "/smart-key-programming/hyundai/sonata", label: "Sonata" },
     { slug: "/smart-key-programming/hyundai/tucson", label: "Tucson" },
+    { slug: "/smart-key-programming/hyundai/santafe", label: "Santa Fe" },
+    { slug: "/smart-key-programming/hyundai/palisade", label: "Palisade" },
   ],
 };
 

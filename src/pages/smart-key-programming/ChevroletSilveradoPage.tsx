@@ -1,6 +1,9 @@
 import { Cpu, Phone, Truck, ShieldCheck, AlertTriangle, CheckCircle2, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 const PAGE_TITLE = "Chevrolet Silverado Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith";
 const PAGE_DESC = "Chevrolet Silverado smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2007–2024 Silverado. Mobile truck service.";
@@ -126,6 +129,9 @@ export default function ChevroletSilveradoPage() {
           </div>
         </div>
       </section>
+
+      <MidPageCTA vehicleName="Chevrolet Silverado" />
+
 
       {/* GM-Specific Differences */}
       <section className="py-12 bg-background">
@@ -289,6 +295,9 @@ export default function ChevroletSilveradoPage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="truck" currentSlug="/smart-key-programming/chevrolet/silverado" brandSlug="chevrolet" />
+
 
       {/* Local SEO */}
       <section className="py-12 bg-background">

@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, ShieldCheck, Clock, Car, ChevronRight, MapPin, Wrench, AlertTriangle, Battery, Zap, DoorOpen, Users } from "lucide-react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 const faqItems = [
   {
@@ -104,6 +107,9 @@ export default function ToyotaSiennaPage() {
           </div>
         </div>
       </section>
+
+      <MidPageCTA vehicleName="Toyota Sienna" />
+
 
       {/* MINIVAN-SPECIFIC ANTENNA ARCHITECTURE */}
       <section className="py-12 md:py-16 bg-muted">

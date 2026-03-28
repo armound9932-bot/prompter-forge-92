@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, MessageCircle, Clock, Shield, Star, ChevronRight, CheckCircle, Cpu, Car, Wrench, AlertTriangle, Key, Award, MapPin, Zap, Lock } from "lucide-react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 const PHONE = "8186061684";
 const PHONE_DISPLAY = "(818) 606-1684";
@@ -98,6 +101,8 @@ export default function ToyotaRav4Page() {
           <span className="flex items-center gap-2"><Car className="w-5 h-5 text-emerald-400" /> Mobile SUV Service</span>
         </div>
       </div>
+
+      <MidPageCTA vehicleName="Toyota RAV4" />
 
       {/* 2. HOW RAV4 SMART KEY SYSTEM WORKS */}
       <section className="py-14 md:py-20 bg-background">
@@ -432,6 +437,9 @@ export default function ToyotaRav4Page() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/toyota/rav4" brandSlug="toyota" />
+
 
       {/* Footer */}
       <footer className="bg-primary text-primary-foreground py-10">

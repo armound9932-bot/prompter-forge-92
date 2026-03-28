@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Phone, Shield, Car, Cpu, CheckCircle, AlertTriangle, Clock, MapPin, Wrench } from "lucide-react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 const defined_faqs = [
   { q: "Can you program a Hyundai Tucson smart key without the original?", a: "Yes. All-keys-lost programming for the Tucson requires extracting the vehicle-specific PIN code from the SMK module and performing a full immobilizer reset. We handle the entire process on-site in Burbank — no dealer tow needed." },
@@ -96,6 +99,9 @@ export default function HyundaiTucsonPage() {
           </div>
         </div>
       </section>
+
+      <MidPageCTA vehicleName="Hyundai Tucson" />
+
 
       {/* SUV Behavior */}
       <section className="py-10 px-4 bg-muted">
@@ -305,6 +311,9 @@ export default function HyundaiTucsonPage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/hyundai/tucson" brandSlug="hyundai" />
+
 
       {/* Local SEO */}
       <section className="py-10 px-4 bg-muted">

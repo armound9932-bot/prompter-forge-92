@@ -1,6 +1,9 @@
 import { Cpu, Phone, Car, ShieldCheck, AlertTriangle, CheckCircle2, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 const PAGE_TITLE = "Chevrolet Malibu Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith";
 const PAGE_DESC = "Chevrolet Malibu smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2008–2024 Malibu. Mobile sedan service.";
@@ -126,6 +129,9 @@ export default function ChevroletMalibuPage() {
           </div>
         </div>
       </section>
+
+      <MidPageCTA vehicleName="Chevrolet Malibu" />
+
 
       {/* GM-Specific Differences */}
       <section className="py-12 bg-background">
@@ -288,6 +294,9 @@ export default function ChevroletMalibuPage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="sedan" currentSlug="/smart-key-programming/chevrolet/malibu" brandSlug="chevrolet" />
+
 
       {/* Local SEO */}
       <section className="py-12 bg-background">

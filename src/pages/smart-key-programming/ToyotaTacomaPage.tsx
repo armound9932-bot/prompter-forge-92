@@ -1,5 +1,8 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 import {
   Phone,
   ChevronRight,
@@ -151,6 +154,9 @@ export default function ToyotaTacomaPage() {
           </div>
         </div>
       </section>
+
+      <MidPageCTA vehicleName="Toyota Tacoma" />
+
 
       {/* ===== 3. HOW IMMOBILIZER WORKS ===== */}
       <section className="py-16 bg-muted/50 border-b border-border">

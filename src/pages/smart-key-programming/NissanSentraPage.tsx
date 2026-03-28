@@ -1,6 +1,9 @@
 import { Cpu, Phone, ShieldCheck, AlertTriangle, Wrench, Clock, MapPin, CheckCircle2, Car, Key } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 export default function NissanSentraPage() {
   useEffect(() => {
@@ -103,6 +106,9 @@ export default function NissanSentraPage() {
           </div>
         </div>
       </section>
+
+      <MidPageCTA vehicleName="Nissan Sentra" />
+
 
       {/* How System Works */}
       <section className="py-12 bg-muted/50">
@@ -291,6 +297,9 @@ export default function NissanSentraPage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="sedan" currentSlug="/smart-key-programming/nissan/sentra" brandSlug="nissan" />
+
 
       {/* Local SEO */}
       <section className="py-12 bg-muted/50">
