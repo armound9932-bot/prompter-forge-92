@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 import { Cpu, Phone, CheckCircle, AlertTriangle, Shield, MapPin, ArrowRight } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 export default function FordExplorerPage() {
   useEffect(() => {
-    document.title = "Ford Explorer Key Programming Burbank | Intelligent Access & Smart Key – Burbank Auto Locksmith";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Ford Explorer smart key programming in Burbank. Intelligent Access, push-to-start, all keys lost service. Mobile locksmith with dealer-level tools. Licensed & insured.");
+    setSeoMeta({ title: "Ford Explorer Key Programming Burbank | Intelligent Access & Smart Key – Burbank Auto Locksmith", description: "Ford Explorer smart key programming in Burbank. Intelligent Access, push-to-start, all keys lost service. Mobile locksmith with dealer-level tools. Licensed & insured.", slug: "/smart-key-programming/ford/explorer" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";

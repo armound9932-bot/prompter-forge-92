@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 export default function HondaCrvPage() {
   useEffect(() => {
-    document.title = "Honda CR-V Smart Key Programming Burbank | SUV Keyless Entry & Push-Start – Burbank Auto Locksmith";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Honda CR-V smart key programming in Burbank. SUV keyless entry, push-button start, rear hatch detection repair, all keys lost service. Mobile locksmith, same-day. Licensed & insured.");
+    setSeoMeta({ title: "Honda CR-V Smart Key Programming Burbank | SUV Keyless Entry & Push-Start – Burbank Auto Locksmith", description: "Honda CR-V smart key programming in Burbank. SUV keyless entry, push-button start, rear hatch detection repair, all keys lost service. Mobile locksmith, same-day. Licensed & insured.", slug: "/smart-key-programming/honda/crv" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";

@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 export default function HondaPilotPage() {
   useEffect(() => {
-    document.title = "Honda Pilot Smart Key Programming Burbank | 3-Row SUV Key Replacement – Burbank Auto Locksmith";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Honda Pilot smart key programming & key replacement in Burbank. 3-row SUV keyless entry, push-button start, all keys lost service. Same-day mobile locksmith. Licensed & insured.");
+    setSeoMeta({ title: "Honda Pilot Smart Key Programming Burbank | 3-Row SUV Key Replacement – Burbank Auto Locksmith", description: "Honda Pilot smart key programming & key replacement in Burbank. 3-row SUV keyless entry, push-button start, all keys lost service. Same-day mobile locksmith. Licensed & insured.", slug: "/smart-key-programming/honda/pilot" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";

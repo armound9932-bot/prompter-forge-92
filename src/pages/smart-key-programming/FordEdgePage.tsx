@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 import { Cpu, Phone, CheckCircle, AlertTriangle, Shield, MapPin, ArrowRight } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 export default function FordEdgePage() {
   useEffect(() => {
-    document.title = "Ford Edge Key Programming Burbank | Intelligent Access & Smart Key – Burbank Auto Locksmith";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Ford Edge smart key programming in Burbank. Intelligent Access, push-to-start, all keys lost recovery. Same-day mobile locksmith with Ford diagnostic tools. Licensed & insured.");
+    setSeoMeta({ title: "Ford Edge Key Programming Burbank | Intelligent Access & Smart Key – Burbank Auto Locksmith", description: "Ford Edge smart key programming in Burbank. Intelligent Access, push-to-start, all keys lost recovery. Same-day mobile locksmith with Ford diagnostic tools. Licensed & insured.", slug: "/smart-key-programming/ford/edge" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";

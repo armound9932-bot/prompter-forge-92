@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 import { Phone, Truck, Shield, Wrench, AlertTriangle, Key, MapPin, ChevronRight } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 export default function FordF150Page() {
   useEffect(() => {
-    document.title = "Ford F-150 Key Programming & Replacement Burbank | PATS & Intelligent Access – Burbank Auto Locksmith";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Ford F-150 key programming in Burbank. PATS transponder keys, Intelligent Access smart fobs, all keys lost service. Mobile truck locksmith. Licensed & insured.");
+    setSeoMeta({ title: "Ford F-150 Key Programming & Replacement Burbank | PATS & Intelligent Access – Burbank Auto Locksmith", description: "Ford F-150 key programming in Burbank. PATS transponder keys, Intelligent Access smart fobs, all keys lost service. Mobile truck locksmith. Licensed & insured.", slug: "/smart-key-programming/ford/f150" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
