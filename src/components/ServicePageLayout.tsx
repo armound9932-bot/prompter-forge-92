@@ -143,6 +143,8 @@ export default function ServicePageLayout({ page, extraContent }: { page: Servic
         </div>
       </section>
 
+      {extraContent}
+
       {/* Other Services */}
       <section className="py-14 bg-muted">
         <div className="max-w-4xl mx-auto px-4">
