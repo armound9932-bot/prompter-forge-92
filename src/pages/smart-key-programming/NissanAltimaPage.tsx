@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Cpu, Phone, CheckCircle, AlertTriangle, Shield, MapPin, ArrowRight } from "lucide-react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 export default function NissanAltimaPage() {
   useEffect(() => {

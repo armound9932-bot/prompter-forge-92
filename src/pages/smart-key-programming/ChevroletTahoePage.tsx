@@ -1,6 +1,9 @@
 import { Cpu, Phone, Truck, ShieldCheck, AlertTriangle, CheckCircle2, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 const PAGE_TITLE = "Chevrolet Tahoe Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith";
 const PAGE_DESC = "Chevrolet Tahoe smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2007–2024 Tahoe. Mobile large SUV service.";
@@ -264,6 +267,9 @@ export default function ChevroletTahoePage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/chevrolet/tahoe" brandSlug="chevrolet" />
+
 
       {/* Local SEO */}
       <section className="py-12 bg-muted">

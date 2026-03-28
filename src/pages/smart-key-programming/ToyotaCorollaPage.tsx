@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, MessageCircle, Clock, Shield, Star, ChevronRight, CheckCircle, Cpu, Car, Wrench, AlertTriangle, Key, Award } from "lucide-react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 const PHONE = "8186061684";
 const PHONE_DISPLAY = "(818) 606-1684";
@@ -96,6 +99,8 @@ export default function ToyotaCorollaPage() {
           <span className="flex items-center gap-2"><CheckCircle className="w-5 h-5 text-emerald-400" /> 1-Year Warranty</span>
         </div>
       </div>
+
+      <MidPageCTA vehicleName="Toyota Corolla" />
 
       {/* Conversion Section */}
       <section className="py-10 md:py-14 bg-accent">
@@ -386,6 +391,9 @@ export default function ToyotaCorollaPage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="sedan" currentSlug="/smart-key-programming/toyota/corolla" brandSlug="toyota" />
+
 
       {/* Local SEO */}
       <section className="py-10 bg-muted border-t border-border">

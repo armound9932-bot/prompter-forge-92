@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Phone, Shield, Car, Cpu, CheckCircle, AlertTriangle, Clock, MapPin, Wrench } from "lucide-react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 const defined_faqs = [
   { q: "Can you program a Hyundai Elantra smart key without the original?", a: "Yes. All-keys-lost programming for the Elantra requires extracting the vehicle's PIN code from the SMK (Smart Key Module) and performing an immobilizer reset. We carry the diagnostic tools to complete this on-site in Burbank — no tow to a dealer required." },
@@ -316,6 +319,9 @@ export default function HyundaiElantraPage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="sedan" currentSlug="/smart-key-programming/hyundai/elantra" brandSlug="hyundai" />
+
 
       {/* Local SEO */}
       <section className="py-12 px-4">

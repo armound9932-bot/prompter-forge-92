@@ -1,5 +1,8 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 import {
   Phone,
   ChevronRight,

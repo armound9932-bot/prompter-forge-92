@@ -1,6 +1,9 @@
 import { Phone, ShieldCheck, Clock, Wrench, AlertTriangle, Car, Key, CheckCircle2, Settings, Info } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 export default function HondaCrvPage() {
   useEffect(() => {
@@ -264,6 +267,9 @@ export default function HondaCrvPage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/honda/cr-v" brandSlug="honda" />
+
 
       {/* Local SEO */}
       <section className="py-10 bg-background">

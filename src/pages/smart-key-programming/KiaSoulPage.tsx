@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, Key, ShieldCheck, AlertTriangle, Cpu, Car, CheckCircle, ArrowRight, Wrench, Clock, MapPin, Battery, Settings, Box } from "lucide-react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 export default function KiaSoulPage() {
   useEffect(() => {
@@ -390,6 +393,9 @@ export default function KiaSoulPage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/kia/soul" brandSlug="kia" />
+
 
       {/* Local SEO */}
       <section className="py-12 bg-background">

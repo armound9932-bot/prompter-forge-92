@@ -1,6 +1,9 @@
 import { Cpu, Phone, Truck, ShieldCheck, AlertTriangle, CheckCircle2, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 const PAGE_TITLE = "Chevrolet Suburban Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith";
 const PAGE_DESC = "Chevrolet Suburban smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2007–2024 Suburban. Mobile service for full-size SUVs.";
@@ -297,6 +300,9 @@ export default function ChevroletSuburbanPage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/chevrolet/suburban" brandSlug="chevrolet" />
+
 
       {/* Local SEO */}
       <section className="py-12 bg-background">

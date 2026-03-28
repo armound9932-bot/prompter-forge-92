@@ -1,6 +1,9 @@
 import { Phone, ShieldCheck, Clock, Wrench, AlertTriangle, Car, Key, CheckCircle2, Cpu, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 export default function HondaAccordPage() {
   useEffect(() => {
@@ -243,6 +246,9 @@ export default function HondaAccordPage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="sedan" currentSlug="/smart-key-programming/honda/accord" brandSlug="honda" />
+
 
       {/* Local SEO */}
       <section className="py-10 bg-muted">

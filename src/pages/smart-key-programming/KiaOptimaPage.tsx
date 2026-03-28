@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Phone, Shield, Car, Cpu, CheckCircle, AlertTriangle, MapPin, Wrench } from "lucide-react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 const defined_faqs = [
   { q: "Can you program a Kia Optima smart key without the original?", a: "Yes. All-keys-lost programming on the Optima requires extracting the vehicle-specific PIN code from the immobilizer module and performing a full reset. We handle everything on-site in Burbank — no dealer tow needed." },
@@ -304,6 +307,9 @@ export default function KiaOptimaPage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="sedan" currentSlug="/smart-key-programming/kia/optima" brandSlug="kia" />
+
 
       {/* Local SEO */}
       <section className="py-10 px-4 bg-muted">

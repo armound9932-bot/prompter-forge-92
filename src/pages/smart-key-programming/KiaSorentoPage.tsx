@@ -1,5 +1,8 @@
 import { Cpu, Phone, CheckCircle, AlertTriangle, Info, Car, Shield, MapPin } from "lucide-react";
 import ServicePageLayout from "@/components/ServicePageLayout";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 export default function KiaSorentoPage() {
   return (
@@ -262,6 +265,9 @@ export default function KiaSorentoPage() {
               </div>
             </div>
           </section>
+
+      <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/kia/sorento" brandSlug="kia" />
+
 
           {/* Local SEO */}
           <section className="py-10 bg-background">

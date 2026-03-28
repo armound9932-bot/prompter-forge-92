@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, Truck, Shield, Wrench, AlertTriangle, Key, MapPin, ChevronRight } from "lucide-react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 export default function FordF150Page() {
   useEffect(() => {

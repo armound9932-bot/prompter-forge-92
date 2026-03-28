@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, ShieldCheck, Clock, Car, ChevronRight, Truck, Users, MapPin, Wrench, AlertTriangle, Battery, Zap } from "lucide-react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 const faqItems = [
   {

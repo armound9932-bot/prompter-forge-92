@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Phone, Shield, Car, Cpu, CheckCircle, AlertTriangle, MapPin, Wrench } from "lucide-react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 const defined_faqs = [
   { q: "Can you program a Hyundai Sonata smart key without the original?", a: "Yes. All-keys-lost programming on the Sonata requires PIN code extraction from the SMK module and a full immobilizer reset cycle. We carry the Hyundai-specific diagnostic tools to complete this at your location in Burbank — no dealership visit needed." },
@@ -295,6 +298,9 @@ export default function HyundaiSonataPage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="sedan" currentSlug="/smart-key-programming/hyundai/sonata" brandSlug="hyundai" />
+
 
       {/* Local SEO */}
       <section className="py-10 px-4 bg-muted">

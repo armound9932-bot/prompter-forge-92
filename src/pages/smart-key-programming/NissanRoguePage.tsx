@@ -1,6 +1,9 @@
 import { Cpu, Phone, ShieldCheck, AlertTriangle, Wrench, Clock, MapPin, CheckCircle2, Car } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 export default function NissanRoguePage() {
   useEffect(() => {
@@ -266,6 +269,9 @@ export default function NissanRoguePage() {
           </div>
         </div>
       </section>
+
+      <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/nissan/rogue" brandSlug="nissan" />
+
 
       {/* Local SEO */}
       <section className="py-12 bg-muted/50">

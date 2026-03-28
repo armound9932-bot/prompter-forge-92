@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, Shield, Clock, MapPin, Wrench, AlertTriangle, ChevronRight } from "lucide-react";
+import MidPageCTA from "@/components/MidPageCTA";
+import RelatedModelsSection from "@/components/RelatedModelsSection";
+
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -337,6 +340,9 @@ export default function HondaOdysseyPage() {
             </div>
           </div>
         </section>
+
+      <RelatedModelsSection category="minivan" currentSlug="/smart-key-programming/honda/odyssey" brandSlug="honda" />
+
 
         {/* Local SEO */}
         <section className="py-12 bg-background">
