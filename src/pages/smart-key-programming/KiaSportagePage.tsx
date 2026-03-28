@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Phone, Shield, Car, Cpu, CheckCircle, AlertTriangle, MapPin, Wrench } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 const defined_faqs = [
@@ -14,11 +15,7 @@ const defined_faqs = [
 
 export default function KiaSportagePage() {
   useEffect(() => {
-    document.title = "Kia Sportage Smart Key Programming Burbank | Compact SUV Keyless Service – Burbank Auto Locksmith";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute("content", "Expert Kia Sportage smart key programming in Burbank. SUV antenna diagnostics, PIN code extraction, immobilizer reset. Mobile locksmith — no dealer needed.");
-    }
+    setSeoMeta({ title: "Kia Sportage Smart Key Programming Burbank | Compact SUV Keyless Service – Burbank Auto Locksmith", description: "Expert Kia Sportage smart key programming in Burbank. SUV antenna diagnostics, PIN code extraction, immobilizer reset. Mobile locksmith — no dealer needed.", slug: "/smart-key-programming/kia/sportage" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({

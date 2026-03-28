@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 const PAGE_TITLE = "Chevrolet Equinox Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith";
@@ -21,9 +22,7 @@ const faqSchema = {
 
 export default function ChevroletEquinoxPage() {
   useEffect(() => {
-    document.title = PAGE_TITLE;
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", PAGE_DESC);
+    setSeoMeta({ title: "Chevrolet Equinox Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith", description: "Chevrolet Equinox smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2010–2024 Equinox. Mobile SUV service.", slug: "/smart-key-programming/chevrolet/equinox" });
     else {
       const m = document.createElement("meta");
       m.name = "description";

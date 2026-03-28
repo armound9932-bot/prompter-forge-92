@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Phone, Shield, Car, Cpu, CheckCircle, AlertTriangle, MapPin, Wrench } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 const defined_faqs = [
@@ -14,11 +15,7 @@ const defined_faqs = [
 
 export default function HyundaiPalisadePage() {
   useEffect(() => {
-    document.title = "Hyundai Palisade Smart Key Programming Burbank | Premium SUV SMK Service – Burbank Auto Locksmith";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute("content", "Expert Hyundai Palisade smart key programming in Burbank. Premium SUV SMK diagnostics, PIN extraction, immobilizer reset. Mobile locksmith — no dealer needed.");
-    }
+    setSeoMeta({ title: "Hyundai Palisade Smart Key Programming Burbank | Premium SUV SMK Service – Burbank Auto Locksmith", description: "Expert Hyundai Palisade smart key programming in Burbank. Premium SUV SMK diagnostics, PIN extraction, immobilizer reset. Mobile locksmith — no dealer needed.", slug: "/smart-key-programming/hyundai/palisade" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({

@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Phone, Shield, Car, Cpu, CheckCircle, AlertTriangle, Clock, MapPin, Wrench } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 const defined_faqs = [
@@ -14,11 +15,7 @@ const defined_faqs = [
 
 export default function HyundaiElantraPage() {
   useEffect(() => {
-    document.title = "Hyundai Elantra Smart Key Programming Burbank | SMK System – Burbank Auto Locksmith";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute("content", "Expert Hyundai Elantra smart key programming in Burbank. SMK module diagnostics, PIN code extraction, immobilizer reset. Mobile locksmith service — no dealer needed.");
-    }
+    setSeoMeta({ title: "Hyundai Elantra Smart Key Programming Burbank | SMK System – Burbank Auto Locksmith", description: "Expert Hyundai Elantra smart key programming in Burbank. SMK module diagnostics, PIN code extraction, immobilizer reset. Mobile locksmith service — no dealer needed.", slug: "/smart-key-programming/hyundai/elantra" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({

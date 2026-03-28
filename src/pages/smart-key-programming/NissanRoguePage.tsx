@@ -3,16 +3,12 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 export default function NissanRoguePage() {
   useEffect(() => {
-    document.title = "Nissan Rogue Smart Key Programming Burbank | Intelligent Key – Burbank Auto Locksmith";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute("content", "Professional Nissan Rogue Intelligent Key programming in Burbank. BCM reset, PIN code extraction, proximity key replacement for all Rogue generations. Mobile locksmith service.");
-    }
-
+    setSeoMeta({ title: "Nissan Rogue Smart Key Programming Burbank | Intelligent Key – Burbank Auto Locksmith", description: "Professional Nissan Rogue Intelligent Key programming in Burbank. BCM reset, PIN code extraction, proximity key replacement for all Rogue generations. Mobile locksmith service.", slug: "/smart-key-programming/nissan/rogue" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({

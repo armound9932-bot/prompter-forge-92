@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Phone, Shield, Car, Cpu, CheckCircle, AlertTriangle, MapPin, Wrench } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 const defined_faqs = [
@@ -14,11 +15,7 @@ const defined_faqs = [
 
 export default function KiaOptimaPage() {
   useEffect(() => {
-    document.title = "Kia Optima Smart Key Programming Burbank | Keyless Entry & Immobilizer – Burbank Auto Locksmith";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute("content", "Expert Kia Optima smart key programming in Burbank. Immobilizer diagnostics, PIN code extraction, keyless entry repair. Mobile locksmith — no dealer needed.");
-    }
+    setSeoMeta({ title: "Kia Optima Smart Key Programming Burbank | Keyless Entry & Immobilizer – Burbank Auto Locksmith", description: "Expert Kia Optima smart key programming in Burbank. Immobilizer diagnostics, PIN code extraction, keyless entry repair. Mobile locksmith — no dealer needed.", slug: "/smart-key-programming/kia/optima" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({

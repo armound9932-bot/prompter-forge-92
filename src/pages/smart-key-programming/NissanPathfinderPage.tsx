@@ -3,16 +3,12 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 export default function NissanPathfinderPage() {
   useEffect(() => {
-    document.title = "Nissan Pathfinder Smart Key Programming Burbank | Intelligent Key – Burbank Auto Locksmith";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute("content", "Professional Nissan Pathfinder Intelligent Key programming in Burbank. BCM reset, PIN extraction, 3-row SUV antenna diagnostics for all Pathfinder generations. Mobile locksmith service.");
-    }
-
+    setSeoMeta({ title: "Nissan Pathfinder Smart Key Programming Burbank | Intelligent Key – Burbank Auto Locksmith", description: "Professional Nissan Pathfinder Intelligent Key programming in Burbank. BCM reset, PIN extraction, 3-row SUV antenna diagnostics for all Pathfinder generations. Mobile locksmith service.", slug: "/smart-key-programming/nissan/pathfinder" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({
