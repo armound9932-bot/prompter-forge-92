@@ -9,6 +9,7 @@ interface BrandData {
   specialty: string;
   fobType: string;
   commonIssue: string;
+  additionalModels?: string[];
 }
 
 const brandData: Record<string, BrandData> = {
