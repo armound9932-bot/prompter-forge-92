@@ -15,12 +15,13 @@ import ToyotaTacomaPage from "./pages/smart-key-programming/ToyotaTacomaPage";
 import ToyotaPriusPage from "./pages/smart-key-programming/ToyotaPriusPage";
 import ToyotaSiennaPage from "./pages/smart-key-programming/ToyotaSiennaPage";
 import HondaCivicPage from "./pages/smart-key-programming/HondaCivicPage";
+import HondaAccordPage from "./pages/smart-key-programming/HondaAccordPage";
 
 const SMART_KEY_BRANDS = ["toyota", "honda", "ford", "chevrolet", "nissan", "kia", "hyundai"];
 
 const SMART_KEY_MODELS: Record<string, string[]> = {
   toyota: [],
-  honda: ["accord", "cr-v"],
+  honda: ["cr-v"],
   ford: ["f-150", "escape", "explorer"],
   chevrolet: ["malibu", "equinox", "silverado"],
   nissan: ["altima", "sentra", "rogue"],
