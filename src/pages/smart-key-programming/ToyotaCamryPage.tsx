@@ -357,6 +357,29 @@ export default function ToyotaCamryPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="py-14 md:py-20 bg-card border-t border-border">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-black text-foreground mb-8">Toyota Camry Smart Key FAQ</h2>
+          <div className="space-y-3">
+            {[
+              { q: "Can you program a Toyota Camry smart key without the original?", a: "Yes. We perform full immobilizer resets for all Camry generations. On 2018+ models (XV70), this involves EEPROM-level security access via the BCM — no original key or dealer appointment required." },
+              { q: "How long does Camry smart key programming take?", a: "Most Toyota Camry smart key jobs are completed in 20–30 minutes at your location. All-keys-lost on newer encrypted models may take slightly longer due to the security initialization process." },
+              { q: "Is it cheaper than the Toyota dealership?", a: "Significantly. Dealerships typically charge $300–$500+ for a Camry smart key with programming. We offer the same OEM-quality service at a fraction of the cost — and we come to you." },
+              { q: "My Camry says 'Key Not Detected' — what should I do?", a: "First, replace the fob battery (CR2032) — signal drops below usable levels around 2.8V. If the warning persists, hold the fob against the start button to use the backup coil. If it still won't start, call us for an on-site diagnostic." },
+            ].map((faq, i) => (
+              <details key={i} className="rounded-2xl border border-border bg-muted overflow-hidden group">
+                <summary className="flex items-center justify-between px-6 py-5 cursor-pointer font-semibold text-foreground">
+                  {faq.q}
+                  <ChevronRight className="w-5 h-5 text-accent shrink-0 transition-transform group-open:rotate-90" />
+                </summary>
+                <div className="px-6 pb-5 text-muted-foreground text-sm leading-relaxed">{faq.a}</div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Local SEO */}
       <section className="py-10 bg-muted border-t border-border">
         <div className="max-w-4xl mx-auto px-4">
