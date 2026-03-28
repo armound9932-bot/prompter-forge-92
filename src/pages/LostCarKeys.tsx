@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, MessageCircle, Clock, Shield, Star, ChevronRight, CheckCircle, Key, Car, AlertTriangle, MapPin, Award } from "lucide-react";
+import { setSeoMeta } from "@/utils/seo";
 
 const PHONE = "8186061684";
 const PHONE_DISPLAY = "(818) 606-1684";
