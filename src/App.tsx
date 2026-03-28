@@ -31,6 +31,7 @@ import ChevroletSilveradoPage from "./pages/smart-key-programming/ChevroletSilve
 import ChevroletMalibuPage from "./pages/smart-key-programming/ChevroletMalibuPage";
 import ChevroletEquinoxPage from "./pages/smart-key-programming/ChevroletEquinoxPage";
 import ChevroletSuburbanPage from "./pages/smart-key-programming/ChevroletSuburbanPage";
+import ChevroletTahoePage from "./pages/smart-key-programming/ChevroletTahoePage";
 
 const SMART_KEY_BRANDS = ["toyota", "honda", "ford", "chevrolet", "nissan", "kia", "hyundai"];
 
@@ -77,6 +78,7 @@ function App() {
       <Route path="/smart-key-programming/chevrolet/malibu" element={<ChevroletMalibuPage />} />
       <Route path="/smart-key-programming/chevrolet/equinox" element={<ChevroletEquinoxPage />} />
       <Route path="/smart-key-programming/chevrolet/suburban" element={<ChevroletSuburbanPage />} />
+      <Route path="/smart-key-programming/chevrolet/tahoe" element={<ChevroletTahoePage />} />
       {SMART_KEY_BRANDS.map(brand => (
         <Route key={brand} path={`/smart-key-programming/${brand}`} element={<SmartKeyBrandPage brand={brand} />} />
       ))}
