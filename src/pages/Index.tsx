@@ -126,7 +126,7 @@ function SmartKeyBrandsSection() {
   );
 }
 
-
+function UrgencyBanner() {
   return (
     <div className="bg-accent text-accent-foreground py-3 text-center font-bold text-sm md:text-base">
       🚨 Emergency Locksmith Available Now — Fast Mobile Service in Burbank, Glendale &amp; North Hollywood
