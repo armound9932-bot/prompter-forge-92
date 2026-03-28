@@ -40,6 +40,7 @@ import HyundaiPalisadePage from "./pages/smart-key-programming/HyundaiPalisadePa
 import KiaOptimaPage from "./pages/smart-key-programming/KiaOptimaPage";
 import KiaSportagePage from "./pages/smart-key-programming/KiaSportagePage";
 import KiaSorentoPage from "./pages/smart-key-programming/KiaSorentoPage";
+import KiaFortePage from "./pages/smart-key-programming/KiaFortePage";
 
 const SMART_KEY_BRANDS = ["toyota", "honda", "ford", "chevrolet", "nissan", "kia", "hyundai"];
 
@@ -49,7 +50,7 @@ const SMART_KEY_MODELS: Record<string, string[]> = {
   ford: ["escape"],
   chevrolet: [],
   nissan: [],
-  kia: ["forte"],
+  kia: [],
   hyundai: [],
 };
 
