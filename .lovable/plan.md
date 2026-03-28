@@ -1,63 +1,56 @@
 
 
-## Full SEO Audit Results & Fix Plan
+## High-Conversion Landing Page Upgrade Plan
 
-### Issues Found
+### What's Needed
 
-**CRITICAL - Missing Canonical Tags (32 pages)**
-Only 3 model pages (Camry, Corolla, RAV4) and pages using `ServicePageLayout` set canonical URLs. The remaining 32 model pages (Honda Civic, Accord, CR-V, Pilot, Odyssey; Ford F-150, Explorer, Fusion, Edge; all Chevrolet, Nissan, Hyundai, and Kia pages) do NOT set canonical tags. This causes duplicate content risk.
-
-**CRITICAL - No Open Graph / Twitter Tags on Inner Pages**
-Only `index.html` has OG and Twitter meta tags. All 40+ service and model pages lack dynamic OG tags. When shared on social media, they'll show the homepage's title/description/image instead of page-specific content.
-
-**MODERATE - Inconsistent Meta Description Handling**
-Some pages use `setAttribute("content", ...)` which fails if the meta tag doesn't exist yet (first navigation). Others use the `setMeta()` helper that creates the tag if missing. Pages with the simpler pattern will silently fail to set descriptions on direct navigation.
-
-**MODERATE - No Service/LocalBusiness Schema on Model Pages**
-Model pages only inject `FAQPage` schema. They lack `Service` or `LocalBusiness` structured data, missing an opportunity for rich results.
-
-**MINOR - Homepage Title Not Reset on Back-Navigation**
-When a user navigates from a model page back to the homepage, `document.title` stays as the last page's title because `Index.tsx` doesn't reset it.
-
-**MINOR - Ford Escape Link Points to Generic Page**
-`SmartKeyBrandPage.tsx` links to `/smart-key-programming/ford/escape` which renders via the generic `SmartKeyModelPage` component with minimal content. Not harmful but inconsistent with the dedicated-page strategy.
-
-**OK - Sitemap**: Complete with all 49 URLs, correct priorities, lastmod dates present.
-**OK - robots.txt**: Properly configured with sitemap reference.
-**OK - Heading hierarchy**: All pages follow H1 > H2 > H3 pattern correctly.
-**OK - index.html**: LocalBusiness schema, OG tags, Twitter cards all properly configured.
+Most model pages already have FAQs, CTAs, local SEO blocks, and internal links. What's missing are dedicated **pricing**, **service time**, and **emergency** sections as standalone, scannable blocks. Rather than editing 35 files with duplicated JSX, we'll create two new reusable components and insert them into every page.
 
 ---
 
-### Fix Plan
+### Step 1: Create `PricingAndTimeSection` Component
 
-#### Step 1: Create a shared SEO utility function
-**New file: `src/utils/seo.ts`**
-- `setSeoMeta({ title, description, slug, ogImage? })` function that handles:
-  - `document.title`
-  - Meta description (create if missing)
-  - Canonical URL
-  - OG title, description, URL, image, type
-  - Twitter card tags
-- Single import replaces 5-10 lines of boilerplate in every page
+**New file: `src/components/PricingAndTimeSection.tsx`**
 
-#### Step 2: Update all 32 model pages missing canonical tags
-**Edit 32 files** in `src/pages/smart-key-programming/`:
-- Replace manual `useEffect` SEO code with `setSeoMeta()` call
-- This automatically adds canonical + OG + Twitter tags to every page
-- Pages affected: all Honda, Ford, Chevrolet, Nissan, Hyundai, Kia model pages + Highlander, Tacoma, Prius, Sienna
+Accepts `vehicleName` prop. Renders two side-by-side cards:
 
-#### Step 3: Fix homepage title reset
-**Edit: `src/pages/Index.tsx`**
-- Add `useEffect` to reset `document.title` and canonical to homepage values on mount
+- **Pricing card**: "Duplicate key: $120–$180" / "All keys lost: $250–$450" / disclaimer about year & system
+- **Time card**: "Service time: 20–60 minutes" / "We come to your location" / "No towing needed"
 
-#### Step 4: Update LostCarKeys.tsx
-**Edit: `src/pages/LostCarKeys.tsx`**
-- Replace manual SEO code with `setSeoMeta()` call for consistency and OG tag support
+Includes trust line: "Licensed & Insured – CA Locksmith License LCO8538" and service area mention (Burbank, Glendale, Pasadena, North Hollywood).
+
+---
+
+### Step 2: Create `EmergencyCallSection` Component
+
+**New file: `src/components/EmergencyCallSection.tsx`**
+
+Accepts `vehicleName` prop. Bold emergency block with:
+
+- "Locked out right now?" / "Lost all keys?"
+- "Call now for immediate service — we arrive in 15–30 minutes"
+- Large Call Now button + WhatsApp button
+- Urgency styling (red/orange accent border)
+
+---
+
+### Step 3: Insert Components into All 35 Model Pages
+
+**Edit all files in `src/pages/smart-key-programming/`**
+
+Each page gets two new imports and two new component renders:
+- `<PricingAndTimeSection vehicleName="..." />` inserted after the main content sections (before FAQ)
+- `<EmergencyCallSection vehicleName="..." />` inserted after the FAQ section (before the final CTA)
+
+This adds the pricing, time, trust, and emergency sections without removing any existing content. The existing MidPageCTA, LocalSeoBlock, RelatedModelsSection, and bottom CTA remain untouched.
 
 ---
 
 ### Technical Details
 
-The `setSeoMeta` utility will use the same pattern already proven in `ServicePageLayout.tsx` (create-if-missing), extended with OG/Twitter tags. All 35+ page files will be edited to import and call this single function, replacing their individual meta-handling code. No visual changes -- purely SEO infrastructure.
+- Both components are stateless, receiving only `vehicleName` as a prop
+- Phone/WhatsApp constants reused from existing pattern
+- Styling follows existing Tailwind patterns (card borders, accent colors, rounded-2xl)
+- No layout changes — new sections slot between existing ones
+- 35 model page files edited with 2 import lines + 2 JSX lines each
 
