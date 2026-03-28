@@ -13,7 +13,7 @@ import ToyotaCorollaPage from "./pages/smart-key-programming/ToyotaCorollaPage";
 const SMART_KEY_BRANDS = ["toyota", "honda", "ford", "chevrolet", "nissan", "kia", "hyundai"];
 
 const SMART_KEY_MODELS: Record<string, string[]> = {
-  toyota: ["corolla", "prius", "rav4", "highlander"],
+  toyota: ["prius", "rav4", "highlander"],
   honda: ["civic", "accord", "cr-v"],
   ford: ["f-150", "escape", "explorer"],
   chevrolet: ["malibu", "equinox", "silverado"],
