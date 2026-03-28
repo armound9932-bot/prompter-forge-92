@@ -5,6 +5,8 @@ import MidPageCTA from "@/components/MidPageCTA";
 import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
+import PricingAndTimeSection from "@/components/PricingAndTimeSection";
+import EmergencyCallSection from "@/components/EmergencyCallSection";
 
 
 export default function KiaFortePage() {
@@ -334,6 +336,8 @@ export default function KiaFortePage() {
             </div>
           </div>
         </section>
+      <PricingAndTimeSection vehicleName="Kia Forte" />
+
 
         {/* FAQ */}
         <section className="py-12 bg-muted/50">
@@ -354,6 +358,8 @@ export default function KiaFortePage() {
             </div>
           </div>
         </section>
+      <EmergencyCallSection vehicleName="Kia Forte" />
+
 
         {/* CTA */}
         <section className="py-16 bg-gradient-to-b from-primary/5 to-primary/10">

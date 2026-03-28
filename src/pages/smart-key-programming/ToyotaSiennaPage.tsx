@@ -5,6 +5,8 @@ import MidPageCTA from "@/components/MidPageCTA";
 import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
+import PricingAndTimeSection from "@/components/PricingAndTimeSection";
+import EmergencyCallSection from "@/components/EmergencyCallSection";
 
 
 const faqItems = [
@@ -287,6 +289,8 @@ export default function ToyotaSiennaPage() {
           </p>
         </div>
       </section>
+      <PricingAndTimeSection vehicleName="Toyota Sienna" />
+
 
       {/* FAQ */}
       <section className="py-12 md:py-16 bg-background">
@@ -302,6 +306,8 @@ export default function ToyotaSiennaPage() {
           </div>
         </div>
       </section>
+      <EmergencyCallSection vehicleName="Toyota Sienna" />
+
 
       {/* CTA */}
       <section className="py-14 md:py-20 bg-gradient-to-br from-accent/95 to-accent">

@@ -5,6 +5,8 @@ import MidPageCTA from "@/components/MidPageCTA";
 import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
+import PricingAndTimeSection from "@/components/PricingAndTimeSection";
+import EmergencyCallSection from "@/components/EmergencyCallSection";
 
 
 export default function FordF150Page() {
@@ -352,6 +354,8 @@ export default function FordF150Page() {
           </div>
         </div>
       </section>
+      <PricingAndTimeSection vehicleName="Ford F-150" />
+
 
       {/* FAQ */}
       <section className="py-14 bg-background">
@@ -372,6 +376,8 @@ export default function FordF150Page() {
           </div>
         </div>
       </section>
+      <EmergencyCallSection vehicleName="Ford F-150" />
+
 
       {/* CTA */}
       <section className="py-16 bg-gradient-to-br from-accent/90 to-accent text-accent-foreground">

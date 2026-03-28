@@ -5,6 +5,8 @@ import MidPageCTA from "@/components/MidPageCTA";
 import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
+import PricingAndTimeSection from "@/components/PricingAndTimeSection";
+import EmergencyCallSection from "@/components/EmergencyCallSection";
 
 
 const defined_faqs = [
@@ -349,6 +351,8 @@ export default function KiaSportagePage() {
           </div>
         </div>
       </section>
+      <PricingAndTimeSection vehicleName="Kia Sportage" />
+
 
       {/* FAQ */}
       <section className="py-12 px-4">
@@ -364,6 +368,8 @@ export default function KiaSportagePage() {
           </div>
         </div>
       </section>
+      <EmergencyCallSection vehicleName="Kia Sportage" />
+
 
       {/* CTA */}
       <section className="py-14 px-4 bg-gradient-to-br from-accent/90 to-accent">

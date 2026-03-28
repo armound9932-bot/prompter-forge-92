@@ -5,6 +5,8 @@ import MidPageCTA from "@/components/MidPageCTA";
 import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
+import PricingAndTimeSection from "@/components/PricingAndTimeSection";
+import EmergencyCallSection from "@/components/EmergencyCallSection";
 
 
 const PAGE_TITLE = "Chevrolet Equinox Key Programming in Burbank, CA | Burbank Auto Locksmith";
@@ -322,6 +324,8 @@ export default function ChevroletEquinoxPage() {
           </div>
         </div>
       </section>
+      <PricingAndTimeSection vehicleName="Chevrolet Equinox" />
+
 
       {/* FAQ */}
       <section className="py-12 bg-muted">
@@ -340,6 +344,8 @@ export default function ChevroletEquinoxPage() {
           </div>
         </div>
       </section>
+      <EmergencyCallSection vehicleName="Chevrolet Equinox" />
+
 
       {/* CTA */}
       <section className="py-16 bg-primary text-primary-foreground">

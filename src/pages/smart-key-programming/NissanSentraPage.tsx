@@ -5,6 +5,8 @@ import MidPageCTA from "@/components/MidPageCTA";
 import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
+import PricingAndTimeSection from "@/components/PricingAndTimeSection";
+import EmergencyCallSection from "@/components/EmergencyCallSection";
 
 
 export default function NissanSentraPage() {
@@ -334,6 +336,8 @@ export default function NissanSentraPage() {
           </div>
         </div>
       </section>
+      <PricingAndTimeSection vehicleName="Nissan Sentra" />
+
 
       {/* FAQ */}
       <section className="py-12 bg-background">
@@ -354,6 +358,8 @@ export default function NissanSentraPage() {
           </div>
         </div>
       </section>
+      <EmergencyCallSection vehicleName="Nissan Sentra" />
+
 
       {/* CTA */}
       <section className="py-14 bg-primary text-primary-foreground">

@@ -5,6 +5,8 @@ import MidPageCTA from "@/components/MidPageCTA";
 import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
+import PricingAndTimeSection from "@/components/PricingAndTimeSection";
+import EmergencyCallSection from "@/components/EmergencyCallSection";
 
 
 const defined_faqs = [
@@ -360,6 +362,8 @@ export default function HyundaiElantraPage() {
           </div>
         </div>
       </section>
+      <PricingAndTimeSection vehicleName="Hyundai Elantra" />
+
 
       {/* FAQ */}
       <section className="py-10 px-4 bg-muted">
@@ -375,6 +379,8 @@ export default function HyundaiElantraPage() {
           </div>
         </div>
       </section>
+      <EmergencyCallSection vehicleName="Hyundai Elantra" />
+
 
       {/* CTA */}
       <section className="py-14 px-4 bg-gradient-to-br from-accent/90 to-accent">

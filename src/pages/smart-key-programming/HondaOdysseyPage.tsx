@@ -5,6 +5,8 @@ import MidPageCTA from "@/components/MidPageCTA";
 import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
+import PricingAndTimeSection from "@/components/PricingAndTimeSection";
+import EmergencyCallSection from "@/components/EmergencyCallSection";
 
 
 const faqSchema = {
@@ -370,6 +372,8 @@ export default function HondaOdysseyPage() {
             </div>
           </div>
         </section>
+      <PricingAndTimeSection vehicleName="Honda Odyssey" />
+
 
         {/* FAQ */}
         <section className="py-12 bg-muted">
@@ -390,6 +394,8 @@ export default function HondaOdysseyPage() {
             </div>
           </div>
         </section>
+      <EmergencyCallSection vehicleName="Honda Odyssey" />
+
 
         {/* CTA */}
         <section className="py-14 bg-gradient-to-r from-primary/10 to-accent/10">

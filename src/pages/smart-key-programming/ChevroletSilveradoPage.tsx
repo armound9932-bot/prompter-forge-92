@@ -5,6 +5,8 @@ import MidPageCTA from "@/components/MidPageCTA";
 import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
+import PricingAndTimeSection from "@/components/PricingAndTimeSection";
+import EmergencyCallSection from "@/components/EmergencyCallSection";
 
 
 const PAGE_TITLE = "Chevrolet Silverado Key Programming in Burbank, CA | Burbank Auto Locksmith";
@@ -319,6 +321,8 @@ export default function ChevroletSilveradoPage() {
           </div>
         </div>
       </section>
+      <PricingAndTimeSection vehicleName="Chevrolet Silverado" />
+
 
       {/* FAQ */}
       <section className="py-12 bg-muted">
@@ -337,6 +341,8 @@ export default function ChevroletSilveradoPage() {
           </div>
         </div>
       </section>
+      <EmergencyCallSection vehicleName="Chevrolet Silverado" />
+
 
       {/* CTA */}
       <section className="py-16 bg-primary text-primary-foreground">

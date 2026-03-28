@@ -5,6 +5,8 @@ import MidPageCTA from "@/components/MidPageCTA";
 import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
+import PricingAndTimeSection from "@/components/PricingAndTimeSection";
+import EmergencyCallSection from "@/components/EmergencyCallSection";
 
 
 export default function KiaSoulPage() {
@@ -432,6 +434,8 @@ export default function KiaSoulPage() {
           </div>
         </div>
       </section>
+      <PricingAndTimeSection vehicleName="Kia Soul" />
+
 
       {/* FAQ */}
       <section className="py-12 bg-muted/50">
@@ -455,6 +459,8 @@ export default function KiaSoulPage() {
           </div>
         </div>
       </section>
+      <EmergencyCallSection vehicleName="Kia Soul" />
+
 
       {/* CTA */}
       <section className="py-16 bg-primary text-primary-foreground">
