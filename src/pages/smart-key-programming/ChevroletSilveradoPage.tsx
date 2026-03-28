@@ -23,12 +23,6 @@ const faqSchema = {
 export default function ChevroletSilveradoPage() {
   useEffect(() => {
     setSeoMeta({ title: "Chevrolet Silverado Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith", description: "Chevrolet Silverado smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2007–2024 Silverado. Mobile truck service.", slug: "/smart-key-programming/chevrolet/silverado" });
-    else {
-      const m = document.createElement("meta");
-      m.name = "description";
-      m.content = PAGE_DESC;
-      document.head.appendChild(m);
-    }
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.text = JSON.stringify(faqSchema);

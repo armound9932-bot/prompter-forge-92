@@ -23,12 +23,6 @@ const faqSchema = {
 export default function ChevroletSuburbanPage() {
   useEffect(() => {
     setSeoMeta({ title: "Chevrolet Suburban Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith", description: "Chevrolet Suburban smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2007–2024 Suburban. Mobile service for full-size SUVs.", slug: "/smart-key-programming/chevrolet/suburban" });
-    else {
-      const m = document.createElement("meta");
-      m.name = "description";
-      m.content = PAGE_DESC;
-      document.head.appendChild(m);
-    }
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.text = JSON.stringify(faqSchema);
