@@ -153,7 +153,7 @@ export default function KiaSorentoPage() {
                 </div>
                 <div className="bg-card rounded-xl p-5 border border-border">
                   <h3 className="font-bold text-foreground mb-3 flex items-center gap-2">
-                    <AlertTriangle className="w-4 h-4 text-orange-500" />
+                    <AlertTriangle className="w-4 h-4 text-destructive" />
                     All Keys Lost
                   </h3>
                   <ul className="space-y-2 text-muted-foreground text-xs">
