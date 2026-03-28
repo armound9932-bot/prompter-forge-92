@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 import {
   Phone,
@@ -39,15 +40,7 @@ const faqItems = [
 
 export default function ToyotaTacomaPage() {
   useEffect(() => {
-    document.title =
-      "Toyota Tacoma Key Replacement & Programming Burbank | Truck Key Specialist – Burbank Auto Locksmith";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute(
-        "content",
-        "Toyota Tacoma key replacement & programming in Burbank. Transponder keys, smart keys, ignition repair. All years 2005–2024+. Same-day mobile truck locksmith."
-      );
-    }
+    setSeoMeta({ title: "Toyota Tacoma Key Replacement & Programming Burbank | Truck Key Specialist – Burbank Auto Locksmith", description: "Toyota Tacoma key replacement & programming in Burbank. Transponder keys, smart keys, ignition repair. All years 2005–2024+. Same-day mobile truck locksmith.", slug: "/smart-key-programming/toyota/tacoma" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({
