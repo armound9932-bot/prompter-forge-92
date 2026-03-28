@@ -8,11 +8,12 @@ import SmartKeyProgramming from "./pages/SmartKeyProgramming";
 import SmartKeyBrandPage from "./pages/smart-key-programming/SmartKeyBrandPage";
 import SmartKeyModelPage from "./pages/smart-key-programming/SmartKeyModelPage";
 import ToyotaCamryPage from "./pages/smart-key-programming/ToyotaCamryPage";
+import ToyotaCorollaPage from "./pages/smart-key-programming/ToyotaCorollaPage";
 
 const SMART_KEY_BRANDS = ["toyota", "honda", "ford", "chevrolet", "nissan", "kia", "hyundai"];
 
 const SMART_KEY_MODELS: Record<string, string[]> = {
-  toyota: ["corolla", "prius", "rav4", "highlander"],
+  toyota: ["prius", "rav4", "highlander"],
   honda: ["civic", "accord", "cr-v"],
   ford: ["f-150", "escape", "explorer"],
   chevrolet: ["malibu", "equinox", "silverado"],
@@ -31,6 +32,7 @@ function App() {
       <Route path="/ignition-repair" element={<IgnitionRepair />} />
       <Route path="/smart-key-programming" element={<SmartKeyProgramming />} />
       <Route path="/smart-key-programming/toyota/camry" element={<ToyotaCamryPage />} />
+      <Route path="/smart-key-programming/toyota/corolla" element={<ToyotaCorollaPage />} />
       {SMART_KEY_BRANDS.map(brand => (
         <Route key={brand} path={`/smart-key-programming/${brand}`} element={<SmartKeyBrandPage brand={brand} />} />
       ))}
