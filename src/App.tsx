@@ -22,6 +22,7 @@ import HondaOdysseyPage from "./pages/smart-key-programming/HondaOdysseyPage";
 import FordF150Page from "./pages/smart-key-programming/FordF150Page";
 import FordExplorerPage from "./pages/smart-key-programming/FordExplorerPage";
 import FordFusionPage from "./pages/smart-key-programming/FordFusionPage";
+import FordEdgePage from "./pages/smart-key-programming/FordEdgePage";
 
 const SMART_KEY_BRANDS = ["toyota", "honda", "ford", "chevrolet", "nissan", "kia", "hyundai"];
 
@@ -59,6 +60,7 @@ function App() {
       <Route path="/smart-key-programming/ford/f-150" element={<FordF150Page />} />
       <Route path="/smart-key-programming/ford/explorer" element={<FordExplorerPage />} />
       <Route path="/smart-key-programming/ford/fusion" element={<FordFusionPage />} />
+      <Route path="/smart-key-programming/ford/edge" element={<FordEdgePage />} />
       {SMART_KEY_BRANDS.map(brand => (
         <Route key={brand} path={`/smart-key-programming/${brand}`} element={<SmartKeyBrandPage brand={brand} />} />
       ))}
