@@ -8,6 +8,7 @@ import SmartKeyProgramming from "./pages/SmartKeyProgramming";
 import SmartKeyBrandPage from "./pages/smart-key-programming/SmartKeyBrandPage";
 import SmartKeyModelPage from "./pages/smart-key-programming/SmartKeyModelPage";
 import ToyotaCamryPage from "./pages/smart-key-programming/ToyotaCamryPage";
+import ToyotaCorollaPage from "./pages/smart-key-programming/ToyotaCorollaPage";
 
 const SMART_KEY_BRANDS = ["toyota", "honda", "ford", "chevrolet", "nissan", "kia", "hyundai"];
 
