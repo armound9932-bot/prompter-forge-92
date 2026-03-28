@@ -636,7 +636,7 @@ function FloatingReviewButton({ reviewsSectionRef }: { reviewsSectionRef: React.
 
   return (
     <a
-      href="https://maps.app.goo.gl/ZxvrjzHunakGa8WV8"
+      href="https://maps.app.goo.gl/vtRt23VC2Bfv3Jd49"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed right-4 z-50 inline-flex items-center gap-2 px-5 py-3 rounded-full bg-accent text-accent-foreground font-bold text-sm shadow-2xl hover:brightness-110 hover:-translate-y-0.5 transition-all animate-fade-in bottom-20 md:bottom-6"
