@@ -9,16 +9,18 @@ interface BrandData {
   specialty: string;
   fobType: string;
   commonIssue: string;
+  additionalModels?: string[];
 }
 
 const brandData: Record<string, BrandData> = {
   toyota: {
     brand: "Toyota",
     slug: "/smart-key-programming/toyota",
-    models: "Camry, Corolla, RAV4, Highlander, Tacoma, 4Runner, Prius, and Tundra",
+    models: "Camry, Corolla, RAV4, Highlander, Prius, Tacoma, Tundra, Sienna, Venza, 4Runner, Sequoia",
     specialty: "Toyota Smart Key System (SKS) and Smart Entry with Push-to-Start",
     fobType: "Toyota HYQ14FBE, HYQ14FBC, and HYQ1EA proximity fobs",
     commonIssue: "Toyota smart keys losing sync after battery replacement",
+    additionalModels: ["Tacoma", "Tundra", "Sienna", "Venza", "4Runner", "Sequoia"],
   },
   honda: {
     brand: "Honda",
@@ -74,8 +76,9 @@ const brandModelPages: Record<string, { slug: string; label: string }[]> = {
   toyota: [
     { slug: "/smart-key-programming/toyota/camry", label: "Camry" },
     { slug: "/smart-key-programming/toyota/corolla", label: "Corolla" },
-    { slug: "/smart-key-programming/toyota/prius", label: "Prius" },
     { slug: "/smart-key-programming/toyota/rav4", label: "RAV4" },
+    { slug: "/smart-key-programming/toyota/highlander", label: "Highlander" },
+    { slug: "/smart-key-programming/toyota/prius", label: "Prius" },
   ],
   honda: [
     { slug: "/smart-key-programming/honda/civic", label: "Civic" },
@@ -113,6 +116,7 @@ export default function SmartKeyBrandPage({ brand }: { brand: string }) {
   const data = brandData[brand];
   if (!data) return null;
   const modelLinks = brandModelPages[brand] || [];
+  const extra = data.additionalModels || [];
 
   return (
     <ServicePageLayout
@@ -147,7 +151,7 @@ export default function SmartKeyBrandPage({ brand }: { brand: string }) {
       }}
       extraContent={
         modelLinks.length > 0 ? (
-          <section className="py-10 bg-muted">
+           <section className="py-10 bg-muted">
             <div className="max-w-4xl mx-auto px-4">
               <h2 className="text-xl font-bold text-foreground mb-4">{data.brand} Model-Specific Smart Key Pages</h2>
               <p className="text-muted-foreground text-sm mb-4">Select your {data.brand} model for detailed smart key programming information, common problems, and pricing specific to your vehicle.</p>
@@ -159,6 +163,16 @@ export default function SmartKeyBrandPage({ brand }: { brand: string }) {
                   </Link>
                 ))}
               </div>
+              {extra.length > 0 && (
+                <div className="mt-6">
+                  <h3 className="text-sm font-semibold text-foreground mb-2">We Also Service:</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {extra.map(model => (
+                      <span key={model} className="bg-card border border-border rounded-lg px-3 py-1.5 text-sm text-muted-foreground">{data.brand} {model}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </section>
         ) : undefined
