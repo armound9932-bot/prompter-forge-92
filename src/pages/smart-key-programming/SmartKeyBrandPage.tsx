@@ -92,6 +92,7 @@ const brandModelPages: Record<string, { slug: string; label: string }[]> = {
     { slug: "/smart-key-programming/ford/f-150", label: "F-150" },
     { slug: "/smart-key-programming/ford/escape", label: "Escape" },
     { slug: "/smart-key-programming/ford/explorer", label: "Explorer" },
+    { slug: "/smart-key-programming/ford/fusion", label: "Fusion" },
   ],
   chevrolet: [
     { slug: "/smart-key-programming/chevrolet/malibu", label: "Malibu" },
