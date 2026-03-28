@@ -15,7 +15,7 @@ const defined_faqs = [
 
 export default function HyundaiSantaFePage() {
   useEffect(() => {
-    setSeoMeta({ title: "Hyundai Santa Fe Smart Key Programming Burbank | Large SUV SMK Service – Burbank Auto Locksmith", description: "Expert Hyundai Santa Fe smart key programming in Burbank. Large SUV antenna diagnostics, SMK module service, PIN extraction. Mobile locksmith — no dealer needed.", slug: "/smart-key-programming/hyundai/santafe" });
+    setSeoMeta({ title: "Hyundai Santa Fe Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Hyundai Santa Fe smart key programming in Burbank, CA. Large SUV SMK service, PIN extraction, all keys lost. Same-day mobile locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/hyundai/santafe" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({
@@ -43,7 +43,7 @@ export default function HyundaiSantaFePage() {
             <span className="text-primary-foreground">Santa Fe</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-extrabold text-primary-foreground mb-4">
-            Hyundai Santa Fe Smart Key Programming in Burbank
+            Hyundai Santa Fe Smart Key Programming in Burbank, CA
           </h1>
           <p className="text-primary-foreground/90 max-w-2xl mx-auto text-base mb-6">
             The Santa Fe is Hyundai's largest mainstream SUV — and its cabin volume creates smart key challenges that smaller vehicles simply don't have. Three rows of seating, an expansive cargo bay, and more antenna zones than the Tucson or Sonata mean more potential failure points and weaker rear detection. We specialize in Santa Fe SMK diagnostics, PIN extraction, and immobilizer programming on-site across Burbank.

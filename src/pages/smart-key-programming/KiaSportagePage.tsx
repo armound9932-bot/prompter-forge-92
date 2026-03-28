@@ -15,7 +15,7 @@ const defined_faqs = [
 
 export default function KiaSportagePage() {
   useEffect(() => {
-    setSeoMeta({ title: "Kia Sportage Smart Key Programming Burbank | Compact SUV Keyless Service – Burbank Auto Locksmith", description: "Expert Kia Sportage smart key programming in Burbank. SUV antenna diagnostics, PIN code extraction, immobilizer reset. Mobile locksmith — no dealer needed.", slug: "/smart-key-programming/kia/sportage" });
+    setSeoMeta({ title: "Kia Sportage Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Kia Sportage smart key programming in Burbank, CA. Compact SUV key replacement, PIN extraction, all keys lost. Same-day mobile locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/kia/sportage" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({
@@ -43,7 +43,7 @@ export default function KiaSportagePage() {
             <span className="text-primary-foreground">Sportage</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-extrabold text-primary-foreground mb-4">
-            Kia Sportage Smart Key Programming in Burbank
+            Kia Sportage Smart Key Programming in Burbank, CA
           </h1>
           <p className="text-primary-foreground/90 max-w-2xl mx-auto text-base mb-6">
             The Sportage is Kia's flagship compact SUV — and the best-selling model in their lineup for good reason. Its smart key system shares the Hyundai Motor Group platform but uses Kia-specific module addresses, diagnostic protocols, and PIN formats that require dedicated tooling. We program Sportage keys across every generation on-site in Burbank with the right software — not Hyundai tools hoping they'll work.

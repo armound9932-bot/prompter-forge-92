@@ -15,7 +15,7 @@ const defined_faqs = [
 
 export default function HyundaiSonataPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Hyundai Sonata Smart Key Programming Burbank | SMK System – Burbank Auto Locksmith", description: "Expert Hyundai Sonata smart key programming in Burbank. SMK module diagnostics, PIN code extraction, immobilizer reset for all Sonata generations. Mobile locksmith — no dealer needed.", slug: "/smart-key-programming/hyundai/sonata" });
+    setSeoMeta({ title: "Hyundai Sonata Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Hyundai Sonata smart key programming in Burbank, CA. SMK module, PIN code extraction, all keys lost. Same-day mobile locksmith — no dealer needed. Call (818) 606-1684.", slug: "/smart-key-programming/hyundai/sonata" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({
@@ -43,7 +43,7 @@ export default function HyundaiSonataPage() {
             <span className="text-primary-foreground">Sonata</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-extrabold text-primary-foreground mb-4">
-            Hyundai Sonata Smart Key Programming in Burbank
+            Hyundai Sonata Smart Key Programming in Burbank, CA
           </h1>
           <p className="text-primary-foreground/90 max-w-2xl mx-auto text-base mb-6">
             The Sonata is Hyundai's flagship sedan — and its Smart Key Module carries more advanced security than the Elantra. From the YF generation through the current DN8, the Sonata's SMK architecture has evolved through three distinct security tiers. We program all of them on-site across Burbank.

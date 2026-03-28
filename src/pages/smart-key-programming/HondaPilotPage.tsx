@@ -8,7 +8,7 @@ import { setSeoMeta } from "@/utils/seo";
 
 export default function HondaPilotPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Honda Pilot Smart Key Programming Burbank | 3-Row SUV Key Replacement – Burbank Auto Locksmith", description: "Honda Pilot smart key programming & key replacement in Burbank. 3-row SUV keyless entry, push-button start, all keys lost service. Same-day mobile locksmith. Licensed & insured.", slug: "/smart-key-programming/honda/pilot" });
+    setSeoMeta({ title: "Honda Pilot Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Honda Pilot smart key programming in Burbank, CA. 3-row SUV keyless entry, push-button start, all keys lost. Same-day mobile service. Call (818) 606-1684.", slug: "/smart-key-programming/honda/pilot" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
@@ -44,7 +44,7 @@ export default function HondaPilotPage() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl font-extrabold text-foreground leading-tight mb-4">
-                Honda Pilot Key Replacement & Smart Key Programming in Burbank
+                Honda Pilot Smart Key Programming in Burbank, CA
               </h1>
               <p className="text-muted-foreground text-base leading-relaxed mb-6">
                 The Honda Pilot is a full-size 3-row SUV — and its smart key system is built to match. Whether you need an <strong>additional key programmed</strong> or you've <strong>lost every key</strong> to your Pilot, our mobile locksmith brings Honda-specific diagnostic equipment directly to your Burbank location. No tow truck. No dealership scheduling. Same-day service, on-site.

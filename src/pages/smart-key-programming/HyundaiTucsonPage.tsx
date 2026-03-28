@@ -15,7 +15,7 @@ const defined_faqs = [
 
 export default function HyundaiTucsonPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Hyundai Tucson Smart Key Programming Burbank | SMK & SUV Diagnostics – Burbank Auto Locksmith", description: "Expert Hyundai Tucson smart key programming in Burbank. SMK module diagnostics, PIN code extraction, SUV antenna troubleshooting. Mobile locksmith — no dealer needed.", slug: "/smart-key-programming/hyundai/tucson" });
+    setSeoMeta({ title: "Hyundai Tucson Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Hyundai Tucson smart key programming in Burbank, CA. SUV SMK diagnostics, PIN extraction, all keys lost. Same-day mobile locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/hyundai/tucson" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({
@@ -43,7 +43,7 @@ export default function HyundaiTucsonPage() {
             <span className="text-primary-foreground">Tucson</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-extrabold text-primary-foreground mb-4">
-            Hyundai Tucson Smart Key Programming in Burbank
+            Hyundai Tucson Smart Key Programming in Burbank, CA
           </h1>
           <p className="text-primary-foreground/90 max-w-2xl mx-auto text-base mb-6">
             The Tucson is Hyundai's best-selling compact SUV — and its Smart Key Module (SMK) system brings SUV-specific challenges that sedans like the Elantra and Sonata don't face. Larger cabin volume, rear hatch antenna coverage, and cargo-area interference all affect how the Tucson detects your key fob. We handle SMK diagnostics, PIN extraction, and immobilizer resets on-site across Burbank.

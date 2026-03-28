@@ -6,8 +6,8 @@ import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
 
-const PAGE_TITLE = "Chevrolet Silverado Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith";
-const PAGE_DESC = "Chevrolet Silverado smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2007–2024 Silverado. Mobile truck service.";
+const PAGE_TITLE = "Chevrolet Silverado Key Programming in Burbank, CA | Burbank Auto Locksmith";
+const PAGE_DESC = "Chevrolet Silverado smart key programming in Burbank, CA. GM PEPS, theft deterrent reset, push-to-start fob. Same-day mobile truck locksmith. Call (818) 606-1684.";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -22,7 +22,7 @@ const faqSchema = {
 
 export default function ChevroletSilveradoPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Chevrolet Silverado Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith", description: "Chevrolet Silverado smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2007–2024 Silverado. Mobile truck service.", slug: "/smart-key-programming/chevrolet/silverado" });
+    setSeoMeta({ title: "Chevrolet Silverado Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Chevrolet Silverado smart key programming in Burbank, CA. GM PEPS, theft deterrent reset, push-to-start fob. Same-day mobile truck locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/chevrolet/silverado" });
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.text = JSON.stringify(faqSchema);
@@ -52,7 +52,7 @@ export default function ChevroletSilveradoPage() {
             <div className="p-2.5 bg-primary/10 rounded-xl"><Truck className="w-7 h-7 text-primary" /></div>
             <span className="text-xs font-semibold uppercase tracking-wider text-primary">Chevrolet Silverado</span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">Chevrolet Silverado Smart Key Programming in Burbank</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">Chevrolet Silverado Smart Key Programming in Burbank, CA</h1>
           <p className="text-muted-foreground max-w-2xl text-base md:text-lg leading-relaxed">
             Whether you drive a classic Silverado with a transponder key or a new-generation model with GM's PEPS push-to-start system, we handle every key scenario on-site. Our mobile locksmith truck rolls to your Burbank location equipped with GM-specific diagnostic tools, security access credentials, and OEM-grade key blanks — no dealership tow required.
           </p>

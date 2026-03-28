@@ -8,7 +8,7 @@ import { setSeoMeta } from "@/utils/seo";
 
 export default function NissanAltimaPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Nissan Altima Key Programming Burbank | Intelligent Key & BCM Reset – Burbank Auto Locksmith", description: "Nissan Altima smart key programming in Burbank. Intelligent Key system, BCM reset, PIN code access, all keys lost recovery. Same-day mobile locksmith. Licensed & insured.", slug: "/smart-key-programming/nissan/altima" });
+    setSeoMeta({ title: "Nissan Altima Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Nissan Altima smart key programming in Burbank, CA. Intelligent Key, BCM reset, PIN code extraction, all keys lost. Same-day mobile locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/nissan/altima" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
@@ -37,7 +37,7 @@ export default function NissanAltimaPage() {
             <Link to="/smart-key-programming/nissan" className="hover:text-primary transition-colors">Nissan</Link><span>/</span>
             <span className="text-foreground font-medium">Altima</span>
           </nav>
-          <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Nissan Altima Key Replacement & Smart Key Programming in Burbank</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Nissan Altima Smart Key Programming in Burbank, CA</h1>
           <p className="text-lg text-muted-foreground max-w-3xl mb-6">
             The Altima runs on Nissan's Intelligent Key platform — a BCM-centric architecture that's fundamentally different from Toyota or Honda systems. Whether you need a spare fob registered or you've lost every key, our mobile locksmith handles Nissan Altima key programming on-site across Burbank with CONSULT-level diagnostic tools and PIN code security access. No dealer appointment, no towing, no waiting days for a service slot.
           </p>

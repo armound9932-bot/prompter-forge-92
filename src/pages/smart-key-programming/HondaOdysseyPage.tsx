@@ -47,7 +47,7 @@ const faqSchema = {
 
 export default function HondaOdysseyPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Honda Odyssey Key Replacement & Smart Key Programming Burbank | Burbank Auto Locksmith", description: "Honda Odyssey smart key programming in Burbank. Sliding door antenna diagnostics, keyless start repair, all keys lost service. Mobile locksmith with Honda-specific tools. Licensed & insured.", slug: "/smart-key-programming/honda/odyssey" });
+    setSeoMeta({ title: "Honda Odyssey Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Honda Odyssey smart key programming in Burbank, CA. Minivan keyless start, sliding door diagnostics, all keys lost. Same-day mobile locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/honda/odyssey" });
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.text = JSON.stringify(faqSchema);
@@ -78,7 +78,7 @@ export default function HondaOdysseyPage() {
             <div className="grid md:grid-cols-5 gap-8 items-center">
               <div className="md:col-span-3">
                 <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">
-                  Honda Odyssey Key Replacement & Smart Key Programming in Burbank
+                  Honda Odyssey Smart Key Programming in Burbank, CA
                 </h1>
                 <p className="text-muted-foreground text-base leading-relaxed mb-6">
                   Locked out of your Odyssey? Need a new smart key for your family minivan? We specialize in Honda Odyssey keyless entry systems — from sliding door antenna diagnostics to complete key replacement when all fobs are lost. Same-day mobile service across Burbank with Honda-specific diagnostic equipment.

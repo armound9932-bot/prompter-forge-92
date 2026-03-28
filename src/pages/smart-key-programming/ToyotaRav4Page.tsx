@@ -10,8 +10,8 @@ const PHONE = "8186061684";
 const PHONE_DISPLAY = "(818) 606-1684";
 const WHATSAPP = `https://wa.me/1${PHONE}`;
 const SLUG = "/smart-key-programming/toyota/rav4";
-const META_TITLE = "Toyota RAV4 Smart Key Programming Burbank | SUV Key Replacement – Burbank Auto Locksmith";
-const META_DESC = "Toyota RAV4 smart key programming & key replacement in Burbank. Push-to-start fob, immobilizer reset for 2013–2024 RAV4. Add key or all keys lost. Mobile SUV locksmith, 20–30 min response.";
+const META_TITLE = "Toyota RAV4 Key Programming in Burbank, CA | Burbank Auto Locksmith";
+const META_DESC = "Toyota RAV4 smart key programming & replacement in Burbank, CA. SUV push-to-start, all keys lost, same-day mobile service. No dealer needed. Call (818) 606-1684.";
 
 export default function ToyotaRav4Page() {
   useEffect(() => {
@@ -67,7 +67,7 @@ export default function ToyotaRav4Page() {
       <section className="bg-primary text-primary-foreground py-12 md:py-16">
         <div className="max-w-4xl mx-auto px-4">
           <div className="inline-block px-3 py-1 rounded-full bg-accent/20 text-accent text-xs font-bold mb-4 tracking-wide">TOYOTA RAV4 SPECIALIST</div>
-          <h1 className="text-3xl md:text-5xl font-black leading-tight mb-4">Toyota RAV4 Key Replacement &amp; Smart Key Programming in Burbank</h1>
+          <h1 className="text-3xl md:text-5xl font-black leading-tight mb-4">Toyota RAV4 Smart Key Programming in Burbank, CA</h1>
           <p className="text-lg md:text-xl opacity-90 mb-3 max-w-2xl">
             Locked out of your RAV4? Lost every key? We handle <strong>add-key</strong> and <strong>all-keys-lost</strong> for every RAV4 generation—right in your driveway, parking garage, or trailhead. Same-day mobile service with push-to-start fob programming, no tow required.
           </p>

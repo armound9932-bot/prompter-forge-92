@@ -8,7 +8,7 @@ import { setSeoMeta } from "@/utils/seo";
 
 export default function NissanSentraPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Nissan Sentra Smart Key Programming Burbank | Intelligent Key & Transponder – Burbank Auto Locksmith", description: "Professional Nissan Sentra key programming in Burbank. Transponder keys, Intelligent Key fobs, BCM reset, and PIN code extraction for all Sentra generations. Mobile locksmith service.", slug: "/smart-key-programming/nissan/sentra" });
+    setSeoMeta({ title: "Nissan Sentra Key Programming in Burbank, CA, CA | Burbank Auto Locksmith", description: "Nissan Sentra key programming in Burbank, CA. Transponder keys, Intelligent Key fobs, BCM reset, all keys lost. Same-day mobile locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/nissan/sentra" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({
@@ -49,7 +49,7 @@ export default function NissanSentraPage() {
             </div>
             <span className="text-xs font-bold uppercase tracking-widest text-primary">Nissan Sentra — Compact Sedan Specialist</span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-extrabold mb-4">Nissan Sentra Key Programming in Burbank</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold mb-4">Nissan Sentra Key Programming in Burbank, CA</h1>
           <p className="text-lg text-muted-foreground max-w-3xl mb-6">
             The Nissan Sentra spans nearly two decades of key technology — from traditional transponder keys that physically turn in the ignition to modern Intelligent Key fobs with push-button start. This dual-system history makes the Sentra unique among Nissan models and requires a locksmith who understands both architectures. Our Burbank mobile team programs every Sentra generation on-site, from basic chip key cutting to advanced BCM security access procedures.
           </p>
@@ -355,7 +355,7 @@ export default function NissanSentraPage() {
       {/* CTA */}
       <section className="py-14 bg-primary text-primary-foreground">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-extrabold mb-3">Need Nissan Sentra Key Programming in Burbank?</h2>
+          <h2 className="text-2xl md:text-3xl font-extrabold mb-3">Need Nissan Sentra Key Programming in Burbank, CA?</h2>
           <p className="text-primary-foreground/80 mb-6 text-base">
             Whether your Sentra uses a traditional transponder key or modern Intelligent Key system, our mobile locksmith arrives with the right equipment for your exact model year. Same-day service across Burbank, Glendale, North Hollywood, and greater Los Angeles.
           </p>

@@ -6,8 +6,8 @@ import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
 
-const PAGE_TITLE = "Chevrolet Equinox Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith";
-const PAGE_DESC = "Chevrolet Equinox smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2010–2024 Equinox. Mobile SUV service.";
+const PAGE_TITLE = "Chevrolet Equinox Key Programming in Burbank, CA | Burbank Auto Locksmith";
+const PAGE_DESC = "Chevrolet Equinox smart key programming in Burbank, CA. GM PEPS, theft deterrent reset, push-to-start fob. Same-day mobile SUV locksmith. Call (818) 606-1684.";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -22,7 +22,7 @@ const faqSchema = {
 
 export default function ChevroletEquinoxPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Chevrolet Equinox Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith", description: "Chevrolet Equinox smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2010–2024 Equinox. Mobile SUV service.", slug: "/smart-key-programming/chevrolet/equinox" });
+    setSeoMeta({ title: "Chevrolet Equinox Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Chevrolet Equinox smart key programming in Burbank, CA. GM PEPS, theft deterrent reset, push-to-start fob. Same-day mobile SUV locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/chevrolet/equinox" });
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.text = JSON.stringify(faqSchema);
@@ -52,7 +52,7 @@ export default function ChevroletEquinoxPage() {
             <div className="p-2.5 bg-primary/10 rounded-xl"><Car className="w-7 h-7 text-primary" /></div>
             <span className="text-xs font-semibold uppercase tracking-wider text-primary">Chevrolet Equinox</span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">Chevrolet Equinox Smart Key Programming in Burbank</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">Chevrolet Equinox Smart Key Programming in Burbank, CA</h1>
           <p className="text-muted-foreground max-w-2xl text-base md:text-lg leading-relaxed">
             The Equinox is one of the most popular compact SUVs on Burbank roads, and its key system has evolved significantly across generations. From early transponder-equipped models to current PEPS-enabled push-to-start Equinoxes, we program every version on-site with GM-specific diagnostic tools. No dealership appointment, no towing — our mobile unit comes to your location with everything needed to get your Equinox running.
           </p>

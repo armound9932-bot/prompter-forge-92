@@ -8,7 +8,7 @@ import { setSeoMeta } from "@/utils/seo";
 
 export default function FordEdgePage() {
   useEffect(() => {
-    setSeoMeta({ title: "Ford Edge Key Programming Burbank | Intelligent Access & Smart Key – Burbank Auto Locksmith", description: "Ford Edge smart key programming in Burbank. Intelligent Access, push-to-start, all keys lost recovery. Same-day mobile locksmith with Ford diagnostic tools. Licensed & insured.", slug: "/smart-key-programming/ford/edge" });
+    setSeoMeta({ title: "Ford Edge Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Ford Edge smart key programming in Burbank, CA. Intelligent Access, push-to-start, all keys lost recovery. Same-day mobile locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/ford/edge" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
@@ -37,7 +37,7 @@ export default function FordEdgePage() {
             <Link to="/smart-key-programming/ford" className="hover:text-primary transition-colors">Ford</Link><span>/</span>
             <span className="text-foreground font-medium">Edge</span>
           </nav>
-          <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Ford Edge Key Replacement & Smart Key Programming in Burbank</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Ford Edge Smart Key Programming in Burbank, CA</h1>
           <p className="text-lg text-muted-foreground max-w-3xl mb-6">
             The Edge sits in a sweet spot — large enough to need a multi-zone antenna system, compact enough to avoid the detection headaches of a three-row SUV. Whether you're adding a spare Intelligent Access fob or recovering from a total key loss, our mobile locksmith programs Ford Edge smart keys on-site across Burbank with dealer-grade Ford diagnostic tools. No appointments, no towing, no dealership markup.
           </p>

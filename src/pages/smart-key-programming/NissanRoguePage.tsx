@@ -8,7 +8,7 @@ import { setSeoMeta } from "@/utils/seo";
 
 export default function NissanRoguePage() {
   useEffect(() => {
-    setSeoMeta({ title: "Nissan Rogue Smart Key Programming Burbank | Intelligent Key – Burbank Auto Locksmith", description: "Professional Nissan Rogue Intelligent Key programming in Burbank. BCM reset, PIN code extraction, proximity key replacement for all Rogue generations. Mobile locksmith service.", slug: "/smart-key-programming/nissan/rogue" });
+    setSeoMeta({ title: "Nissan Rogue Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Nissan Rogue smart key programming in Burbank, CA. Intelligent Key, BCM reset, proximity key replacement, all keys lost. Same-day mobile service. Call (818) 606-1684.", slug: "/smart-key-programming/nissan/rogue" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({
@@ -49,7 +49,7 @@ export default function NissanRoguePage() {
             </div>
             <span className="text-xs font-bold uppercase tracking-widest text-primary">Nissan Rogue — Compact SUV Specialist</span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-extrabold mb-4">Nissan Rogue Smart Key Programming in Burbank</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold mb-4">Nissan Rogue Smart Key Programming in Burbank, CA</h1>
           <p className="text-lg text-muted-foreground max-w-3xl mb-6">
             The Nissan Rogue is one of the best-selling compact SUVs in the Burbank area, and its Intelligent Key system is built around Nissan's BCM-centric architecture. Whether you've lost all your keys, need a spare programmed, or your Rogue displays "No Key Detected," our mobile locksmith team handles every generation on-site with professional diagnostic equipment designed for Nissan's security protocols.
           </p>

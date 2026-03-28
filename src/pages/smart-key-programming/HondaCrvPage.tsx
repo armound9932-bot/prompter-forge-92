@@ -8,7 +8,7 @@ import { setSeoMeta } from "@/utils/seo";
 
 export default function HondaCrvPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Honda CR-V Smart Key Programming Burbank | SUV Keyless Entry & Push-Start – Burbank Auto Locksmith", description: "Honda CR-V smart key programming in Burbank. SUV keyless entry, push-button start, rear hatch detection repair, all keys lost service. Mobile locksmith, same-day. Licensed & insured.", slug: "/smart-key-programming/honda/crv" });
+    setSeoMeta({ title: "Honda CR-V Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Honda CR-V smart key programming in Burbank, CA. SUV keyless entry, push-to-start, all keys lost service. Same-day mobile locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/honda/crv" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
@@ -44,7 +44,7 @@ export default function HondaCrvPage() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl font-extrabold text-foreground leading-tight mb-4">
-                Honda CR-V Key Replacement & Smart Key Programming in Burbank
+                Honda CR-V Smart Key Programming in Burbank, CA
               </h1>
               <p className="text-muted-foreground text-base leading-relaxed mb-6">
                 Need a replacement smart key for your Honda CR-V? Whether you need a <strong>spare key programmed</strong> or you've <strong>lost every key</strong>, our mobile locksmith arrives at your Burbank location with everything needed. No tow truck, no dealer wait — just fast, professional SUV key service.

@@ -12,7 +12,7 @@ export default function KiaSorentoPage() {
         title: "Kia Sorento Smart Key Programming",
         metaTitle: "Kia Sorento Smart Key Programming Burbank | Mid-Size SUV Key Fob – Burbank Auto Locksmith",
         metaDescription: "Kia Sorento smart key programming in Burbank. PIN-based immobilizer reset, all keys lost, push-to-start fob replacement. Mobile SUV locksmith. Licensed & insured.",
-        h1: "Kia Sorento Smart Key Programming in Burbank",
+        h1: "Kia Sorento Smart Key Programming in Burbank, CA",
         heroText: "The Kia Sorento's three-row cabin and extended wheelbase create unique challenges for smart key detection that smaller Kia models don't face. Our mobile locksmiths carry Kia-specific diagnostic tools and program proximity fobs on-site across Burbank — no dealer appointment, no tow truck.",
         icon: Cpu,
         benefits: [

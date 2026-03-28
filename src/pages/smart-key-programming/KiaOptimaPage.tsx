@@ -15,7 +15,7 @@ const defined_faqs = [
 
 export default function KiaOptimaPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Kia Optima Smart Key Programming Burbank | Keyless Entry & Immobilizer – Burbank Auto Locksmith", description: "Expert Kia Optima smart key programming in Burbank. Immobilizer diagnostics, PIN code extraction, keyless entry repair. Mobile locksmith — no dealer needed.", slug: "/smart-key-programming/kia/optima" });
+    setSeoMeta({ title: "Kia Optima Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Kia Optima smart key programming in Burbank, CA. SKM diagnostics, PIN extraction, all keys lost. Same-day mobile locksmith — no dealer needed. Call (818) 606-1684.", slug: "/smart-key-programming/kia/optima" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({
@@ -43,7 +43,7 @@ export default function KiaOptimaPage() {
             <span className="text-primary-foreground">Optima</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-extrabold text-primary-foreground mb-4">
-            Kia Optima Smart Key Programming in Burbank
+            Kia Optima Smart Key Programming in Burbank, CA
           </h1>
           <p className="text-primary-foreground/90 max-w-2xl mx-auto text-base mb-6">
             The Kia Optima's smart key system shares DNA with Hyundai — they're built on the same platform — but the programming workflow, module addresses, and diagnostic access differ in ways that trip up locksmiths who treat them as identical. We've programmed hundreds of Optima keys across every generation and know exactly where Kia's implementation diverges. On-site service across Burbank with dealer-equivalent tools.

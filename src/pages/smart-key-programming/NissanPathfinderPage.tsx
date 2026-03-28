@@ -8,7 +8,7 @@ import { setSeoMeta } from "@/utils/seo";
 
 export default function NissanPathfinderPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Nissan Pathfinder Smart Key Programming Burbank | Intelligent Key – Burbank Auto Locksmith", description: "Professional Nissan Pathfinder Intelligent Key programming in Burbank. BCM reset, PIN extraction, 3-row SUV antenna diagnostics for all Pathfinder generations. Mobile locksmith service.", slug: "/smart-key-programming/nissan/pathfinder" });
+    setSeoMeta({ title: "Nissan Pathfinder Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Nissan Pathfinder smart key programming in Burbank, CA. 3-row SUV Intelligent Key, BCM reset, all keys lost. Same-day mobile locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/nissan/pathfinder" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({
@@ -49,7 +49,7 @@ export default function NissanPathfinderPage() {
             </div>
             <span className="text-xs font-bold uppercase tracking-widest text-primary">Nissan Pathfinder — Large SUV Specialist</span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-extrabold mb-4">Nissan Pathfinder Smart Key Programming in Burbank</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold mb-4">Nissan Pathfinder Smart Key Programming in Burbank, CA</h1>
           <p className="text-lg text-muted-foreground max-w-3xl mb-6">
             The Nissan Pathfinder is a full-size three-row SUV that presents unique challenges for Intelligent Key programming. Its expansive cabin stretches antenna coverage across zones that smaller Nissans don't contend with, and its BCM must manage key detection from the driver's seat to the third row and cargo area. Our Burbank mobile locksmith team specializes in Pathfinder-specific diagnostics — from rear antenna faults to BCM security access procedures that keep your family SUV running.
           </p>

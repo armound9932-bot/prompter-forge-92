@@ -10,8 +10,8 @@ const PHONE = "8186061684";
 const PHONE_DISPLAY = "(818) 606-1684";
 const WHATSAPP = `https://wa.me/1${PHONE}`;
 const SLUG = "/smart-key-programming/toyota/camry";
-const META_TITLE = "Toyota Camry Smart Key Programming Burbank | Push-to-Start Fob Replacement – Burbank Auto Locksmith";
-const META_DESC = "Toyota Camry smart key programming in Burbank. Proximity key, push-to-start fob, immobilizer reset for 2007–2024 Camry. Add key or all keys lost. Mobile service, 20–30 min. Licensed & insured.";
+const META_TITLE = "Toyota Camry Key Programming in Burbank, CA | Burbank Auto Locksmith";
+const META_DESC = "Toyota Camry smart key programming in Burbank, CA. Same-day mobile service — no dealer needed. Push-to-start fob, all keys lost, immobilizer reset. Call (818) 606-1684.";
 
 export default function ToyotaCamryPage() {
   useEffect(() => {
@@ -66,7 +66,7 @@ export default function ToyotaCamryPage() {
       {/* Hero */}
       <section className="bg-primary text-primary-foreground py-14 md:py-20">
         <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-3xl md:text-5xl font-black leading-tight mb-4">Toyota Camry Smart Key Programming in Burbank</h1>
+          <h1 className="text-3xl md:text-5xl font-black leading-tight mb-4">Toyota Camry Smart Key Programming in Burbank, CA</h1>
           <p className="text-lg md:text-xl opacity-90 mb-6 max-w-2xl">
             The Toyota Camry uses a proximity-based smart key system that communicates with the vehicle's immobilizer to allow keyless entry and push-button start. Whether you've lost your only key or need a spare programmed, our mobile locksmith team in Burbank handles every Camry generation — from early transponder systems to the latest encrypted smart keys.
           </p>
@@ -340,7 +340,7 @@ export default function ToyotaCamryPage() {
       {/* CTA */}
       <section className="py-12 bg-accent text-accent-foreground">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-black mb-3">Call Now for Toyota Camry Smart Key Programming in Burbank</h2>
+          <h2 className="text-2xl md:text-3xl font-black mb-3">Call Now for Toyota Camry Smart Key Programming in Burbank, CA</h2>
           <p className="text-lg opacity-90 mb-6">We arrive in 15–30 minutes with all equipment needed. Licensed & insured.</p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-primary text-primary-foreground font-bold text-lg shadow-xl hover:brightness-110 transition">
