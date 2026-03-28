@@ -357,6 +357,16 @@ export default function ToyotaCamryPage() {
         </div>
       </section>
 
+      {/* Local SEO */}
+      <section className="py-10 bg-muted border-t border-border">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-xl font-bold text-foreground mb-3">Serving Burbank & Surrounding Areas</h2>
+          <p className="text-muted-foreground leading-relaxed text-sm">
+            Our mobile locksmith team provides Toyota Camry smart key programming throughout Burbank and the surrounding communities. Whether you're in Glendale, North Hollywood, or anywhere across Los Angeles, we bring our equipment directly to your location — no tow truck, no dealership wait. Most calls in the Burbank area are answered within 15–30 minutes, and we service vehicles on-site at your home, office, or roadside.
+          </p>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-primary text-primary-foreground py-10">
         <div className="max-w-7xl mx-auto px-4">
