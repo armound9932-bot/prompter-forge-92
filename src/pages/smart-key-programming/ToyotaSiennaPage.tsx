@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Phone, ShieldCheck, Clock, Car, ChevronRight, MapPin, Wrench, AlertTriangle, Battery, Zap, DoorOpen, Users } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 const faqItems = [
@@ -14,27 +15,11 @@ const faqItems = [
     q: "Why does my Sienna say 'key not detected' when I'm in the rear seats?",
     a: "The Sienna's extended cabin uses multiple LF antenna zones to cover all three rows and the cargo area. If a rear or sliding-door antenna weakens — often from repeated door cycling or wiring stress — detection drops in those zones. A key fob battery below 2.8V also reduces signal range significantly.",
   },
-  {
-    q: "Can sliding door issues affect smart key detection?",
-    a: "Indirectly, yes. Each sliding door has its own proximity antenna embedded in the handle assembly. If the wiring harness inside the sliding track is damaged from years of opening and closing, the door may not detect the key for touch-to-unlock. This doesn't affect push-to-start operation but does impact keyless entry on that door.",
-  },
-  {
-    q: "Do I need to go to the Toyota dealer for Sienna key programming?",
-    a: "No. Our mobile locksmith arrives at your Burbank location with the same diagnostic platform used by Toyota dealers. We program smart keys on-site, test all doors including sliding doors, and verify push-to-start — typically at a lower cost than dealer pricing with no appointment wait.",
-  },
 ];
 
 export default function ToyotaSiennaPage() {
   useEffect(() => {
-    document.title =
-      "Toyota Sienna Smart Key Programming Burbank | Minivan Key Replacement – Burbank Auto Locksmith";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute(
-        "content",
-        "Expert Toyota Sienna smart key programming & key replacement in Burbank. Add key, all keys lost, sliding door keyless entry, push-to-start systems. Same-day mobile locksmith for 2011–2024 Sienna."
-      );
-    }
+    setSeoMeta({ title: "Toyota Sienna Smart Key Programming Burbank | Minivan Key Replacement – Burbank Auto Locksmith", description: "Expert Toyota Sienna smart key programming & key replacement in Burbank. Add key, all keys lost, sliding door keyless entry, push-to-start systems. Same-day mobile locksmith for 2011–2024 Sienna.", slug: "/smart-key-programming/toyota/sienna" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({
