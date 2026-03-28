@@ -54,6 +54,7 @@ export default function HondaOdysseyPage() {
     return () => { document.head.removeChild(script); };
   }, []);
 
+  return (
       <div className="min-h-screen bg-background text-foreground">
         {/* Breadcrumb */}
         <div className="bg-muted border-b border-border">
