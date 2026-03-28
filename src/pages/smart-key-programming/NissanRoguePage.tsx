@@ -141,7 +141,7 @@ export default function NissanRoguePage() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-card rounded-xl border border-border p-6">
               <h3 className="font-bold text-lg mb-3 flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-green-600" /> Add a Key (Working Key Available)
+                <CheckCircle2 className="w-5 h-5 text-primary" /> Add a Key (Working Key Available)
               </h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start gap-2"><span className="text-primary font-bold mt-0.5">•</span> Existing registered key authenticates the programming session</li>
