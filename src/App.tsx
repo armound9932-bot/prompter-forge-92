@@ -41,6 +41,7 @@ import KiaOptimaPage from "./pages/smart-key-programming/KiaOptimaPage";
 import KiaSportagePage from "./pages/smart-key-programming/KiaSportagePage";
 import KiaSorentoPage from "./pages/smart-key-programming/KiaSorentoPage";
 import KiaFortePage from "./pages/smart-key-programming/KiaFortePage";
+import KiaSoulPage from "./pages/smart-key-programming/KiaSoulPage";
 
 const SMART_KEY_BRANDS = ["toyota", "honda", "ford", "chevrolet", "nissan", "kia", "hyundai"];
 
