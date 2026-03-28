@@ -24,6 +24,8 @@ const allServices: { slug: string; title: string; icon: LucideIcon }[] = [
   { slug: "/key-replacement", title: "Car Key Replacement", icon: Star },
   { slug: "/key-programming", title: "Key Programming", icon: Award },
   { slug: "/ignition-repair", title: "Ignition Repair", icon: CheckCircle },
+  { slug: "/smart-key-programming", title: "Smart Key Programming", icon: Award },
+  { slug: "/lost-car-keys", title: "Lost Car Keys", icon: MapPin },
 ];
 
 export default function ServicePageLayout({ page, extraContent }: { page: ServicePage; extraContent?: React.ReactNode }) {

@@ -60,6 +60,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Index />} />
+      <Route path="/lost-car-keys" element={<LostCarKeys />} />
       <Route path="/car-lockout" element={<CarLockout />} />
       <Route path="/key-replacement" element={<KeyReplacement />} />
       <Route path="/key-programming" element={<KeyProgramming />} />
