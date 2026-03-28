@@ -2,13 +2,14 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, Key, ShieldCheck, AlertTriangle, Cpu, Car, CheckCircle, ArrowRight, Wrench, Clock, MapPin, Battery, Settings, Box } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
 
 export default function KiaSoulPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Kia Soul Smart Key Programming Burbank | Box-Style Crossover Key Fob – Burbank Auto Locksmith", description: "Kia Soul smart key programming & transponder key replacement in Burbank. 2010–2024 models. Traditional keys, push-to-start fobs, PIN extraction. Mobile locksmith for Soul crossovers.", slug: "/smart-key-programming/kia/soul" });
+    setSeoMeta({ title: "Kia Soul Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Kia Soul smart key programming in Burbank, CA. Compact crossover key replacement, transponder & smart key, all keys lost. Same-day mobile locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/kia/soul" });
   }, []);
 
   return (
@@ -393,6 +394,8 @@ export default function KiaSoulPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Kia Soul" />
 
       <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/kia/soul" brandSlug="kia" />
 

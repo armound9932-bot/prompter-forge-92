@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
@@ -40,7 +41,7 @@ const faqItems = [
 
 export default function ToyotaPriusPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Toyota Prius Smart Key Programming Burbank | Hybrid Key Replacement – Burbank Auto Locksmith", description: "Toyota Prius smart key programming & key replacement in Burbank. Hybrid key specialist — READY mode, proximity key, all keys lost. 2004–2024 Prius. Same-day mobile locksmith.", slug: "/smart-key-programming/toyota/prius" });
+    setSeoMeta({ title: "Toyota Prius Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Toyota Prius smart key programming in Burbank, CA. Hybrid key specialist — READY mode, proximity key, all keys lost. Same-day mobile service. Call (818) 606-1684.", slug: "/smart-key-programming/toyota/prius" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({
@@ -81,7 +82,7 @@ export default function ToyotaPriusPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-primary">Hybrid Key Specialist</span>
           </div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-5">
-            Toyota Prius Key Replacement &amp; Smart Key Programming in Burbank
+            Toyota Prius Smart Key Programming in Burbank, CA
           </h1>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mb-8 leading-relaxed">
             Prius won't go into READY mode? Lost your only smart key? We program and replace Toyota Prius proximity keys on-site — your driveway, office parking lot, or roadside. Same-day mobile service across Burbank. No dealer wait, no tow needed.
@@ -450,6 +451,9 @@ export default function ToyotaPriusPage() {
           </a>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Toyota Prius" />
+
     </main>
   );
 }

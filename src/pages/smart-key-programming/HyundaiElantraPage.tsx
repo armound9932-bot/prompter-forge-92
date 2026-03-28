@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Phone, Shield, Car, Cpu, CheckCircle, AlertTriangle, Clock, MapPin, Wrench } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
@@ -15,7 +16,7 @@ const defined_faqs = [
 
 export default function HyundaiElantraPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Hyundai Elantra Smart Key Programming Burbank | SMK System – Burbank Auto Locksmith", description: "Expert Hyundai Elantra smart key programming in Burbank. SMK module diagnostics, PIN code extraction, immobilizer reset. Mobile locksmith service — no dealer needed.", slug: "/smart-key-programming/hyundai/elantra" });
+    setSeoMeta({ title: "Hyundai Elantra Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Hyundai Elantra smart key programming in Burbank, CA. SMK module, PIN code extraction, immobilizer reset, all keys lost. Same-day mobile locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/hyundai/elantra" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({
@@ -43,7 +44,7 @@ export default function HyundaiElantraPage() {
             <span className="text-primary-foreground">Elantra</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-extrabold text-primary-foreground mb-4">
-            Hyundai Elantra Smart Key Programming in Burbank
+            Hyundai Elantra Smart Key Programming in Burbank, CA
           </h1>
           <p className="text-primary-foreground/90 max-w-2xl mx-auto text-base mb-6">
             The Elantra's Smart Key Module (SMK) system is Hyundai's own take on keyless entry and push-to-start — and it has quirks that set it apart from every other brand. We handle SMK diagnostics, PIN code extraction, and immobilizer resets on-site across Burbank with dealer-equivalent tools.
@@ -319,6 +320,8 @@ export default function HyundaiElantraPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Hyundai Elantra" />
 
       <RelatedModelsSection category="sedan" currentSlug="/smart-key-programming/hyundai/elantra" brandSlug="hyundai" />
 

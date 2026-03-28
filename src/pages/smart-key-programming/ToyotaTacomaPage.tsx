@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
@@ -40,7 +41,7 @@ const faqItems = [
 
 export default function ToyotaTacomaPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Toyota Tacoma Key Replacement & Programming Burbank | Truck Key Specialist – Burbank Auto Locksmith", description: "Toyota Tacoma key replacement & programming in Burbank. Transponder keys, smart keys, ignition repair. All years 2005–2024+. Same-day mobile truck locksmith.", slug: "/smart-key-programming/toyota/tacoma" });
+    setSeoMeta({ title: "Toyota Tacoma Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Toyota Tacoma key replacement & programming in Burbank, CA. Transponder keys, smart keys, ignition repair. Same-day mobile truck locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/toyota/tacoma" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({
@@ -81,7 +82,7 @@ export default function ToyotaTacomaPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-accent">Truck Key Specialist</span>
           </div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-5">
-            Toyota Tacoma Key Replacement &amp; Programming in Burbank
+            Toyota Tacoma Key Replacement & Programming in Burbank, CA
           </h1>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mb-8 leading-relaxed">
             Key snapped in the ignition? Lost your only Tacoma key at the job site? Whether your truck uses a traditional turn-key ignition or the newer push-to-start system, we cut and program replacement keys on the spot. No tow truck. No dealer appointment. Just a working key in your hand.
@@ -424,6 +425,9 @@ export default function ToyotaTacomaPage() {
           </a>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Toyota Tacoma" />
+
     </main>
   );
 }

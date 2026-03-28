@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, MessageCircle, Clock, Shield, Star, ChevronRight, CheckCircle, Cpu, Car, Wrench, AlertTriangle, Key, Award } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
@@ -10,8 +11,8 @@ const PHONE = "8186061684";
 const PHONE_DISPLAY = "(818) 606-1684";
 const WHATSAPP = `https://wa.me/1${PHONE}`;
 const SLUG = "/smart-key-programming/toyota/corolla";
-const META_TITLE = "Toyota Corolla Smart Key Programming Burbank | Push-to-Start Fob Service – Burbank Auto Locksmith";
-const META_DESC = "Toyota Corolla smart key programming in Burbank. Proximity fob, push-to-start, immobilizer reset for 2014–2024 Corolla. Add key or all keys lost. Mobile service, 20–30 min. Licensed & insured.";
+const META_TITLE = "Toyota Corolla Key Programming in Burbank, CA | Burbank Auto Locksmith";
+const META_DESC = "Toyota Corolla smart key programming in Burbank, CA. Push-to-start fob replacement, immobilizer reset, all keys lost. Same-day mobile locksmith. Call (818) 606-1684.";
 
 export default function ToyotaCorollaPage() {
   useEffect(() => {
@@ -66,7 +67,7 @@ export default function ToyotaCorollaPage() {
       {/* Hero */}
       <section className="bg-primary text-primary-foreground py-14 md:py-20">
         <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-3xl md:text-5xl font-black leading-tight mb-4">Toyota Corolla Smart Key Programming in Burbank</h1>
+          <h1 className="text-3xl md:text-5xl font-black leading-tight mb-4">Toyota Corolla Smart Key Programming in Burbank, CA</h1>
           <p className="text-lg md:text-xl opacity-90 mb-6 max-w-2xl">
             The Toyota Corolla transitioned to a smart key system later than many of Toyota's larger sedans — but the technology it uses is no less sophisticated. From the first push-to-start Corollas in 2014 to the TNGA-based 12th generation, each version brings distinct immobilizer protocols that require model-specific programming knowledge. Our Burbank mobile team handles every smart-key-equipped Corolla on-site.
           </p>
@@ -347,7 +348,7 @@ export default function ToyotaCorollaPage() {
       {/* CTA */}
       <section className="py-12 bg-accent text-accent-foreground">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-black mb-3">Call Now for Toyota Corolla Smart Key Programming in Burbank</h2>
+          <h2 className="text-2xl md:text-3xl font-black mb-3">Call Now for Toyota Corolla Smart Key Programming in Burbank, CA</h2>
           <p className="text-lg opacity-90 mb-6">We arrive in 15–30 minutes with all equipment needed. Licensed & insured.</p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-primary text-primary-foreground font-bold text-lg shadow-xl hover:brightness-110 transition">
@@ -382,6 +383,8 @@ export default function ToyotaCorollaPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Toyota Corolla" />
 
       <RelatedModelsSection category="sedan" currentSlug="/smart-key-programming/toyota/corolla" brandSlug="toyota" />
 

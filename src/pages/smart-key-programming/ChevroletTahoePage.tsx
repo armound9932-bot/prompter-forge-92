@@ -2,12 +2,13 @@ import { Cpu, Phone, Truck, ShieldCheck, AlertTriangle, CheckCircle2, ArrowRight
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
 
-const PAGE_TITLE = "Chevrolet Tahoe Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith";
-const PAGE_DESC = "Chevrolet Tahoe smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2007–2024 Tahoe. Mobile large SUV service.";
+const PAGE_TITLE = "Chevrolet Tahoe Key Programming in Burbank, CA | Burbank Auto Locksmith";
+const PAGE_DESC = "Chevrolet Tahoe smart key programming in Burbank, CA. GM PEPS, theft deterrent reset, push-to-start fob. Same-day mobile SUV locksmith. Call (818) 606-1684.";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -22,7 +23,7 @@ const faqSchema = {
 
 export default function ChevroletTahoePage() {
   useEffect(() => {
-    setSeoMeta({ title: "Chevrolet Tahoe Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith", description: "Chevrolet Tahoe smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2007–2024 Tahoe. Mobile large SUV service.", slug: "/smart-key-programming/chevrolet/tahoe" });
+    setSeoMeta({ title: "Chevrolet Tahoe Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Chevrolet Tahoe smart key programming in Burbank, CA. GM PEPS, theft deterrent reset, push-to-start fob. Same-day mobile SUV locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/chevrolet/tahoe" });
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.text = JSON.stringify(faqSchema);
@@ -52,7 +53,7 @@ export default function ChevroletTahoePage() {
             <div className="p-2.5 bg-primary/10 rounded-xl"><Truck className="w-7 h-7 text-primary" /></div>
             <span className="text-xs font-semibold uppercase tracking-wider text-primary">Chevrolet Tahoe</span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">Chevrolet Tahoe Smart Key Programming in Burbank</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">Chevrolet Tahoe Smart Key Programming in Burbank, CA</h1>
           <p className="text-muted-foreground max-w-2xl text-base md:text-lg leading-relaxed">
             The Tahoe is GM's workhorse large SUV — a three-row, body-on-frame platform that runs a multi-zone antenna system, three-module theft deterrent architecture, and PEPS proximity logic built for a cabin significantly larger than anything in the compact or mid-size lineup. Whether you need a spare fob added or a complete all-keys-lost recovery, our mobile locksmith arrives at your Burbank location with GM-specific diagnostic tools calibrated for every Tahoe generation. No tow truck, no dealer wait — professional key programming where your Tahoe sits.
           </p>
@@ -263,6 +264,8 @@ export default function ChevroletTahoePage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Chevrolet Tahoe" />
 
       <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/chevrolet/tahoe" brandSlug="chevrolet" />
 

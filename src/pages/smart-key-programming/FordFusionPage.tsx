@@ -2,13 +2,14 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Cpu, Phone, CheckCircle, AlertTriangle, Shield, MapPin, ArrowRight } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
 
 export default function FordFusionPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Ford Fusion Key Programming Burbank | Intelligent Access & PATS – Burbank Auto Locksmith", description: "Ford Fusion smart key programming in Burbank. PATS transponder, Intelligent Access, push-to-start, all keys lost. Same-day mobile locksmith. Licensed & insured.", slug: "/smart-key-programming/ford/fusion" });
+    setSeoMeta({ title: "Ford Fusion Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Ford Fusion smart key programming in Burbank, CA. PATS, Intelligent Access, push-to-start, all keys lost. Same-day mobile locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/ford/fusion" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
@@ -37,7 +38,7 @@ export default function FordFusionPage() {
             <Link to="/smart-key-programming/ford" className="hover:text-primary transition-colors">Ford</Link><span>/</span>
             <span className="text-foreground font-medium">Fusion</span>
           </nav>
-          <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Ford Fusion Key Replacement & Smart Key Programming in Burbank</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Ford Fusion Smart Key Programming in Burbank, CA</h1>
           <p className="text-lg text-muted-foreground max-w-3xl mb-6">
             Whether your Fusion uses a traditional PATS transponder key or the newer Intelligent Access push-to-start system, we program and replace Ford Fusion keys on-site throughout Burbank. One key left, no keys at all — our mobile locksmith arrives same-day with Ford-specific diagnostic equipment and gets you driving again without a dealer appointment.
           </p>
@@ -333,6 +334,9 @@ export default function FordFusionPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Ford Fusion" />
+
     </main>
   );
 }

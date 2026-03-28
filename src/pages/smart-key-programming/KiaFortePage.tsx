@@ -2,13 +2,14 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, Key, ShieldCheck, AlertTriangle, Cpu, Car, CheckCircle, ArrowRight, Wrench, Clock, MapPin, Battery, Settings } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
 
 export default function KiaFortePage() {
   useEffect(() => {
-    setSeoMeta({ title: "Kia Forte Smart Key Programming Burbank | Compact Sedan Key Fob – Burbank Auto Locksmith", description: "Kia Forte smart key programming & transponder key replacement in Burbank. 2010–2024 models. Traditional keys, push-to-start fobs, PIN extraction. Mobile locksmith.", slug: "/smart-key-programming/kia/forte" });
+    setSeoMeta({ title: "Kia Forte Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Kia Forte smart key programming in Burbank, CA. Compact sedan key replacement, transponder & smart key, all keys lost. Same-day mobile locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/kia/forte" });
   }, []);
 
   return (
@@ -305,6 +306,8 @@ export default function KiaFortePage() {
             </div>
           </div>
         </section>
+
+      <LocalSeoBlock vehicleName="Kia Forte" />
 
       <RelatedModelsSection category="sedan" currentSlug="/smart-key-programming/kia/forte" brandSlug="kia" />
 

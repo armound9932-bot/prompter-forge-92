@@ -2,13 +2,14 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Cpu, Phone, CheckCircle, AlertTriangle, Shield, MapPin, ArrowRight } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
 
 export default function FordExplorerPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Ford Explorer Key Programming Burbank | Intelligent Access & Smart Key – Burbank Auto Locksmith", description: "Ford Explorer smart key programming in Burbank. Intelligent Access, push-to-start, all keys lost service. Mobile locksmith with dealer-level tools. Licensed & insured.", slug: "/smart-key-programming/ford/explorer" });
+    setSeoMeta({ title: "Ford Explorer Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Ford Explorer smart key programming in Burbank, CA. Intelligent Access, push-to-start, all keys lost. Same-day mobile locksmith — no dealer needed. Call (818) 606-1684.", slug: "/smart-key-programming/ford/explorer" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
@@ -37,7 +38,7 @@ export default function FordExplorerPage() {
             <Link to="/smart-key-programming/ford" className="hover:text-primary transition-colors">Ford</Link><span>/</span>
             <span className="text-foreground font-medium">Explorer</span>
           </nav>
-          <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Ford Explorer Key Replacement & Smart Key Programming in Burbank</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Ford Explorer Smart Key Programming in Burbank, CA</h1>
           <p className="text-lg text-muted-foreground max-w-3xl mb-6">
             Locked out of your Explorer? Need a replacement Intelligent Access fob or lost every key? We program Ford Explorer smart keys on-site across Burbank — same-day mobile service with Ford IDS/FDRS-level diagnostic tools. From first-gen push-to-start Explorers to the latest high-security models, we handle add-key jobs and complete all-keys-lost recoveries without a dealership appointment.
           </p>
@@ -333,6 +334,9 @@ export default function FordExplorerPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Ford Explorer" />
+
     </main>
   );
 }

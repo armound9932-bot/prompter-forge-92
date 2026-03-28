@@ -2,12 +2,13 @@ import { Cpu, Phone, Car, ShieldCheck, AlertTriangle, CheckCircle2, ArrowRight }
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
 
-const PAGE_TITLE = "Chevrolet Malibu Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith";
-const PAGE_DESC = "Chevrolet Malibu smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2008–2024 Malibu. Mobile sedan service.";
+const PAGE_TITLE = "Chevrolet Malibu Key Programming in Burbank, CA | Burbank Auto Locksmith";
+const PAGE_DESC = "Chevrolet Malibu smart key programming in Burbank, CA. GM PEPS, theft deterrent reset, push-to-start fob. Same-day mobile locksmith. Call (818) 606-1684.";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -22,7 +23,7 @@ const faqSchema = {
 
 export default function ChevroletMalibuPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Chevrolet Malibu Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith", description: "Chevrolet Malibu smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2008–2024 Malibu. Mobile sedan service.", slug: "/smart-key-programming/chevrolet/malibu" });
+    setSeoMeta({ title: "Chevrolet Malibu Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Chevrolet Malibu smart key programming in Burbank, CA. GM PEPS, theft deterrent reset, push-to-start fob. Same-day mobile locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/chevrolet/malibu" });
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.text = JSON.stringify(faqSchema);
@@ -52,7 +53,7 @@ export default function ChevroletMalibuPage() {
             <div className="p-2.5 bg-primary/10 rounded-xl"><Car className="w-7 h-7 text-primary" /></div>
             <span className="text-xs font-semibold uppercase tracking-wider text-primary">Chevrolet Malibu</span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">Chevrolet Malibu Smart Key Programming in Burbank</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">Chevrolet Malibu Smart Key Programming in Burbank, CA</h1>
           <p className="text-muted-foreground max-w-2xl text-base md:text-lg leading-relaxed">
             The Malibu is one of the most popular mid-size sedans on the road, and its key system has evolved dramatically over the years — from basic transponder chips to GM's full PEPS proximity architecture. Whether you need a spare fob for your daily commuter or you've lost every key to your Malibu, our mobile locksmith handles it at your Burbank location with GM-specific diagnostic tools and same-day turnaround.
           </p>
@@ -287,6 +288,8 @@ export default function ChevroletMalibuPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Chevrolet Malibu" />
 
       <RelatedModelsSection category="sedan" currentSlug="/smart-key-programming/chevrolet/malibu" brandSlug="chevrolet" />
 

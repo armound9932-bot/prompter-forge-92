@@ -2,13 +2,14 @@ import { Phone, ShieldCheck, Clock, Wrench, AlertTriangle, Car, Key, CheckCircle
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
 
 export default function HondaAccordPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Honda Accord Smart Key Programming Burbank | Keyless Entry & Push-Start – Burbank Auto Locksmith", description: "Honda Accord smart key programming in Burbank. Smart Entry system repair, push-button start fob replacement, all keys lost service. Mobile locksmith, same-day. Licensed & insured.", slug: "/smart-key-programming/honda/accord" });
+    setSeoMeta({ title: "Honda Accord Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Honda Accord smart key programming in Burbank, CA. Keyless entry, push-start fob, all keys lost. Same-day mobile locksmith — no dealer needed. Call (818) 606-1684.", slug: "/smart-key-programming/honda/accord" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
@@ -44,7 +45,7 @@ export default function HondaAccordPage() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl font-extrabold text-foreground leading-tight mb-4">
-                Honda Accord Key Replacement & Smart Key Programming in Burbank
+                Honda Accord Smart Key Programming in Burbank, CA
               </h1>
               <p className="text-muted-foreground text-base leading-relaxed mb-6">
                 Locked out or lost your Honda Accord smart key? Whether you need an <strong>additional key programmed</strong> or you're in an <strong>all-keys-lost situation</strong>, our mobile locksmith handles it on-site. Same-day emergency service throughout Burbank — no dealer appointment, no towing.
@@ -248,6 +249,8 @@ export default function HondaAccordPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Honda Accord" />
 
       <RelatedModelsSection category="sedan" currentSlug="/smart-key-programming/honda/accord" brandSlug="honda" />
 

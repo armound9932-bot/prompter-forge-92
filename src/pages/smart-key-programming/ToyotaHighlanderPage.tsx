@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, ShieldCheck, Clock, Car, ChevronRight, Truck, Users, MapPin, Wrench, AlertTriangle, Battery, Zap } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
@@ -19,7 +20,7 @@ const faqItems = [
 
 export default function ToyotaHighlanderPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Toyota Highlander Smart Key Programming Burbank | Family SUV Key Replacement – Burbank Auto Locksmith", description: "Expert Toyota Highlander smart key programming & key replacement in Burbank. Add key, all keys lost, push-to-start systems. Same-day mobile locksmith for 2014–2024 Highlander.", slug: "/smart-key-programming/toyota/highlander" });
+    setSeoMeta({ title: "Toyota Highlander Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Toyota Highlander smart key programming in Burbank, CA. Family SUV key replacement, push-to-start, all keys lost. Same-day mobile service. Call (818) 606-1684.", slug: "/smart-key-programming/toyota/highlander" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({
@@ -60,7 +61,7 @@ export default function ToyotaHighlanderPage() {
             <span className="text-xs font-bold uppercase tracking-widest text-primary">Family SUV Specialist</span>
           </div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-5">
-            Toyota Highlander Key Replacement &amp; Smart Key Programming in Burbank
+            Toyota Highlander Smart Key Programming in Burbank, CA
           </h1>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mb-8 leading-relaxed">
             Locked out of your Highlander? Lost every key? Don't let a missing smart key derail your family's day. Our emergency mobile locksmith arrives at your Burbank location — home, school, parking lot — and programs a new push-to-start key on the spot. No towing, no dealer wait times, no stress.
@@ -396,6 +397,9 @@ export default function ToyotaHighlanderPage() {
           </a>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Toyota Highlander" />
+
     </main>
   );
 }

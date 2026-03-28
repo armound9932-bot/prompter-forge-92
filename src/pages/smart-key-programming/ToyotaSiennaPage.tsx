@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, ShieldCheck, Clock, Car, ChevronRight, MapPin, Wrench, AlertTriangle, Battery, Zap, DoorOpen, Users } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
@@ -19,7 +20,7 @@ const faqItems = [
 
 export default function ToyotaSiennaPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Toyota Sienna Smart Key Programming Burbank | Minivan Key Replacement – Burbank Auto Locksmith", description: "Expert Toyota Sienna smart key programming & key replacement in Burbank. Add key, all keys lost, sliding door keyless entry, push-to-start systems. Same-day mobile locksmith for 2011–2024 Sienna.", slug: "/smart-key-programming/toyota/sienna" });
+    setSeoMeta({ title: "Toyota Sienna Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Toyota Sienna smart key programming in Burbank, CA. Minivan key replacement, sliding door keyless entry, all keys lost. Same-day mobile service. Call (818) 606-1684.", slug: "/smart-key-programming/toyota/sienna" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({
@@ -52,7 +53,7 @@ export default function ToyotaSiennaPage() {
             <span className="text-primary-foreground font-medium">Sienna</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-extrabold text-primary-foreground leading-tight mb-4">
-            Toyota Sienna Key Replacement &amp; Smart Key Programming in Burbank
+            Toyota Sienna Smart Key Programming in Burbank, CA
           </h1>
           <p className="text-primary-foreground/90 text-base md:text-lg leading-relaxed mb-6 max-w-2xl">
             Locked out of your Sienna? Need a spare key for the family minivan? We provide same-day mobile smart key programming for every Toyota Sienna — from adding a spare to complete all-keys-lost recovery. Push-to-start, sliding door keyless entry, rear hatch — all programmed and tested on-site in Burbank.
@@ -335,6 +336,9 @@ export default function ToyotaSiennaPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Toyota Sienna" />
+
     </main>
   );
 }

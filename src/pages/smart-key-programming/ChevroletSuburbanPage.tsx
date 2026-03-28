@@ -2,12 +2,13 @@ import { Cpu, Phone, Truck, ShieldCheck, AlertTriangle, CheckCircle2, ArrowRight
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
 
-const PAGE_TITLE = "Chevrolet Suburban Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith";
-const PAGE_DESC = "Chevrolet Suburban smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2007–2024 Suburban. Mobile service for full-size SUVs.";
+const PAGE_TITLE = "Chevrolet Suburban Key Programming in Burbank, CA | Burbank Auto Locksmith";
+const PAGE_DESC = "Chevrolet Suburban smart key programming in Burbank, CA. Full-size SUV PEPS, theft deterrent reset, all keys lost. Same-day mobile service. Call (818) 606-1684.";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -22,7 +23,7 @@ const faqSchema = {
 
 export default function ChevroletSuburbanPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Chevrolet Suburban Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith", description: "Chevrolet Suburban smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2007–2024 Suburban. Mobile service for full-size SUVs.", slug: "/smart-key-programming/chevrolet/suburban" });
+    setSeoMeta({ title: "Chevrolet Suburban Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Chevrolet Suburban smart key programming in Burbank, CA. Full-size SUV PEPS, theft deterrent reset, all keys lost. Same-day mobile service. Call (818) 606-1684.", slug: "/smart-key-programming/chevrolet/suburban" });
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.text = JSON.stringify(faqSchema);
@@ -52,7 +53,7 @@ export default function ChevroletSuburbanPage() {
             <div className="p-2.5 bg-primary/10 rounded-xl"><Truck className="w-7 h-7 text-primary" /></div>
             <span className="text-xs font-semibold uppercase tracking-wider text-primary">Chevrolet Suburban</span>
           </div>
-          <h1 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">Chevrolet Suburban Smart Key Programming in Burbank</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">Chevrolet Suburban Smart Key Programming in Burbank, CA</h1>
           <p className="text-muted-foreground max-w-2xl text-base md:text-lg leading-relaxed">
             The Suburban is GM's longest SUV — over 18 feet of vehicle that demands more antenna zones, extended module communication pathways, and specialized diagnostic attention that smaller SUVs simply don't require. Whether your Suburban uses a traditional transponder key or the latest PEPS push-to-start system, our mobile locksmith arrives at your Burbank location with GM-specific tools built for full-size platform complexity. No dealership tow, no waiting — we handle it where your Suburban sits.
           </p>
@@ -296,6 +297,8 @@ export default function ChevroletSuburbanPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Chevrolet Suburban" />
 
       <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/chevrolet/suburban" brandSlug="chevrolet" />
 

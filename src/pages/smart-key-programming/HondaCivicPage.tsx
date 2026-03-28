@@ -2,13 +2,14 @@ import { Cpu, Phone, ShieldCheck, Clock, Wrench, AlertTriangle, Car, Key, CheckC
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
 
 export default function HondaCivicPage() {
   useEffect(() => {
-    setSeoMeta({ title: "Honda Civic Smart Key Programming Burbank | Keyless Start System – Burbank Auto Locksmith", description: "Honda Civic smart key programming in Burbank. Keyless Start System repair, push-button start fob replacement, all keys lost service. Mobile locksmith, same-day. Licensed & insured.", slug: "/smart-key-programming/honda/civic" });
+    setSeoMeta({ title: "Honda Civic Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Honda Civic smart key programming in Burbank, CA. Push-button start fob, BCM registration, all keys lost service. Same-day mobile locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/honda/civic" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
@@ -44,7 +45,7 @@ export default function HondaCivicPage() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="text-3xl md:text-4xl font-extrabold text-foreground leading-tight mb-4">
-                Honda Civic Key Replacement & Smart Key Programming in Burbank
+                Honda Civic Smart Key Programming in Burbank, CA
               </h1>
               <p className="text-muted-foreground text-base leading-relaxed mb-6">
                 Lost your Honda Civic smart key? Need a spare programmed? We handle <strong>add-key</strong> and <strong>all-keys-lost</strong> situations for every Civic generation — from early push-button models to the latest keyless start systems. Same-day mobile service across Burbank.
@@ -272,6 +273,8 @@ export default function HondaCivicPage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Honda Civic" />
 
       <RelatedModelsSection category="sedan" currentSlug="/smart-key-programming/honda/civic" brandSlug="honda" />
 

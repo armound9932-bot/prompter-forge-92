@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Phone, Shield, Car, Cpu, CheckCircle, AlertTriangle, MapPin, Wrench } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
@@ -15,7 +16,7 @@ const defined_faqs = [
 
 export default function HyundaiPalisadePage() {
   useEffect(() => {
-    setSeoMeta({ title: "Hyundai Palisade Smart Key Programming Burbank | Premium SUV SMK Service – Burbank Auto Locksmith", description: "Expert Hyundai Palisade smart key programming in Burbank. Premium SUV SMK diagnostics, PIN extraction, immobilizer reset. Mobile locksmith — no dealer needed.", slug: "/smart-key-programming/hyundai/palisade" });
+    setSeoMeta({ title: "Hyundai Palisade Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Hyundai Palisade smart key programming in Burbank, CA. Luxury SUV SMK service, PIN extraction, all keys lost. Same-day mobile locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/hyundai/palisade" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({
@@ -43,7 +44,7 @@ export default function HyundaiPalisadePage() {
             <span className="text-primary-foreground">Palisade</span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-extrabold text-primary-foreground mb-4">
-            Hyundai Palisade Smart Key Programming in Burbank
+            Hyundai Palisade Smart Key Programming in Burbank, CA
           </h1>
           <p className="text-primary-foreground/90 max-w-2xl mx-auto text-base mb-6">
             The Palisade is Hyundai's flagship SUV — and its Smart Key Module reflects that positioning. More antenna zones, tighter signal calibration, and a more refined detection algorithm set it apart from the Tucson and Santa Fe. When this premium system needs service, you want a locksmith who understands the difference. We handle Palisade SMK diagnostics, PIN extraction, and key programming on-site across Burbank.
@@ -295,6 +296,8 @@ export default function HyundaiPalisadePage() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Hyundai Palisade" />
 
       <RelatedModelsSection category="suv" currentSlug="/smart-key-programming/hyundai/palisade" brandSlug="hyundai" />
 

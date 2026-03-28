@@ -2,13 +2,14 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, Truck, Shield, Wrench, AlertTriangle, Key, MapPin, ChevronRight } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
+import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
 
 
 export default function FordF150Page() {
   useEffect(() => {
-    setSeoMeta({ title: "Ford F-150 Key Programming & Replacement Burbank | PATS & Intelligent Access – Burbank Auto Locksmith", description: "Ford F-150 key programming in Burbank. PATS transponder keys, Intelligent Access smart fobs, all keys lost service. Mobile truck locksmith. Licensed & insured.", slug: "/smart-key-programming/ford/f150" });
+    setSeoMeta({ title: "Ford F-150 Key Programming in Burbank, CA | Burbank Auto Locksmith", description: "Ford F-150 key programming in Burbank, CA. PATS transponder, Intelligent Access smart fob, all keys lost. Same-day mobile truck locksmith. Call (818) 606-1684.", slug: "/smart-key-programming/ford/f150" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
@@ -42,7 +43,7 @@ export default function FordF150Page() {
           </nav>
           <div className="flex items-center gap-3 mb-4">
             <Truck className="w-10 h-10" />
-            <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">Ford F-150 Key Replacement &amp; Programming in Burbank</h1>
+            <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">Ford F-150 Key Programming & Replacement in Burbank, CA</h1>
           </div>
           <p className="text-lg md:text-xl text-primary-foreground/90 max-w-3xl leading-relaxed mt-4">
             Locked out of your F-150? Lost all your keys? Whether your truck uses a traditional PATS transponder key or the newer Intelligent Access push-to-start system, we handle it on-site. Same-day mobile service across Burbank — no dealer trip, no tow truck.
@@ -409,6 +410,9 @@ export default function FordF150Page() {
           </div>
         </div>
       </section>
+
+      <LocalSeoBlock vehicleName="Ford F-150" />
+
     </main>
   );
 }
