@@ -21,6 +21,7 @@ import HondaPilotPage from "./pages/smart-key-programming/HondaPilotPage";
 import HondaOdysseyPage from "./pages/smart-key-programming/HondaOdysseyPage";
 import FordF150Page from "./pages/smart-key-programming/FordF150Page";
 import FordExplorerPage from "./pages/smart-key-programming/FordExplorerPage";
+import FordFusionPage from "./pages/smart-key-programming/FordFusionPage";
 
 const SMART_KEY_BRANDS = ["toyota", "honda", "ford", "chevrolet", "nissan", "kia", "hyundai"];
 
