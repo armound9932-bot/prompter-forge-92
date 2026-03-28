@@ -38,6 +38,7 @@ import HyundaiTucsonPage from "./pages/smart-key-programming/HyundaiTucsonPage";
 import HyundaiSantaFePage from "./pages/smart-key-programming/HyundaiSantaFePage";
 import HyundaiPalisadePage from "./pages/smart-key-programming/HyundaiPalisadePage";
 import KiaOptimaPage from "./pages/smart-key-programming/KiaOptimaPage";
+import KiaSportagePage from "./pages/smart-key-programming/KiaSportagePage";
 
 const SMART_KEY_BRANDS = ["toyota", "honda", "ford", "chevrolet", "nissan", "kia", "hyundai"];
 
