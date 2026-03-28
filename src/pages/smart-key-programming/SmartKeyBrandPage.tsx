@@ -119,6 +119,8 @@ const brandModelPages: Record<string, { slug: string; label: string }[]> = {
     { slug: "/smart-key-programming/hyundai/elantra", label: "Elantra" },
     { slug: "/smart-key-programming/hyundai/sonata", label: "Sonata" },
     { slug: "/smart-key-programming/hyundai/tucson", label: "Tucson" },
+    { slug: "/smart-key-programming/hyundai/santafe", label: "Santa Fe" },
+    { slug: "/smart-key-programming/hyundai/palisade", label: "Palisade" },
   ],
 };
 
