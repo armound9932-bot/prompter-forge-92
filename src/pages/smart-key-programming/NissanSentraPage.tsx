@@ -3,16 +3,12 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 export default function NissanSentraPage() {
   useEffect(() => {
-    document.title = "Nissan Sentra Smart Key Programming Burbank | Intelligent Key & Transponder – Burbank Auto Locksmith";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute("content", "Professional Nissan Sentra key programming in Burbank. Transponder keys, Intelligent Key fobs, BCM reset, and PIN code extraction for all Sentra generations. Mobile locksmith service.");
-    }
-
+    setSeoMeta({ title: "Nissan Sentra Smart Key Programming Burbank | Intelligent Key & Transponder – Burbank Auto Locksmith", description: "Professional Nissan Sentra key programming in Burbank. Transponder keys, Intelligent Key fobs, BCM reset, and PIN code extraction for all Sentra generations. Mobile locksmith service.", slug: "/smart-key-programming/nissan/sentra" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({

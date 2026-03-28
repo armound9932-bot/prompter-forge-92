@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 export default function HondaAccordPage() {
   useEffect(() => {
-    document.title = "Honda Accord Smart Key Programming Burbank | Keyless Entry & Push-Start – Burbank Auto Locksmith";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Honda Accord smart key programming in Burbank. Smart Entry system repair, push-button start fob replacement, all keys lost service. Mobile locksmith, same-day. Licensed & insured.");
+    setSeoMeta({ title: "Honda Accord Smart Key Programming Burbank | Keyless Entry & Push-Start – Burbank Auto Locksmith", description: "Honda Accord smart key programming in Burbank. Smart Entry system repair, push-button start fob replacement, all keys lost service. Mobile locksmith, same-day. Licensed & insured.", slug: "/smart-key-programming/honda/accord" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";

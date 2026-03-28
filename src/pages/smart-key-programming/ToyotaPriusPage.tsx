@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 import {
   Phone,
@@ -39,15 +40,7 @@ const faqItems = [
 
 export default function ToyotaPriusPage() {
   useEffect(() => {
-    document.title =
-      "Toyota Prius Smart Key Programming Burbank | Hybrid Key Replacement – Burbank Auto Locksmith";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute(
-        "content",
-        "Toyota Prius smart key programming & key replacement in Burbank. Hybrid key specialist — READY mode, proximity key, all keys lost. 2004–2024 Prius. Same-day mobile locksmith."
-      );
-    }
+    setSeoMeta({ title: "Toyota Prius Smart Key Programming Burbank | Hybrid Key Replacement – Burbank Auto Locksmith", description: "Toyota Prius smart key programming & key replacement in Burbank. Hybrid key specialist — READY mode, proximity key, all keys lost. 2004–2024 Prius. Same-day mobile locksmith.", slug: "/smart-key-programming/toyota/prius" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({

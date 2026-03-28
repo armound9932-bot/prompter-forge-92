@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, MessageCircle, Clock, Shield, Star, ChevronRight, CheckCircle, Key, Car, AlertTriangle, MapPin, Award } from "lucide-react";
+import { setSeoMeta } from "@/utils/seo";
 
 const PHONE = "8186061684";
 const PHONE_DISPLAY = "(818) 606-1684";
@@ -36,16 +37,7 @@ const FAQS = [
 
 export default function LostCarKeys() {
   useEffect(() => {
-    document.title = META_TITLE;
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement | null;
-      if (!el) { el = document.createElement("meta"); el.name = name; document.head.appendChild(el); }
-      el.content = content;
-    };
-    setMeta("description", META_DESC);
-    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-    if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.appendChild(canonical); }
-    canonical.href = `https://burbankautolocksmith.com${SLUG}`;
+    setSeoMeta({ title: META_TITLE, description: META_DESC, slug: SLUG });
 
     const faqSchema = {
       "@context": "https://schema.org",

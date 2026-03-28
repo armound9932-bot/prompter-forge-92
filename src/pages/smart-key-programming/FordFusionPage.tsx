@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 import { Cpu, Phone, CheckCircle, AlertTriangle, Shield, MapPin, ArrowRight } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 export default function FordFusionPage() {
   useEffect(() => {
-    document.title = "Ford Fusion Key Programming Burbank | Intelligent Access & PATS – Burbank Auto Locksmith";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Ford Fusion smart key programming in Burbank. PATS transponder, Intelligent Access, push-to-start, all keys lost. Same-day mobile locksmith. Licensed & insured.");
+    setSeoMeta({ title: "Ford Fusion Key Programming Burbank | Intelligent Access & PATS – Burbank Auto Locksmith", description: "Ford Fusion smart key programming in Burbank. PATS transponder, Intelligent Access, push-to-start, all keys lost. Same-day mobile locksmith. Licensed & insured.", slug: "/smart-key-programming/ford/fusion" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Phone, ShieldCheck, Clock, Car, ChevronRight, Truck, Users, MapPin, Wrench, AlertTriangle, Battery, Zap } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 const faqItems = [
@@ -14,27 +15,11 @@ const faqItems = [
     q: "Why does my Highlander say 'key not detected' when I'm in the back seats?",
     a: "The Highlander's large cabin relies on multiple LF antenna zones. If the third-row or cargo antenna has weakened — often from wiring fatigue or moisture near the liftgate — detection drops off in the rear. A low key fob battery (below 2.8V) also reduces response range. We diagnose and resolve these issues on-site.",
   },
-  {
-    q: "How long does Toyota Highlander smart key programming take?",
-    a: "Adding a key with a working spare takes 15–20 minutes. All-keys-lost jobs on pre-2020 models run about 30 minutes; 2020+ TNGA Highlanders with AES encryption typically take 35–50 minutes due to the enhanced security handshake.",
-  },
-  {
-    q: "Is a locksmith cheaper than the Toyota dealer for Highlander key programming?",
-    a: "In most cases, significantly. Dealerships charge $350–$600+ for Highlander smart key programming plus the cost of towing. Our mobile service comes to you in Burbank with competitive pricing, no tow fees, and the same OEM-grade diagnostic tools the dealer uses.",
-  },
 ];
 
 export default function ToyotaHighlanderPage() {
   useEffect(() => {
-    document.title =
-      "Toyota Highlander Smart Key Programming Burbank | Family SUV Key Replacement – Burbank Auto Locksmith";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute(
-        "content",
-        "Expert Toyota Highlander smart key programming & key replacement in Burbank. Add key, all keys lost, push-to-start systems. Same-day mobile locksmith for 2014–2024 Highlander."
-      );
-    }
+    setSeoMeta({ title: "Toyota Highlander Smart Key Programming Burbank | Family SUV Key Replacement – Burbank Auto Locksmith", description: "Expert Toyota Highlander smart key programming & key replacement in Burbank. Add key, all keys lost, push-to-start systems. Same-day mobile locksmith for 2014–2024 Highlander.", slug: "/smart-key-programming/toyota/highlander" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({

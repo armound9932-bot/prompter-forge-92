@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, MessageCircle, Clock, Shield, Star, MapPin, ChevronRight, Award, CheckCircle, type LucideIcon } from "lucide-react";
+import { setSeoMeta } from "@/utils/seo";
 
 const PHONE = "8186061684";
 const PHONE_DISPLAY = "(818) 606-1684";
@@ -30,25 +31,7 @@ const allServices: { slug: string; title: string; icon: LucideIcon }[] = [
 
 export default function ServicePageLayout({ page, extraContent }: { page: ServicePage; extraContent?: React.ReactNode }) {
   useEffect(() => {
-    document.title = page.metaTitle;
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement | null;
-      if (!el) {
-        el = document.createElement("meta");
-        el.name = name;
-        document.head.appendChild(el);
-      }
-      el.content = content;
-    };
-    setMeta("description", page.metaDescription);
-
-    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.rel = "canonical";
-      document.head.appendChild(canonical);
-    }
-    canonical.href = `https://burbankautolocksmith.com${page.slug}`;
+    setSeoMeta({ title: page.metaTitle, description: page.metaDescription, slug: page.slug });
 
     const faqSchema = {
       "@context": "https://schema.org",

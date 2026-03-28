@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Phone, Shield, Car, Cpu, CheckCircle, AlertTriangle, Clock, MapPin, Wrench } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 const defined_faqs = [
@@ -14,11 +15,7 @@ const defined_faqs = [
 
 export default function HyundaiTucsonPage() {
   useEffect(() => {
-    document.title = "Hyundai Tucson Smart Key Programming Burbank | SMK & SUV Diagnostics – Burbank Auto Locksmith";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute("content", "Expert Hyundai Tucson smart key programming in Burbank. SMK module diagnostics, PIN code extraction, SUV antenna troubleshooting. Mobile locksmith — no dealer needed.");
-    }
+    setSeoMeta({ title: "Hyundai Tucson Smart Key Programming Burbank | SMK & SUV Diagnostics – Burbank Auto Locksmith", description: "Expert Hyundai Tucson smart key programming in Burbank. SMK module diagnostics, PIN code extraction, SUV antenna troubleshooting. Mobile locksmith — no dealer needed.", slug: "/smart-key-programming/hyundai/tucson" });
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
     schema.text = JSON.stringify({

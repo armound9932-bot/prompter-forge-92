@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 const PAGE_TITLE = "Chevrolet Malibu Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith";
@@ -21,15 +22,7 @@ const faqSchema = {
 
 export default function ChevroletMalibuPage() {
   useEffect(() => {
-    document.title = PAGE_TITLE;
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", PAGE_DESC);
-    else {
-      const m = document.createElement("meta");
-      m.name = "description";
-      m.content = PAGE_DESC;
-      document.head.appendChild(m);
-    }
+    setSeoMeta({ title: "Chevrolet Malibu Smart Key Programming Burbank | GM PEPS & Theft Deterrent – Burbank Auto Locksmith", description: "Chevrolet Malibu smart key programming in Burbank. GM PEPS system, theft deterrent reset, push-to-start fob replacement for 2008–2024 Malibu. Mobile sedan service.", slug: "/smart-key-programming/chevrolet/malibu" });
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.text = JSON.stringify(faqSchema);

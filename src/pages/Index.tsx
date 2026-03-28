@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Phone, MessageCircle, Clock, Shield, Star, MapPin, Wrench, Key, Car, Zap, ChevronRight, Award, CheckCircle, Cpu } from "lucide-react";
+import { setSeoMeta } from "@/utils/seo";
 
 import serviceCarLockout from "@/assets/service-car-lockout.jpg";
 import serviceAllKeysLost from "@/assets/service-all-keys-lost.jpg";
@@ -681,6 +682,15 @@ function FloatingReviewButton({ reviewsSectionRef }: { reviewsSectionRef: React.
 
 export default function Index() {
   const reviewsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setSeoMeta({
+      title: "Car Locksmith Burbank | Mobile Key Programming & Ignition Repair – Burbank Auto Locksmith",
+      description: "Burbank Auto Locksmith — mobile car locksmith specializing in key programming, smart keys, EEPROM/BCM/ECU programming, ignition repair. 15–30 min response. Licensed & insured.",
+      slug: "/",
+    });
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Header />

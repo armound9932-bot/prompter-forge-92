@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 export default function HondaCivicPage() {
   useEffect(() => {
-    document.title = "Honda Civic Smart Key Programming Burbank | Keyless Start System – Burbank Auto Locksmith";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Honda Civic smart key programming in Burbank. Keyless Start System repair, push-button start fob replacement, all keys lost service. Mobile locksmith, same-day. Licensed & insured.");
+    setSeoMeta({ title: "Honda Civic Smart Key Programming Burbank | Keyless Start System – Burbank Auto Locksmith", description: "Honda Civic smart key programming in Burbank. Keyless Start System repair, push-button start fob replacement, all keys lost service. Mobile locksmith, same-day. Licensed & insured.", slug: "/smart-key-programming/honda/civic" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";

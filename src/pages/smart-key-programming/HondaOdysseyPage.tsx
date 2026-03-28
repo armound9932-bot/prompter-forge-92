@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Phone, Shield, Clock, MapPin, Wrench, AlertTriangle, ChevronRight } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 const faqSchema = {
@@ -46,10 +47,7 @@ const faqSchema = {
 
 export default function HondaOdysseyPage() {
   useEffect(() => {
-    document.title = "Honda Odyssey Key Replacement & Smart Key Programming Burbank | Burbank Auto Locksmith";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", "Honda Odyssey smart key programming in Burbank. Sliding door antenna diagnostics, keyless start repair, all keys lost service. Mobile locksmith with Honda-specific tools. Licensed & insured.");
-
+    setSeoMeta({ title: "Honda Odyssey Key Replacement & Smart Key Programming Burbank | Burbank Auto Locksmith", description: "Honda Odyssey smart key programming in Burbank. Sliding door antenna diagnostics, keyless start repair, all keys lost service. Mobile locksmith with Honda-specific tools. Licensed & insured.", slug: "/smart-key-programming/honda/odyssey" });
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.text = JSON.stringify(faqSchema);

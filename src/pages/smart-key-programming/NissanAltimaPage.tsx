@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 import { Cpu, Phone, CheckCircle, AlertTriangle, Shield, MapPin, ArrowRight } from "lucide-react";
 import MidPageCTA from "@/components/MidPageCTA";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import { setSeoMeta } from "@/utils/seo";
 
 
 export default function NissanAltimaPage() {
   useEffect(() => {
-    document.title = "Nissan Altima Key Programming Burbank | Intelligent Key & BCM Reset – Burbank Auto Locksmith";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Nissan Altima smart key programming in Burbank. Intelligent Key system, BCM reset, PIN code access, all keys lost recovery. Same-day mobile locksmith. Licensed & insured.");
+    setSeoMeta({ title: "Nissan Altima Key Programming Burbank | Intelligent Key & BCM Reset – Burbank Auto Locksmith", description: "Nissan Altima smart key programming in Burbank. Intelligent Key system, BCM reset, PIN code access, all keys lost recovery. Same-day mobile locksmith. Licensed & insured.", slug: "/smart-key-programming/nissan/altima" });
 
     const schema = document.createElement("script");
     schema.type = "application/ld+json";
