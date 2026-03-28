@@ -85,6 +85,7 @@ const brandModelPages: Record<string, { slug: string; label: string }[]> = {
     { slug: "/smart-key-programming/honda/civic", label: "Civic" },
     { slug: "/smart-key-programming/honda/accord", label: "Accord" },
     { slug: "/smart-key-programming/honda/cr-v", label: "CR-V" },
+    { slug: "/smart-key-programming/honda/pilot", label: "Pilot" },
   ],
   ford: [
     { slug: "/smart-key-programming/ford/f-150", label: "F-150" },
