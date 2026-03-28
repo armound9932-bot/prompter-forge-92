@@ -104,6 +104,7 @@ const brandModelPages: Record<string, { slug: string; label: string }[]> = {
     { slug: "/smart-key-programming/nissan/altima", label: "Altima" },
     { slug: "/smart-key-programming/nissan/sentra", label: "Sentra" },
     { slug: "/smart-key-programming/nissan/rogue", label: "Rogue" },
+    { slug: "/smart-key-programming/nissan/pathfinder", label: "Pathfinder" },
   ],
   kia: [
     { slug: "/smart-key-programming/kia/optima", label: "Optima (K5)" },
