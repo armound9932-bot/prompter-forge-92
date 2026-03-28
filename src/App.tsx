@@ -26,6 +26,7 @@ import FordEdgePage from "./pages/smart-key-programming/FordEdgePage";
 import NissanAltimaPage from "./pages/smart-key-programming/NissanAltimaPage";
 import NissanRoguePage from "./pages/smart-key-programming/NissanRoguePage";
 import NissanSentraPage from "./pages/smart-key-programming/NissanSentraPage";
+import NissanPathfinderPage from "./pages/smart-key-programming/NissanPathfinderPage";
 
 const SMART_KEY_BRANDS = ["toyota", "honda", "ford", "chevrolet", "nissan", "kia", "hyundai"];
 
