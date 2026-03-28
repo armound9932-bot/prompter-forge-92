@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, Shield, Clock, MapPin, Wrench, AlertTriangle, ChevronRight } from "lucide-react";
 

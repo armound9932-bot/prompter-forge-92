@@ -51,6 +51,7 @@ function App() {
       <Route path="/smart-key-programming/honda/accord" element={<HondaAccordPage />} />
       <Route path="/smart-key-programming/honda/cr-v" element={<HondaCrvPage />} />
       <Route path="/smart-key-programming/honda/pilot" element={<HondaPilotPage />} />
+      <Route path="/smart-key-programming/honda/odyssey" element={<HondaOdysseyPage />} />
       {SMART_KEY_BRANDS.map(brand => (
         <Route key={brand} path={`/smart-key-programming/${brand}`} element={<SmartKeyBrandPage brand={brand} />} />
       ))}
