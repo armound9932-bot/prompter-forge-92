@@ -36,6 +36,7 @@ function App() {
       <Route path="/smart-key-programming/toyota/camry" element={<ToyotaCamryPage />} />
       <Route path="/smart-key-programming/toyota/corolla" element={<ToyotaCorollaPage />} />
       <Route path="/smart-key-programming/toyota/rav4" element={<ToyotaRav4Page />} />
+      <Route path="/smart-key-programming/toyota/highlander" element={<ToyotaHighlanderPage />} />
       {SMART_KEY_BRANDS.map(brand => (
         <Route key={brand} path={`/smart-key-programming/${brand}`} element={<SmartKeyBrandPage brand={brand} />} />
       ))}
