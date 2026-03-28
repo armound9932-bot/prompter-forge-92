@@ -1,5 +1,16 @@
 import { Cpu } from "lucide-react";
+import { Link } from "react-router-dom";
 import ServicePageLayout from "@/components/ServicePageLayout";
+
+const brands = [
+  { slug: "/smart-key-programming/toyota", label: "Toyota" },
+  { slug: "/smart-key-programming/honda", label: "Honda" },
+  { slug: "/smart-key-programming/ford", label: "Ford" },
+  { slug: "/smart-key-programming/chevrolet", label: "Chevrolet" },
+  { slug: "/smart-key-programming/nissan", label: "Nissan" },
+  { slug: "/smart-key-programming/kia", label: "Kia" },
+  { slug: "/smart-key-programming/hyundai", label: "Hyundai" },
+];
 
 export default function SmartKeyProgramming() {
   return (
@@ -33,6 +44,22 @@ export default function SmartKeyProgramming() {
           { q: "Do I need to tow my car to a dealer for smart key programming?", a: "No. Our mobile locksmith comes to your location in Burbank and programs your smart key on-site." },
         ],
       }}
+      extraContent={
+        <section className="py-10 bg-muted">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-xl font-bold text-foreground mb-4">Smart Key Programming by Brand</h2>
+            <p className="text-muted-foreground text-sm mb-4">Select your vehicle brand for detailed smart key programming information, compatible fob types, and Burbank pricing.</p>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+              {brands.map(b => (
+                <Link key={b.slug} to={b.slug} className="flex items-center gap-2 bg-card rounded-xl p-4 border border-border hover:shadow-md hover:-translate-y-0.5 transition-all">
+                  <Cpu className="w-4 h-4 text-accent shrink-0" />
+                  <span className="font-semibold text-foreground text-sm">{b.label}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      }
     />
   );
 }
