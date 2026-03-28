@@ -5,6 +5,8 @@ import MidPageCTA from "@/components/MidPageCTA";
 import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
+import PricingAndTimeSection from "@/components/PricingAndTimeSection";
+import EmergencyCallSection from "@/components/EmergencyCallSection";
 
 
 export default function NissanRoguePage() {
@@ -309,6 +311,8 @@ export default function NissanRoguePage() {
           </div>
         </div>
       </section>
+      <PricingAndTimeSection vehicleName="Nissan Rogue" />
+
 
       {/* FAQ */}
       <section className="py-12 bg-background">
@@ -329,6 +333,8 @@ export default function NissanRoguePage() {
           </div>
         </div>
       </section>
+      <EmergencyCallSection vehicleName="Nissan Rogue" />
+
 
       {/* CTA */}
       <section className="py-14 bg-primary text-primary-foreground">

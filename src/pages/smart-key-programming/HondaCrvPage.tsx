@@ -5,6 +5,8 @@ import MidPageCTA from "@/components/MidPageCTA";
 import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
+import PricingAndTimeSection from "@/components/PricingAndTimeSection";
+import EmergencyCallSection from "@/components/EmergencyCallSection";
 
 
 export default function HondaCrvPage() {
@@ -285,6 +287,8 @@ export default function HondaCrvPage() {
           </p>
         </div>
       </section>
+      <PricingAndTimeSection vehicleName="Honda CR-V" />
+
 
       {/* FAQ */}
       <section className="py-12 bg-muted">
@@ -305,6 +309,8 @@ export default function HondaCrvPage() {
           </div>
         </div>
       </section>
+      <EmergencyCallSection vehicleName="Honda CR-V" />
+
 
       {/* CTA */}
       <section className="py-12 bg-primary/5 border-t border-border">

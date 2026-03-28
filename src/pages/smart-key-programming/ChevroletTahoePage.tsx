@@ -5,6 +5,8 @@ import MidPageCTA from "@/components/MidPageCTA";
 import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
+import PricingAndTimeSection from "@/components/PricingAndTimeSection";
+import EmergencyCallSection from "@/components/EmergencyCallSection";
 
 
 const PAGE_TITLE = "Chevrolet Tahoe Key Programming in Burbank, CA | Burbank Auto Locksmith";
@@ -294,6 +296,8 @@ export default function ChevroletTahoePage() {
           </div>
         </div>
       </section>
+      <PricingAndTimeSection vehicleName="Chevrolet Tahoe" />
+
 
       {/* FAQ */}
       <section className="py-12 bg-background">
@@ -312,6 +316,8 @@ export default function ChevroletTahoePage() {
           </div>
         </div>
       </section>
+      <EmergencyCallSection vehicleName="Chevrolet Tahoe" />
+
 
       {/* CTA */}
       <section className="py-16 bg-primary text-primary-foreground">

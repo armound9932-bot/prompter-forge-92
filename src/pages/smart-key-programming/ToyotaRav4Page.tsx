@@ -5,6 +5,8 @@ import MidPageCTA from "@/components/MidPageCTA";
 import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
+import PricingAndTimeSection from "@/components/PricingAndTimeSection";
+import EmergencyCallSection from "@/components/EmergencyCallSection";
 
 
 const PHONE = "8186061684";
@@ -380,6 +382,8 @@ export default function ToyotaRav4Page() {
           </div>
         </div>
       </section>
+      <PricingAndTimeSection vehicleName="Toyota RAV4" />
+
 
       {/* FAQ */}
       <section className="py-14 md:py-20 bg-card border-t border-border">
@@ -413,6 +417,8 @@ export default function ToyotaRav4Page() {
           </p>
         </div>
       </section>
+      <EmergencyCallSection vehicleName="Toyota RAV4" />
+
 
       {/* CTA */}
       <section className="py-12 bg-accent text-accent-foreground">

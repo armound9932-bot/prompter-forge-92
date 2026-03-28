@@ -5,6 +5,8 @@ import MidPageCTA from "@/components/MidPageCTA";
 import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
 import { setSeoMeta } from "@/utils/seo";
+import PricingAndTimeSection from "@/components/PricingAndTimeSection";
+import EmergencyCallSection from "@/components/EmergencyCallSection";
 
 
 export default function FordFusionPage() {
@@ -281,6 +283,8 @@ export default function FordFusionPage() {
           </div>
         </div>
       </section>
+      <PricingAndTimeSection vehicleName="Ford Fusion" />
+
 
       {/* FAQ */}
       <section className="py-14 bg-muted/40">
@@ -304,6 +308,8 @@ export default function FordFusionPage() {
           </div>
         </div>
       </section>
+      <EmergencyCallSection vehicleName="Ford Fusion" />
+
 
       {/* CTA */}
       <section className="py-16 bg-primary/5">

@@ -3,6 +3,8 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 import MidPageCTA from "@/components/MidPageCTA";
 import LocalSeoBlock from "@/components/LocalSeoBlock";
 import RelatedModelsSection from "@/components/RelatedModelsSection";
+import PricingAndTimeSection from "@/components/PricingAndTimeSection";
+import EmergencyCallSection from "@/components/EmergencyCallSection";
 
 
 export default function KiaSorentoPage() {
@@ -302,6 +304,8 @@ export default function KiaSorentoPage() {
               </div>
             </div>
           </section>
+      <EmergencyCallSection vehicleName="Kia Sorento" />
+
 
           {/* CTA */}
           <section className="py-12 bg-accent text-accent-foreground">
