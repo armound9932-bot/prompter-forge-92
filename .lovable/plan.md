@@ -1,39 +1,33 @@
 
 
-## Add Brand Logo Strip Below Hero Headline
+## Add Pricing & Service Quick-Info Strip to Homepage
 
 ### What
-Insert a row of 7 brand logos (Toyota, Honda, Ford, Chevrolet, Nissan, Kia, Hyundai) with "We service all major brands" text inside the `HeroSection`, positioned after the subtext paragraph and before the CTA buttons.
+Add a compact, high-visibility pricing and service summary strip on the homepage — positioned between the Hero section and the TrustBar (or just after the TrustBar). This gives visitors instant answers to their top questions before scrolling.
+
+### Design
+A horizontal strip with 4 items in a clean grid/flex layout on dark or muted background:
+
+```text
+┌──────────────┬──────────────┬──────────────┬──────────────┐
+│  💰 Duplicate │  💰 All Keys  │  ⏱ Service   │  🚗 Mobile    │
+│  Key          │  Lost        │  Time        │  Service     │
+│  $120–$180   │  $250–$450   │  20–60 min   │  We come     │
+│              │              │              │  to you      │
+└──────────────┴──────────────┴──────────────┴──────────────┘
+```
 
 ### Edit: `src/pages/Index.tsx`
 
-**Add imports** for the 7 brand logos (already exist in `src/assets/brands/`).
+**Insert a new `PricingStrip` component** between `HeroSection` and `TrustBar` in the page render.
 
-**Insert after line 56** (after the `<p>` subtext, before the CTA buttons div):
+4 cards in a responsive grid (`grid-cols-2 md:grid-cols-4`), each with:
+- Lucide icon (DollarSign, Key, Clock, Truck)
+- Bold label
+- Value text in accent color
+- Subtle description
 
-```tsx
-<div className="mb-6">
-  <p className="text-xs uppercase tracking-widest opacity-60 mb-3">We service all major brands</p>
-  <div className="flex flex-wrap items-center gap-4 md:gap-6">
-    {[
-      { src: toyotaLogo, alt: "Toyota" },
-      { src: hondaLogo, alt: "Honda" },
-      { src: fordLogo, alt: "Ford" },
-      { src: chevroletLogo, alt: "Chevrolet" },
-      { src: nissanLogo, alt: "Nissan" },
-      { src: kiaLogo, alt: "Kia" },
-      { src: hyundaiLogo, alt: "Hyundai" },
-    ].map(b => (
-      <img key={b.alt} src={b.src} alt={b.alt} className="h-5 md:h-6 w-auto object-contain brightness-0 invert opacity-70" loading="lazy" />
-    ))}
-  </div>
-</div>
-```
+Background: `bg-primary` or `bg-gray-950` to contrast with hero and trust bar. Compact padding (`py-6`). On mobile, 2×2 grid keeps it scannable.
 
-Key details:
-- `brightness-0 invert` makes colored logos appear white to match hero text
-- `opacity-70` keeps them subtle/trust-building without competing with CTAs
-- `h-5 md:h-6` = 20px mobile, 24px desktop
-- `flex-wrap` ensures mobile-friendly layout
-- Reuses existing logo assets from `src/assets/brands/`
+No new files needed — just a small inline component in Index.tsx (~30 lines).
 
