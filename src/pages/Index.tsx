@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { Phone, MessageCircle, Clock, Shield, Star, MapPin, Wrench, Key, Car, Zap, ChevronRight, Award, CheckCircle, Cpu } from "lucide-react";
+import { Phone, MessageCircle, Clock, Shield, Star, MapPin, Wrench, Key, Car, Zap, ChevronRight, Award, CheckCircle, Cpu, DollarSign, Truck } from "lucide-react";
 import { setSeoMeta } from "@/utils/seo";
 
 import serviceCarLockout from "@/assets/service-car-lockout.jpg";
