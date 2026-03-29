@@ -8,6 +8,13 @@ import serviceAllKeysLost from "@/assets/service-all-keys-lost.jpg";
 import serviceKeyProgramming from "@/assets/service-key-programming.jpg";
 import serviceIgnitionRepair from "@/assets/service-ignition-repair.jpg";
 import serviceEcuProgramming from "@/assets/service-ecu-programming.jpg";
+import toyotaLogo from "@/assets/brands/toyota-logo.png";
+import hondaLogo from "@/assets/brands/honda-logo.png";
+import fordLogo from "@/assets/brands/ford-logo.png";
+import chevroletLogo from "@/assets/brands/chevrolet-logo.png";
+import nissanLogo from "@/assets/brands/nissan-logo.png";
+import kiaLogo from "@/assets/brands/kia-logo.png";
+import hyundaiLogo from "@/assets/brands/hyundai-logo.png";
 
 const PHONE = "8186061684";
 const PHONE_DISPLAY = "(818) 606-1684";
