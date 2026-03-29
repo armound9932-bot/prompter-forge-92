@@ -93,14 +93,22 @@ function TrustBar() {
     </div>
   );
 }
+import toyotaLogo from "@/assets/brands/toyota-logo.png";
+import hondaLogo from "@/assets/brands/honda-logo.png";
+import fordLogo from "@/assets/brands/ford-logo.png";
+import chevroletLogo from "@/assets/brands/chevrolet-logo.png";
+import nissanLogo from "@/assets/brands/nissan-logo.png";
+import kiaLogo from "@/assets/brands/kia-logo.png";
+import hyundaiLogo from "@/assets/brands/hyundai-logo.png";
+
 const smartKeyBrands = [
-  { slug: "/smart-key-programming/toyota", label: "Toyota" },
-  { slug: "/smart-key-programming/honda", label: "Honda" },
-  { slug: "/smart-key-programming/ford", label: "Ford" },
-  { slug: "/smart-key-programming/chevrolet", label: "Chevrolet" },
-  { slug: "/smart-key-programming/nissan", label: "Nissan" },
-  { slug: "/smart-key-programming/kia", label: "Kia" },
-  { slug: "/smart-key-programming/hyundai", label: "Hyundai" },
+  { slug: "/smart-key-programming/toyota", label: "Toyota", logo: toyotaLogo },
+  { slug: "/smart-key-programming/honda", label: "Honda", logo: hondaLogo },
+  { slug: "/smart-key-programming/ford", label: "Ford", logo: fordLogo },
+  { slug: "/smart-key-programming/chevrolet", label: "Chevrolet", logo: chevroletLogo },
+  { slug: "/smart-key-programming/nissan", label: "Nissan", logo: nissanLogo },
+  { slug: "/smart-key-programming/kia", label: "Kia", logo: kiaLogo },
+  { slug: "/smart-key-programming/hyundai", label: "Hyundai", logo: hyundaiLogo },
 ];
 
 function SmartKeyBrandsSection() {
