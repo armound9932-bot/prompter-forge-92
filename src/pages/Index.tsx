@@ -59,13 +59,13 @@ function HeroSection() {
             <p className="text-xs uppercase tracking-widest opacity-60 mb-3">We service all major brands</p>
             <div className="flex flex-wrap items-center gap-4 md:gap-6">
               {[
-                { src: "/assets/brands/toyota-logo.png", alt: "Toyota" },
-                { src: "/assets/brands/honda-logo.png", alt: "Honda" },
-                { src: "/assets/brands/ford-logo.png", alt: "Ford" },
-                { src: "/assets/brands/chevrolet-logo.png", alt: "Chevrolet" },
-                { src: "/assets/brands/nissan-logo.png", alt: "Nissan" },
-                { src: "/assets/brands/kia-logo.png", alt: "Kia" },
-                { src: "/assets/brands/hyundai-logo.png", alt: "Hyundai" },
+                { src: toyotaLogo, alt: "Toyota" },
+                { src: hondaLogo, alt: "Honda" },
+                { src: fordLogo, alt: "Ford" },
+                { src: chevroletLogo, alt: "Chevrolet" },
+                { src: nissanLogo, alt: "Nissan" },
+                { src: kiaLogo, alt: "Kia" },
+                { src: hyundaiLogo, alt: "Hyundai" },
               ].map(b => (
                 <img key={b.alt} src={b.src} alt={b.alt} className="h-5 md:h-6 w-auto object-contain brightness-0 invert opacity-70" loading="lazy" />
               ))}
