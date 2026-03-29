@@ -58,6 +58,9 @@ function HeroSection() {
             Locked Out? Lost Your Car Keys?<br />
             <span className="text-accent">We're There in 30 Minutes</span>
           </h1>
+          <p className="text-base md:text-lg font-semibold tracking-wide uppercase text-accent mb-2">
+            OEM-level key programming — without the dealership
+          </p>
           <p className="text-lg md:text-xl opacity-90 mb-6 max-w-2xl">
             Fast, reliable mobile car locksmith in Burbank. Call now for immediate service.
           </p>
