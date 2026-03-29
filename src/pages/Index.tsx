@@ -62,9 +62,9 @@ function HeroSection() {
             Fast, reliable mobile car locksmith in Burbank. Call now for immediate service.
           </p>
 
-          <div className="mb-6">
-            <p className="text-xs uppercase tracking-widest opacity-60 mb-3">We service all major brands</p>
-            <div className="flex flex-wrap items-center gap-4 md:gap-6">
+          <div className="mb-6 text-center">
+            <p className="text-xs uppercase tracking-widest opacity-80 mb-3">We service all major brands</p>
+            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
               {[
                 { src: toyotaLogo, alt: "Toyota" },
                 { src: hondaLogo, alt: "Honda" },
@@ -74,7 +74,7 @@ function HeroSection() {
                 { src: kiaLogo, alt: "Kia" },
                 { src: hyundaiLogo, alt: "Hyundai" },
               ].map(b => (
-                <img key={b.alt} src={b.src} alt={b.alt} className="h-5 md:h-6 w-auto object-contain brightness-0 invert opacity-70" loading="lazy" />
+                <img key={b.alt} src={b.src} alt={b.alt} className="h-8 w-auto object-contain brightness-0 invert opacity-90 drop-shadow-md" loading="lazy" />
               ))}
             </div>
           </div>
