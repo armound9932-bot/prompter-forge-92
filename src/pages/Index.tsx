@@ -121,6 +121,7 @@ function PricingStrip() {
 }
 
 function TrustBar() {
+  return (
     <div className="bg-gray-900">
       <div className="max-w-7xl mx-auto px-6 py-5 flex flex-wrap justify-center items-center gap-8 md:gap-14 text-base md:text-lg font-bold text-white tracking-wide">
         <span className="flex items-center gap-2.5">
