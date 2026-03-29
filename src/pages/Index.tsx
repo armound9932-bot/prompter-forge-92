@@ -8,6 +8,13 @@ import serviceAllKeysLost from "@/assets/service-all-keys-lost.jpg";
 import serviceKeyProgramming from "@/assets/service-key-programming.jpg";
 import serviceIgnitionRepair from "@/assets/service-ignition-repair.jpg";
 import serviceEcuProgramming from "@/assets/service-ecu-programming.jpg";
+import toyotaLogo from "@/assets/brands/toyota-logo.png";
+import hondaLogo from "@/assets/brands/honda-logo.png";
+import fordLogo from "@/assets/brands/ford-logo.png";
+import chevroletLogo from "@/assets/brands/chevrolet-logo.png";
+import nissanLogo from "@/assets/brands/nissan-logo.png";
+import kiaLogo from "@/assets/brands/kia-logo.png";
+import hyundaiLogo from "@/assets/brands/hyundai-logo.png";
 
 const PHONE = "8186061684";
 const PHONE_DISPLAY = "(818) 606-1684";
@@ -54,6 +61,23 @@ function HeroSection() {
           <p className="text-lg md:text-xl opacity-90 mb-6 max-w-2xl">
             Fast, reliable mobile car locksmith in Burbank. Call now for immediate service.
           </p>
+
+          <div className="mb-6">
+            <p className="text-xs uppercase tracking-widest opacity-60 mb-3">We service all major brands</p>
+            <div className="flex flex-wrap items-center gap-4 md:gap-6">
+              {[
+                { src: toyotaLogo, alt: "Toyota" },
+                { src: hondaLogo, alt: "Honda" },
+                { src: fordLogo, alt: "Ford" },
+                { src: chevroletLogo, alt: "Chevrolet" },
+                { src: nissanLogo, alt: "Nissan" },
+                { src: kiaLogo, alt: "Kia" },
+                { src: hyundaiLogo, alt: "Hyundai" },
+              ].map(b => (
+                <img key={b.alt} src={b.src} alt={b.alt} className="h-5 md:h-6 w-auto object-contain brightness-0 invert opacity-70" loading="lazy" />
+              ))}
+            </div>
+          </div>
           
           <div className="flex flex-wrap gap-3 mb-8">
             <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 px-10 py-5 rounded-xl bg-accent text-accent-foreground font-bold text-xl shadow-xl animate-pulse-glow hover:brightness-110 transition">
@@ -93,13 +117,7 @@ function TrustBar() {
     </div>
   );
 }
-import toyotaLogo from "@/assets/brands/toyota-logo.png";
-import hondaLogo from "@/assets/brands/honda-logo.png";
-import fordLogo from "@/assets/brands/ford-logo.png";
-import chevroletLogo from "@/assets/brands/chevrolet-logo.png";
-import nissanLogo from "@/assets/brands/nissan-logo.png";
-import kiaLogo from "@/assets/brands/kia-logo.png";
-import hyundaiLogo from "@/assets/brands/hyundai-logo.png";
+
 
 const smartKeyBrands = [
   { slug: "/smart-key-programming/toyota", label: "Toyota", logo: toyotaLogo },
