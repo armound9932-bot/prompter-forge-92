@@ -78,6 +78,8 @@ function HeroSection() {
               ))}
             </div>
           </div>
+
+          <div className="w-24 h-px bg-white/20 mx-auto mb-6"></div>
           
           <div className="flex flex-wrap gap-3 mb-8">
             <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 px-10 py-5 rounded-xl bg-accent text-accent-foreground font-bold text-xl shadow-xl animate-pulse-glow hover:brightness-110 transition">
