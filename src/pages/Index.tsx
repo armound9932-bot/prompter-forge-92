@@ -74,7 +74,7 @@ function HeroSection() {
                 { src: kiaLogo, alt: "Kia" },
                 { src: hyundaiLogo, alt: "Hyundai" },
               ].map(b => (
-                <img key={b.alt} src={b.src} alt={b.alt} className="h-8 w-auto object-contain brightness-0 invert opacity-70 drop-shadow-md" loading="lazy" />
+                <img key={b.alt} src={b.src} alt={b.alt} className="h-12 md:h-16 w-auto object-contain brightness-0 invert opacity-70 drop-shadow-md" loading="lazy" />
               ))}
             </div>
           </div>
