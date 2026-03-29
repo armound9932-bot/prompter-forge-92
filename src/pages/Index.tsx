@@ -93,14 +93,22 @@ function TrustBar() {
     </div>
   );
 }
+import toyotaLogo from "@/assets/brands/toyota-logo.png";
+import hondaLogo from "@/assets/brands/honda-logo.png";
+import fordLogo from "@/assets/brands/ford-logo.png";
+import chevroletLogo from "@/assets/brands/chevrolet-logo.png";
+import nissanLogo from "@/assets/brands/nissan-logo.png";
+import kiaLogo from "@/assets/brands/kia-logo.png";
+import hyundaiLogo from "@/assets/brands/hyundai-logo.png";
+
 const smartKeyBrands = [
-  { slug: "/smart-key-programming/toyota", label: "Toyota" },
-  { slug: "/smart-key-programming/honda", label: "Honda" },
-  { slug: "/smart-key-programming/ford", label: "Ford" },
-  { slug: "/smart-key-programming/chevrolet", label: "Chevrolet" },
-  { slug: "/smart-key-programming/nissan", label: "Nissan" },
-  { slug: "/smart-key-programming/kia", label: "Kia" },
-  { slug: "/smart-key-programming/hyundai", label: "Hyundai" },
+  { slug: "/smart-key-programming/toyota", label: "Toyota", logo: toyotaLogo },
+  { slug: "/smart-key-programming/honda", label: "Honda", logo: hondaLogo },
+  { slug: "/smart-key-programming/ford", label: "Ford", logo: fordLogo },
+  { slug: "/smart-key-programming/chevrolet", label: "Chevrolet", logo: chevroletLogo },
+  { slug: "/smart-key-programming/nissan", label: "Nissan", logo: nissanLogo },
+  { slug: "/smart-key-programming/kia", label: "Kia", logo: kiaLogo },
+  { slug: "/smart-key-programming/hyundai", label: "Hyundai", logo: hyundaiLogo },
 ];
 
 function SmartKeyBrandsSection() {
@@ -112,7 +120,7 @@ function SmartKeyBrandsSection() {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
           {smartKeyBrands.map(b => (
             <Link key={b.slug} to={b.slug} className="flex items-center gap-2.5 bg-card rounded-xl p-4 border border-border hover:shadow-md hover:-translate-y-0.5 transition-all group">
-              <Cpu className="w-5 h-5 text-accent shrink-0" />
+              <img src={b.logo} alt={`${b.label} logo`} className="w-7 h-7 object-contain shrink-0" loading="lazy" width={28} height={28} />
               <span className="font-semibold text-foreground text-sm group-hover:text-accent transition-colors">{b.label}</span>
               <ChevronRight className="w-4 h-4 text-muted-foreground ml-auto" />
             </Link>
