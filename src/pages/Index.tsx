@@ -64,7 +64,7 @@ function HeroSection() {
 
           <div className="mb-6 text-center">
             <p className="text-xs uppercase tracking-widest opacity-80 mb-3">We service all major brands</p>
-            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
               {[
                 { src: toyotaLogo, alt: "Toyota" },
                 { src: hondaLogo, alt: "Honda" },
@@ -74,7 +74,7 @@ function HeroSection() {
                 { src: kiaLogo, alt: "Kia" },
                 { src: hyundaiLogo, alt: "Hyundai" },
               ].map(b => (
-                <img key={b.alt} src={b.src} alt={b.alt} className="h-8 w-auto object-contain brightness-0 invert opacity-70 drop-shadow-md" loading="lazy" />
+                <img key={b.alt} src={b.src} alt={b.alt} className="h-12 md:h-16 w-auto object-contain brightness-0 invert opacity-70 drop-shadow-md" loading="lazy" />
               ))}
             </div>
           </div>
