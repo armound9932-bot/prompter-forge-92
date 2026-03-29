@@ -94,7 +94,33 @@ function HeroSection() {
   );
 }
 
-function TrustBar() {
+function PricingStrip() {
+  const items = [
+    { icon: DollarSign, label: "Duplicate Key", value: "$120–$180", desc: "Have a working key" },
+    { icon: Key, label: "All Keys Lost", value: "$250–$450", desc: "No working key" },
+    { icon: Clock, label: "Service Time", value: "20–60 min", desc: "On-site at your location" },
+    { icon: Truck, label: "Mobile Service", value: "We come to you", desc: "No towing needed" },
+  ];
+
+  return (
+    <section className="bg-gray-950 border-y border-white/10">
+      <div className="max-w-5xl mx-auto px-4 py-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {items.map((item) => (
+            <div key={item.label} className="flex flex-col items-center text-center gap-1.5 py-3 px-2 rounded-xl bg-white/5">
+              <item.icon className="w-6 h-6 text-accent" />
+              <span className="text-xs uppercase tracking-wider text-white/60 font-medium">{item.label}</span>
+              <span className="text-lg font-black text-accent">{item.value}</span>
+              <span className="text-xs text-white/50">{item.desc}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
   return (
     <div className="bg-gray-900">
       <div className="max-w-7xl mx-auto px-6 py-5 flex flex-wrap justify-center items-center gap-8 md:gap-14 text-base md:text-lg font-bold text-white tracking-wide">
