@@ -721,6 +721,7 @@ export default function Index() {
     <div className="min-h-screen">
       <Header />
       <HeroSection />
+      <PricingStrip />
       <TrustBar />
       <SmartKeyBrandsSection />
       <UrgencyBanner />
