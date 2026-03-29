@@ -59,7 +59,7 @@ export default function SmartKeyProgramming() {
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
               {brands.map(b => (
                 <Link key={b.slug} to={b.slug} className="flex items-center gap-2 bg-card rounded-xl p-4 border border-border hover:shadow-md hover:-translate-y-0.5 transition-all">
-                  <Cpu className="w-4 h-4 text-accent shrink-0" />
+                  <img src={b.logo} alt={`${b.label} logo`} className="w-6 h-6 object-contain shrink-0" loading="lazy" width={24} height={24} />
                   <span className="font-semibold text-foreground text-sm">{b.label}</span>
                 </Link>
               ))}

@@ -120,7 +120,7 @@ function SmartKeyBrandsSection() {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
           {smartKeyBrands.map(b => (
             <Link key={b.slug} to={b.slug} className="flex items-center gap-2.5 bg-card rounded-xl p-4 border border-border hover:shadow-md hover:-translate-y-0.5 transition-all group">
-              <Cpu className="w-5 h-5 text-accent shrink-0" />
+              <img src={b.logo} alt={`${b.label} logo`} className="w-7 h-7 object-contain shrink-0" loading="lazy" width={28} height={28} />
               <span className="font-semibold text-foreground text-sm group-hover:text-accent transition-colors">{b.label}</span>
               <ChevronRight className="w-4 h-4 text-muted-foreground ml-auto" />
             </Link>
