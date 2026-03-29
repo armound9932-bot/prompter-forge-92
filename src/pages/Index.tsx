@@ -117,13 +117,7 @@ function TrustBar() {
     </div>
   );
 }
-import toyotaLogo from "@/assets/brands/toyota-logo.png";
-import hondaLogo from "@/assets/brands/honda-logo.png";
-import fordLogo from "@/assets/brands/ford-logo.png";
-import chevroletLogo from "@/assets/brands/chevrolet-logo.png";
-import nissanLogo from "@/assets/brands/nissan-logo.png";
-import kiaLogo from "@/assets/brands/kia-logo.png";
-import hyundaiLogo from "@/assets/brands/hyundai-logo.png";
+
 
 const smartKeyBrands = [
   { slug: "/smart-key-programming/toyota", label: "Toyota", logo: toyotaLogo },
