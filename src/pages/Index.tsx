@@ -64,7 +64,7 @@ function HeroSection() {
 
           <div className="mb-6 text-center">
             <p className="text-xs uppercase tracking-widest opacity-80 mb-3">We service all major brands</p>
-            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
+            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
               {[
                 { src: toyotaLogo, alt: "Toyota" },
                 { src: hondaLogo, alt: "Honda" },
